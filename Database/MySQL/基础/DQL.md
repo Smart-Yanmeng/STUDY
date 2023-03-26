@@ -1,0 +1,11 @@
+MySQL DQL语句执行顺序：
+
+```mysql
+FROM
+WHERE
+GROUP BY
+HAVING
+SELECT
+ORDER BY
+LIMIT
+```

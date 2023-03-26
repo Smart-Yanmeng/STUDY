@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单绑定</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <h1>文本</h1>
+  <input type="text" v-model="inputText">
+
+  <h1>多行文本</h1>
+  <textarea name="" cols="30" rows="10" v-model="textarea"></textarea>
+
+  <h1>密码</h1>
+  <input type="password" v-model="password">
+
+  <h1>单选框</h1>
+  <!-- v-model 拿的是标签的 value 值 -->
+  <input id="man" type="radio" name="sex" v-model="sex" value="1">
+  <label for="man">男</label>
+  <input id="woman" type="radio" name="sex" v-model="sex" value="2">
+  <label for="woman">女</label>
+
+  <h1>复选框</h1>
+  <h2>多项选择</h2>
+  <!-- 返回的是数组，元素为勾选的 value 值 -->
+  <input id="study" type="checkbox" v-model="checkbox" value="study">
+  <label for="study">学习</label>
+  <input id="sleep" type="checkbox" v-model="checkbox" value="sleep">
+  <label for="sleep">睡觉</label>
+  <input id="eat" type="checkbox" v-model="checkbox" value="eat">
+  <label for="eat">干饭</label>
+  <h2>单项选择</h2>
+  <!-- 返回的是布尔值 -->
+  <input id="one" type="checkbox" v-model="checkBoxOne" value="1">
+
+  <h1>下拉菜单</h1>
+  <select name="" id="" v-model="select">
+    <option :value="item.id" v-for="item in userList">{{item.name}}</option>
+  </select>
+
+  <h1>修饰符</h1>
+  <!-- 指定输入为数字 -->
+  <input v-model.number="inputNumber">
+  <!-- 失焦后才更新数据 -->
+  <input type="text" v-model.lazy="inputText">
+  <!-- 过滤用户输入的空格 -->
+  <input type="text" v-model.trim="inputText">
+
+</div>
+
+<script>
+  new Vue({
+    el: "#app",
+    data() {
+      return {
+        inputText: '',
+        textarea: '',
+        password: '',
+        sex: '',
+        checkbox: [],
+        checkBoxOne: '',
+        select: '',
+        userList: [
+          {id: 1, name: "York"},
+          {id: 2, name: "Index"},
+          {id: 3, name: "Zhang"}
+        ],
+        inputNumber: ''
+      }
+    }
+  })
+</script>
+</body>
+</html>

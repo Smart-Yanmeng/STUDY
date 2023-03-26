@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button onclick="alertText('这是一个按钮')">点击弹出</button>
+<button onclick="sum(3, 4)">求 1 + 1</button>
+<button onclick="inputText()">输入框</button>
+
+<script>
+    /**
+     * @param {string} text
+     * @return null
+     */
+    function alertText(text) {
+        // 调用内置弹出框方法
+        alert(text);
+    }
+
+    /**
+     * 两个形参之和
+     * @param a 形参1
+     * @param b 形参2
+     * @return c 求和结果
+     */
+    function sum(a, b) {
+        const c = a + b;
+        console.log(c)
+    }
+
+    function inputText() {
+        const text = prompt('请输入');
+        console.log(text);
+    }
+</script>
+</body>
+</html>

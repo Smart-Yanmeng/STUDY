@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>模板抽离</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <h1>template 抽离</h1>
+  <cpn-global-template></cpn-global-template>
+
+  <h1>script 抽离</h1>
+  <cpn-global-script></cpn-global-script>
+</div>
+</body>
+
+<!-- template 抽离 ( 比较常用 ) 在 body 标签中会显示 -->
+<template id="cpn-global-template">
+  <div>
+    <button @click="addCount">点击{{count}}</button>
+  </div>
+</template>
+
+<!-- script 抽离 在 body 标签中不会显示 -->
+<script type="x-template" id="cpn-global-script">
+  <div>
+    <button @click="addCount">点击{{count}}</button>
+  </div>
+</script>
+
+<script>
+  const cpnGlobalTemplate = Vue.component('cpn-global-template', {
+    template: '#cpn-global-template',
+    data() {
+      return {
+        count: 0
+      }
+    },
+    methods: {
+      addCount() {
+        this.count++;
+      }
+    }
+  })
+
+  const cpnGlobalScript = Vue.component('cpn-global-script', {
+    template: '#cpn-global-script',
+    data() {
+      return {
+        count: 0
+      }
+    },
+    methods: {
+      addCount() {
+        this.count++;
+      }
+    }
+  })
+
+  new Vue({
+    el: "#app",
+  })
+</script>
+</html>

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 19:27:25 CST 2023
+spring-security-config-5.5.8.jar>public=
+spring-security-config-5.5.8-sources.jar>public=
+spring-security-config-5.5.8.pom>public=

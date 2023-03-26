@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 21:16:25 CST 2023
+maven-archiver-3.5.2.jar>central=
+maven-archiver-3.5.2.pom>central=
+maven-archiver-3.5.2.pom>public=
+maven-archiver-3.5.2.jar>public=

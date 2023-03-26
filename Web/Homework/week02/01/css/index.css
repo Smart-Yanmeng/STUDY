@@ -1,0 +1,80 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+.clearfix:after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    width: 100%;
+    padding: 100px 0;
+    background: #f5f5f5;
+
+    position: relative;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+.container .card {
+    border-radius: 7px;
+    box-shadow: gray 0 0 10px;
+    width: 375px;
+    height: 466px;
+    position: absolute;
+    left: calc(50% - 188px);
+}
+
+.container .card .image-container {
+    width: 375px;
+    height: 250px;
+
+    position: relative;
+}
+
+.container .card .image-container .image-explain {
+    width: 202px;
+    height: 40px;
+    background-color: rgb(249, 253, 13);
+    border-radius: 10px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 23px;
+
+    position: absolute;
+    left: 149px;
+    top: 164px;
+}
+
+.container .card .image{
+    border-radius: 7px 7px 0 0;
+    width: 375px;
+    height: 250px;
+}
+
+.container .card .card-content-box {
+    width: 375px;
+    height: 216px;
+    background-color: white;
+    border-radius: 0 0 7px 7px;
+    box-sizing: border-box;
+    padding: 20px;
+
+    position: relative;
+}
+
+.container .card .card-content-box .card-content {
+    font-size: 20px;
+}
+
+.container .card .card-content-box .card-content .card-title {
+    margin: 20px;
+    text-align: right;
+}

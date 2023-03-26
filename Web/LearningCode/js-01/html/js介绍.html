@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!-- css 外部引用 -->
+    <link rel="stylesheet" href="./../css/index.css">
+</head>
+<body>
+<!-- 行内 -->
+<button onclick="console.log('我是一个按钮')">按钮A</button>
+
+<!-- 内部 ( script ) -->
+<!-- js 的调用方法 2 -->
+<button onclick="clickEvent(0)">按钮B</button>
+
+<!-- 外部引用 -->
+<button onclick="outerImportClickEvent()">按钮C</button>
+
+<script src="./../js/index.js"></script>
+
+<script>
+    /**
+     * 方法名的注释
+     * @params {number} a 是个数字
+     * @return 返回空
+     */
+    function clickEvent(a) {
+        console.log("这是一个按钮");
+    }
+
+    // js 的调用方法 1
+    // clickEvent();
+</script>
+</body>
+</html>

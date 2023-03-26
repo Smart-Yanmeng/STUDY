@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>条件判断</title>
+
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <!-- v-if -->
+  <!-- v-if 后面为 true，则渲染元素或组件；为 false，则不渲染 -->
+  <div class="title" v-if="false">你猜我显示不显示</div>
+
+  <div v-if="1 > 2">1 大于 2</div>
+  <div v-else="1 < 2">1 小于 2</div>
+
+  <!-- v-show -->
+  <div v-show="false">是否显示 v-show</div>
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#app"
+  })
+</script>
+</body>
+</html>

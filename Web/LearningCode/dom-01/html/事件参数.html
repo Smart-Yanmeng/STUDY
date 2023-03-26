@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件参数</title>
+</head>
+<body>
+<button class="logon" onclick="logon(111, this)">注册</button>
+<button class="login">登录</button>
+</body>
+<script>
+  var loginDom = document.querySelector('.login');
+  loginDom.onclick = function () {
+    // 点击事件
+    console.log(event);
+    // 对象自身
+    console.log(this)
+  }
+  // loginDom.addEventListener('click', function () {
+  //   // 点击事件
+  //   console.log(event);
+  // })
+
+  /**
+   *
+   * @param {*} num 自定义参数
+   * @param {Object} _this 用来传入点击对象自身的 this
+   */
+  function logon(num, _this) {
+    console.log(num);
+    console.log(event);
+    console.log(_this);
+  }
+</script>
+</html>

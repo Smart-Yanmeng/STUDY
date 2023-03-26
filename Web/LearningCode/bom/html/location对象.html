@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>location对象</title>
+</head>
+<body>
+<button onclick="assign()">跳转</button>
+<button onclick="replace()">替代</button>
+<button onclick="reload()">刷新</button>
+
+<script>
+  console.log(window.location.href);
+
+  function assign() {
+    location.assign('https://www.baidu.com');
+  }
+
+  function replace() {
+    location.replace('https://www.baidu.com');
+  }
+
+  function reload() {
+    location.reload();
+  }
+
+</script>
+</body>
+</html>

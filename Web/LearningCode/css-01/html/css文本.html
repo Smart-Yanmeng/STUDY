@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .border {
+            border: 3px solid #000000;
+        }
+
+        /* 线条 */
+        .text-decoration {
+            /* 上划线 */
+            /* text-decoration: overline; */
+            /* 删除线 */
+            /* text-decoration: line-through; */
+            /* 下划线 */
+            text-decoration: underline;
+        }
+
+        /* 对齐方式 */
+        .text-align-left {
+            text-align: left;
+        }
+
+        .text-align-center {
+            text-align: center;
+        }
+
+        .text-align-right {
+            text-align: right;
+        }
+
+        /* 首行缩进 */
+        .text-indent {
+            text-indent: 20px;
+        }
+
+        .text-line-height {
+            line-height: 30px;
+        }
+    </style>
+</head>
+<body>
+<div class="text-decoration">
+    文本线装饰
+    <!-- 文字相关的样式可以被继承，布局相关的样式默认不能被继承 -->
+    <div class="inherit">文本继承</div>
+</div>
+
+<div class="text-align-left">左对齐</div>
+<div class="text-align-center">居中对齐</div>
+<div class="text-align-right">右对齐</div>
+
+<div class="text-indent">首行缩进</div>
+
+<!-- 文本的垂直居中 -->
+<div class="text-line-height border">行高</div>
+</body>
+</html>

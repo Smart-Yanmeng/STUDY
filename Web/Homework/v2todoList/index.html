@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>v2 todoList</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #app {
+      width: 500px;
+      margin: 100px auto;
+    }
+
+    button {
+      border: 0;
+      border-radius: 7px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+
+    .container-header {
+      text-align: center;
+    }
+
+    .subInputBox {
+      width: 300px;
+      height: 34px;
+      padding-left: 5px;
+      margin: auto;
+
+      vertical-align: bottom;
+
+      font-size: 20px;
+    }
+
+    button {
+      width: 125px;
+      height: 38px;
+
+      margin: 0 10px 0 10px;
+    }
+
+    .container-body {
+      display: flex;
+      flex-direction: column;
+
+      min-height: 300px;
+    }
+
+    .container-tail {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .delBtn {
+      background-color: #ff6347;
+    }
+  </style>
+
+</head>
+<body>
+<div id="app">
+  <!-- 标题 -->
+  <div class="container-title">
+    <h1>v2 todoList</h1>
+  </div>
+
+  <!-- 输入框 -->
+  <div class="container-header">
+    <!-- 输入框中设置 v-model 为 inputData，双向绑定数据 -->
+    <input class="subInputBox" placeholder="请输入内容" type="text" v-model="inputData"></input>
+    <button @click="addTodo">提交</button>
+  </div>
+
+  <!-- Todos list -->
+  <div class="container-body">
+    <!-- v-for 来自动生成 todos -->
+    <div v-for="(obj, index) in todos" :key="index">
+      <!-- input checkbox 中的 v-model 绑定成 obj.completed 来表示是否完成 -->
+      <input type="checkbox" v-model="obj.completed" value="1">
+      <label>{{obj.title}}</label>
+    </div>
+  </div>
+
+  <!-- 底部按钮 -->
+  <div class="container-tail">
+    <div class="leftBtn">
+      <button @click="selectAll">全选</button>
+      <button @click="selectReverse">反选</button>
+    </div>
+    <div class="rightBtn">
+      <button class="delBtn" @click="deleteTodo">删除</button>
+    </div>
+  </div>
+</div>
+<script src="./vue.js"></script>
+<script>
+  //  实现一个 vue2 版本的 todoList 详情看01.png 02.png
+  //  样式可自行修改
+  //  请添加不少于10条注释
+
+  //  1. 实现添加功能
+  //  2. 实现删除功能
+  //  3. 实现全选功能
+  //  4. 实现反选功能
+
+  var vm = new Vue({
+    el: '#app',
+    data: {
+      inputData: '',
+      todos: [
+        {id: 1, title: '吃饭', completed: false},
+        {id: 2, title: '睡觉', completed: false},
+        {id: 3, title: '打豆豆', completed: false},
+      ]
+    },
+    methods: {
+      addTodo() {
+        this.todos.push({id: this.todos.length + 1, title: this.inputData, completed: false});
+
+        // 重置 input 框
+        this.inputData = '';
+      },
+      deleteTodo() {
+        this.todos.forEach(obj => {
+          if (obj.completed === true) {
+            this.todos.splice(obj.id - 1, 1);
+          }
+        });
+        // 重置 todos 中的 id 元素
+        this.todos.forEach((obj, index) => obj.id = index + 1);
+      },
+      selectAll() {
+        this.todos.forEach(obj => obj.completed = true);
+      },
+      selectReverse() {
+        this.todos.forEach(obj => obj.completed = !obj.completed);
+      }
+    }
+  })
+</script>
+
+</body>
+</html>

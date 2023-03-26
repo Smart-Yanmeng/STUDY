@@ -1,0 +1,123 @@
+14-Jul-2022 18:15:24.859 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.0-M16
+14-Jul-2022 18:15:24.870 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Jun 2 2022 09:33:00 UTC
+14-Jul-2022 18:15:24.870 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.0.0
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     C:\Program Files\Java\jdk-18.0.1.1
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    18.0.1.1+2-6
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+14-Jul-2022 18:15:24.871 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:15:24.872 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:15:24.873 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Jul-2022 18:15:24.873 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+14-Jul-2022 18:15:24.874 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+14-Jul-2022 18:15:24.874 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Jul-2022 18:15:24.874 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Jul-2022 18:15:24.874 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=C:\Users\yorky\Desktop\STUDY\tomcat\conf\logging.properties
+14-Jul-2022 18:15:24.874 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2022 18:15:24.875 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2022 18:15:24.875 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2022 18:15:24.875 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:15:24.875 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:15:24.875 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=C:\Users\yorky\Desktop\STUDY\tomcat\temp
+14-Jul-2022 18:15:24.879 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.33]。
+14-Jul-2022 18:15:24.882 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1o  3 May 2022]
+14-Jul-2022 18:15:25.038 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+14-Jul-2022 18:15:25.058 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[348]毫秒内初始化
+14-Jul-2022 18:15:25.099 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+14-Jul-2022 18:15:25.099 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.0-M16]
+14-Jul-2022 18:15:25.111 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\docs]
+14-Jul-2022 18:15:25.372 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\docs]的部署已在[259]毫秒内完成
+14-Jul-2022 18:15:25.376 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\examples]
+14-Jul-2022 18:15:25.640 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\examples]的部署已在[263]毫秒内完成
+14-Jul-2022 18:15:25.641 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\host-manager]
+14-Jul-2022 18:15:25.673 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\host-manager]的部署已在[32]毫秒内完成
+14-Jul-2022 18:15:25.675 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\manager]
+14-Jul-2022 18:15:25.702 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\manager]的部署已在[26]毫秒内完成
+14-Jul-2022 18:15:25.703 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\ROOT]
+14-Jul-2022 18:15:25.718 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\ROOT]的部署已在[15]毫秒内完成
+14-Jul-2022 18:15:25.721 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+14-Jul-2022 18:15:25.749 信息 [main] org.apache.catalina.startup.Catalina.start [689]毫秒后服务器启动
+14-Jul-2022 18:17:40.445 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.0-M16
+14-Jul-2022 18:17:40.448 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Jun 2 2022 09:33:00 UTC
+14-Jul-2022 18:17:40.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.0.0
+14-Jul-2022 18:17:40.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+14-Jul-2022 18:17:40.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+14-Jul-2022 18:17:40.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+14-Jul-2022 18:17:40.453 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     C:\Program Files\Java\jdk-18.0.1.1
+14-Jul-2022 18:17:40.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    18.0.1.1+2-6
+14-Jul-2022 18:17:40.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+14-Jul-2022 18:17:40.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:17:40.454 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:17:40.457 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Jul-2022 18:17:40.457 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+14-Jul-2022 18:17:40.457 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+14-Jul-2022 18:17:40.457 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Jul-2022 18:17:40.457 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Jul-2022 18:17:40.457 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=C:\Users\yorky\Desktop\STUDY\tomcat\conf\logging.properties
+14-Jul-2022 18:17:40.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2022 18:17:40.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2022 18:17:40.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2022 18:17:40.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:17:40.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=C:\Users\yorky\Desktop\STUDY\tomcat
+14-Jul-2022 18:17:40.458 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=C:\Users\yorky\Desktop\STUDY\tomcat\temp
+14-Jul-2022 18:17:40.461 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.33]。
+14-Jul-2022 18:17:40.464 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1o  3 May 2022]
+14-Jul-2022 18:17:40.596 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+14-Jul-2022 18:17:40.612 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[305]毫秒内初始化
+14-Jul-2022 18:17:40.641 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+14-Jul-2022 18:17:40.641 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.0-M16]
+14-Jul-2022 18:17:40.649 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\docs]
+14-Jul-2022 18:17:40.873 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\docs]的部署已在[222]毫秒内完成
+14-Jul-2022 18:17:40.873 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\examples]
+14-Jul-2022 18:17:41.120 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\examples]的部署已在[247]毫秒内完成
+14-Jul-2022 18:17:41.120 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\host-manager]
+14-Jul-2022 18:17:41.153 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\host-manager]的部署已在[32]毫秒内完成
+14-Jul-2022 18:17:41.153 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\manager]
+14-Jul-2022 18:17:41.177 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\manager]的部署已在[24]毫秒内完成
+14-Jul-2022 18:17:41.177 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\tomcat\webapps\ROOT]
+14-Jul-2022 18:17:41.192 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\tomcat\webapps\ROOT]的部署已在[15]毫秒内完成
+14-Jul-2022 18:17:41.194 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+14-Jul-2022 18:17:41.223 信息 [main] org.apache.catalina.startup.Catalina.start [610]毫秒后服务器启动
+14-Jul-2022 21:28:41.837 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Server.服务器版本: Apache Tomcat/10.1.0-M16
+14-Jul-2022 21:28:41.840 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器构建:        Jun 2 2022 09:33:00 UTC
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 服务器版本号:      10.1.0.0
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 操作系统名称:      Windows 11
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log OS.版本:           10.0
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 架构:              amd64
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java 环境变量:     C:\Program Files\Java\jdk-18.0.1.1
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log Java虚拟机版本:    18.0.1.1+2-6
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log JVM.供应商:        Oracle Corporation
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_BASE:     C:\Users\yorky\Desktop\STUDY\Tomcat
+14-Jul-2022 21:28:41.848 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log CATALINA_HOME:     C:\Users\yorky\Desktop\STUDY\Tomcat
+14-Jul-2022 21:28:41.850 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.lang=ALL-UNNAMED
+14-Jul-2022 21:28:41.850 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.io=ALL-UNNAMED
+14-Jul-2022 21:28:41.850 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util=ALL-UNNAMED
+14-Jul-2022 21:28:41.851 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.base/java.util.concurrent=ALL-UNNAMED
+14-Jul-2022 21:28:41.851 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       --add-opens=java.rmi/sun.rmi.transport=ALL-UNNAMED
+14-Jul-2022 21:28:41.851 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.config.file=C:\Users\yorky\Desktop\STUDY\Tomcat\conf\logging.properties
+14-Jul-2022 21:28:41.851 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.util.logging.manager=org.apache.juli.ClassLoaderLogManager
+14-Jul-2022 21:28:41.852 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djdk.tls.ephemeralDHKeySize=2048
+14-Jul-2022 21:28:41.852 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.protocol.handler.pkgs=org.apache.catalina.webresources
+14-Jul-2022 21:28:41.852 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.base=C:\Users\yorky\Desktop\STUDY\Tomcat
+14-Jul-2022 21:28:41.852 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Dcatalina.home=C:\Users\yorky\Desktop\STUDY\Tomcat
+14-Jul-2022 21:28:41.852 信息 [main] org.apache.catalina.startup.VersionLoggerListener.log 命令行参数：       -Djava.io.tmpdir=C:\Users\yorky\Desktop\STUDY\Tomcat\temp
+14-Jul-2022 21:28:41.856 信息 [main] org.apache.catalina.core.AprLifecycleListener.lifecycleEvent 使用APR版本[1.7.0]加载了基于APR的Apache Tomcat本机库[1.2.33]。
+14-Jul-2022 21:28:41.859 信息 [main] org.apache.catalina.core.AprLifecycleListener.initializeSSL OpenSSL成功初始化 [OpenSSL 1.1.1o  3 May 2022]
+14-Jul-2022 21:28:42.048 信息 [main] org.apache.coyote.AbstractProtocol.init 初始化协议处理器 ["http-nio-8080"]
+14-Jul-2022 21:28:42.070 信息 [main] org.apache.catalina.startup.Catalina.load 服务器在[416]毫秒内初始化
+14-Jul-2022 21:28:42.112 信息 [main] org.apache.catalina.core.StandardService.startInternal 正在启动服务[Catalina]
+14-Jul-2022 21:28:42.112 信息 [main] org.apache.catalina.core.StandardEngine.startInternal 正在启动 Servlet 引擎：[Apache Tomcat/10.1.0-M16]
+14-Jul-2022 21:28:42.123 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\docs]
+14-Jul-2022 21:28:42.435 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\docs]的部署已在[310]毫秒内完成
+14-Jul-2022 21:28:42.436 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\examples]
+14-Jul-2022 21:28:42.723 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\examples]的部署已在[287]毫秒内完成
+14-Jul-2022 21:28:42.724 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\host-manager]
+14-Jul-2022 21:28:42.759 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\host-manager]的部署已在[35]毫秒内完成
+14-Jul-2022 21:28:42.760 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\manager]
+14-Jul-2022 21:28:42.787 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\manager]的部署已在[27]毫秒内完成
+14-Jul-2022 21:28:42.787 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory 把web 应用程序部署到目录 [C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\ROOT]
+14-Jul-2022 21:28:42.803 信息 [main] org.apache.catalina.startup.HostConfig.deployDirectory Web应用程序目录[C:\Users\yorky\Desktop\STUDY\Tomcat\webapps\ROOT]的部署已在[15]毫秒内完成
+14-Jul-2022 21:28:42.805 信息 [main] org.apache.coyote.AbstractProtocol.start 开始协议处理句柄["http-nio-8080"]
+14-Jul-2022 21:28:42.831 信息 [main] org.apache.catalina.startup.Catalina.start [758]毫秒后服务器启动

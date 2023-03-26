@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 21:15:35 CST 2023
+@default-central-https\://repo.maven.apache.org/maven2/.lastUpdated=1677762935603
+https\://repo.maven.apache.org/maven2/.error=Could not transfer artifact com.thoughtworks.qdox\:qdox\:jar\:2.0-M8 from/to central (https\://repo.maven.apache.org/maven2)\: C\:\\Users\\yorky\\Desktop\\STUDY\\Java\\Maven\\Repository\\com\\thoughtworks\\qdox\\qdox\\2.0-M8\\qdox-2.0-M8.jar.9653446808433698024.tmp -> C\:\\Users\\yorky\\Desktop\\STUDY\\Java\\Maven\\Repository\\com\\thoughtworks\\qdox\\qdox\\2.0-M8\\qdox-2.0-M8.jar

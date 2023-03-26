@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 21:17:40 CST 2023
+commons-io-2.5.pom>central=
+commons-io-2.5.jar>public=
+commons-io-2.5.pom>public=

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>监听器</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <div>{{transformTitle}}</div>
+
+  <button @click="handleClick">点我</button>
+</div>
+
+<script>
+  const app = new Vue({
+    el: "#app",
+    data() {
+      return {
+        title: "标题",
+        obj: {
+          name: "小明",
+          age: 10,
+          classInfo: {
+            className: '19班',
+            classId: 19
+          }
+        }
+      }
+    },
+    computed: {
+      transformTitle() {
+        return this.title + "transform";
+      }
+    },
+    watch: {
+      title(newValue, oldValue) {
+        console.log('newVal', newValue);
+        console.log('oldVal', oldValue);
+      },
+      // 以下形式用在组件偏多
+      obj: {
+        // 深度监听，主要为了监听对象和数组的变化
+        deep: false,
+        // 在 vue 刚创建时就监听一次
+        immediate: true,
+        handler(newValue, oldValue) {
+          console.log('newVal', newValue);
+          console.log('oldVal', oldValue);
+        }
+      }
+    },
+    methods: {
+      handleClick() {
+        this.title += '1';
+      }
+    }
+  })
+
+  setInterval(() => {
+    app.obj.age++
+  }, 2000)
+</script>
+</body>
+</html>

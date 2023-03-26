@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>全局-局部组件</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<!-- 挂载点1 -->
+<div id="app-1">
+  {{text}}
+  <cpn-global></cpn-global>
+  <app1-cpn-demo></app1-cpn-demo>
+</div>
+
+<!-- 挂载点2 -->
+<div id="app-2">
+  {{text}}
+  <cpn-global></cpn-global>
+</div>
+
+<script>
+  // 全局组件
+  const cpnGlobal = Vue.component('cpn-global', {
+    template: `
+      <button @click="addCount">点击{{ count }}</button>`,
+    data() {
+      return {
+        count: 0,
+      }
+    },
+    methods: {
+      addCount() {
+        this.count++;
+      }
+    }
+  })
+
+  // 声明一个局部组件
+  const app1CpnDemo = Vue.extend({
+    template: `
+      <div>
+      <h2>局部组件</h2>
+      <button @click="addCount">点击{{ count }}</button>
+      <br>
+      </div>
+    `,
+    data() {
+      return {
+        count: 0,
+      }
+    },
+    methods: {
+      addCount() {
+        this.count++;
+      }
+    }
+  })
+
+  // 实例1
+  const app1 = new Vue({
+    el: "#app-1",
+    data() {
+      return {
+        text: "app-1"
+      }
+    },
+    // 组件注册区域
+    components: {
+      // 可以自定义名字 ( 重命名 )
+      app1CpnDemo: app1CpnDemo
+    }
+  })
+
+  // 实例2
+  const app2 = new Vue({
+    el: "#app-2",
+    data() {
+      return {
+        text: "app-2"
+      }
+    }
+  })
+</script>
+</body>
+</html>

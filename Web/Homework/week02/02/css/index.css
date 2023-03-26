@@ -1,0 +1,261 @@
+
+body, html {
+    padding: 0;
+    margin: 0;
+    color: #333;
+}
+
+.container {
+    width: 1024px;
+    height: auto;
+    margin: 100px auto 0;
+
+    display: flex;
+    flex-direction: row;
+}
+
+p {
+    text-align: justify !important;
+    line-height: 160%;
+}
+
+.container .container-left {
+    width: 565px;
+}
+
+.container .container-left .writer {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .container-left .writer .head-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-sizing: border-box;
+
+    background-image: url("./../images/01.jpg");
+    background-size: 100%;
+}
+
+.container .container-left .writer .writer-msg .writer-name {
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.container .container-left .writer .writer-msg .msg {
+    height: 20px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+}
+
+.container .container-left .writer .attention-btn {
+    width: 70px;
+    height: 28px;
+    margin: 6px 0px 6px 20px;
+    background-color: rgb(78, 110, 242);
+    border-radius: 14px;
+    text-align: center;
+    line-height: 28px;
+    font-size: 12px;
+    color: white;
+}
+
+.container .container-left .line {
+    opacity: 10%;
+}
+
+.container .container-right {
+    width: 251px;
+    margin-left: 60px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.container .container-right .news {
+    height: 200px;
+}
+
+.container .container-right .news .news-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .container-right .news .article-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .container-right .news .article-container .article-image {
+    width: 97px;
+    height: 65px;
+    margin-right: 10px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.container .container-right .news .article-container .article-content {
+    width: 150px;
+
+    position: relative;
+}
+
+.container .container-right .news .article-container .article-content .article-title {
+    font-size: 15px;
+}
+
+.container .container-right .news .article-container .article-content .article-msg {
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+
+.container .container-right .recommend {
+    height: 430px;
+}
+
+.container .container-right .recommend .recommend-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .container-right .recommend .article-container {
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.container .container-right .recommend .article-container .article-image {
+    width: 97px;
+    height: 65px;
+    margin-right: 10px;
+    line-height: 65px;
+    text-align: center;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.container .container-right .recommend .article-container .article-content {
+    width: 150px;
+
+    position: relative;
+}
+
+.container .container-right .recommend .article-container .article-content .article-title {
+    font-size: 15px;
+}
+
+.container .container-right .recommend .article-container .article-content .article-msg {
+    font-size: 12px;
+    font-weight: 500;
+    color: gray;
+
+    position: absolute;
+    bottom: 0px;
+}
+
+.container .container-right .hot {
+    height: 440px;
+}
+
+.container .container-right .hot .hot-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.container .container-right .hot .hot-head .hot-title {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container .container-right .hot .hot-head .hot-change {
+    line-height: 21px;
+    font-size: 13px;
+    color: gray;
+    font-weight: 500;
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 8px;
+    line-height: 21px;
+
+    position: relative;
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container:nth-child(1) .number {
+    width: 25px;
+    color: rgb(254, 46, 55);
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container:nth-child(2) .number {
+    width: 25px;
+    color: rgb(255, 132, 27);
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container:nth-child(3) .number {
+    width: 25px;
+    color: rgb(252, 190, 43);
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container:nth-child(n + 4) .number {
+    width: 25px;
+    opacity: 50%;
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container .hot-content {
+    font-size: 13px;
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container .very-hot {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: rgb(210, 6, 107);
+
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+    color: rgb(256 256 256);
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.container .container-right .hot .hot-content-list .hot-content-container .much-hot {
+    width: 15px;
+    height: 15px;
+    border-radius: 5px;
+    background-color: rgb(252, 54, 11);
+
+    font-size: 10px;
+    text-align: center;
+    line-height: 15px;
+    color: rgb(256 256 256);
+
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件</title>
+</head>
+<body>
+<button class="login" onclick="login()">登录</button>
+<button onclick="login()">登录</button>
+</body>
+
+<script>
+  var loginBtn = document.querySelector('.login');
+
+  /* 对一个元素不要绑定两次相同的事件 */
+  // dom.事件类型
+  loginBtn.onclick = function () {
+    alert("点击了登录");
+    console.log("使用的是事件类型")
+  }
+
+  // dom.addEventListener('事件类型', function () {})
+  loginBtn.addEventListener('click', function () {
+    alert("点击了登录");
+    console.log("使用的是监听事件");
+  })
+
+  function login() {
+    alert("点击了登录");
+    console.log("使用的是元素内调取外部函数");
+  }
+</script>
+</html>

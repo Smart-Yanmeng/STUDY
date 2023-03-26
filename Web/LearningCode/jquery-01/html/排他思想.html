@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>排他思想</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+
+<script>
+  $(function () {
+    var divList = $('div');
+    console.log(divList);
+    // 通过 eq 拿到指定下标的元素
+    var first = divList.eq(0);
+    console.log(first);
+    // 排他思想 --> 除了自己以外的同级元素
+    var others = first.siblings();
+    console.log(others);
+    others.css('backgroundColor', 'red');
+
+    /* 链式编程 */
+    var others = $('div').eq(0).siblings();
+    console.log(others);
+  })
+</script>
+</body>
+</html>

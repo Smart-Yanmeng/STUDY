@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>严格模式</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  // 全局开启严格模式
+  // 'use strict'
+  var x = 10;
+  console.log(x);
+
+  function test() {
+    // 局部作用域
+    'use strict'
+    y = 10;
+    console.log(y);
+  }
+
+  test();
+</script>
+</html>

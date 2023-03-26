@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        /* 选择器:伪类名，选择器可以用所有类型 */
+        .div:hover {
+            color: red;
+        }
+
+        .active:active {
+            color: red;
+        }
+
+        /* 伪元素 */
+        .before::before {
+            content: 'before';
+        }
+
+        .before::after {
+            content: 'after';
+        }
+
+        /* 控制同级样式 */
+        .father1:hover + .father2 {
+            color: red;
+        }
+
+        /* 父子关系选择 */
+        .father1:hover .child1 {
+            color: green;
+        }
+
+        .nth {
+            height: 20px;
+            width: 1000px;
+            border: 1px solid red;
+        }
+
+        .not-nth {
+            height: 20px;
+            width: 1000px;
+            border: 1px solid red;
+        }
+
+        /* nth-child 获取父元素下相同类的元素，并组合成一个数组，用 ( an + b ) 的形式进行获取 */
+        .nth:nth-child(n + 2) {
+            border-top: none;
+        }
+        .nth:nth-child(2n + 1) {
+            background-color: #cccccc;
+        }
+
+    </style>
+</head>
+<body>
+
+<div class="div">鼠标悬停</div>
+
+<div>
+    <a href="" class="active">激活</a>
+</div>
+
+<span class="before">BEFORE</span>
+
+<div class="father1">
+    文本1
+    <div class="child1">子元素</div>
+</div>
+<div class="father2">文本2</div>
+
+<div class="nth-list">
+    <div class="nth">This is nth-child div</div>
+    <div class="nth">This is nth-child div</div>
+    <div class="nth">This is nth-child div</div>
+    <div class="nth">This is nth-child div</div>
+    <p></p>
+    <div class="not-nth">This is not a nth-child div</div>
+    <div class="not-nth">This is not a nth-child div</div>
+</div>
+
+</body>
+</html>

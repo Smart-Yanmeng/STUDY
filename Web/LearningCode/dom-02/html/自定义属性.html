@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>自定义属性</title>
+</head>
+<body>
+<div>我没有属性</div>
+
+<script>
+  var divDom = document.querySelector('div');
+  console.log(divDom);
+  console.log(divDom.value);
+
+  // 自定义属性
+  // 设置自定义属性
+  divDom.setAttribute('value', '110');
+  console.log(divDom);
+  console.log(divDom.value);
+  // 获取自定义属性
+  console.log(divDom.getAttribute('value'));
+</script>
+</body>
+</html>

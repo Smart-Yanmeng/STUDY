@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>闭包</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  function fn() {
+    var x = 10;
+  }
+
+  // console.log(x);
+
+  // 最简单的闭包
+  function fn1() {
+    var y = 11;
+
+    function a() {
+      console.log(y);
+    }
+
+    a();
+  }
+
+  fn1();
+
+  // 高级闭包
+  function add(closure) {
+    var a = 0;
+    return closure;
+  }
+
+  function closure() {
+    a++;
+    console.log(a);
+  }
+
+  var count = add();
+
+  count()
+
+  // 垃圾回收机制中，会对 null 值的变量回收
+  count = null;
+
+  count();
+
+  // 什么是闭包？
+  // 闭包是指有权访问另一个函数作用域中变量的函数
+  // 其实就是一个作用域可以访问另一个函数内部的局部变量
+
+  // 闭包的作用
+  // 函数外部能操作函数的局部变量
+  // 避免变量被资源回收机制销毁
+
+  // 闭包的缺点
+  // 函数的局部变量一直存在，占用内存
+  // 容易造成内存泄露
+  // 解决办法 - 删除闭包
+</script>
+</html>

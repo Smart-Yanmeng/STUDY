@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="./../utils/vue.js"></script>
+
+  <style>
+    div {
+      height: 100px;
+      width: 100px;
+    }
+
+    .normal-class {
+      background-color: aquamarine;
+    }
+
+    .active {
+      background-color: red;
+      border: 1px solid gray;
+      box-shadow: 0 0 10px gray;
+      box-sizing: border-box;
+    }
+
+    .normalClass {
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+  <!-- 普通 class 属性方式 -->
+  <div class="normal-class"></div>
+
+  <!-- v-bind 绑定 class 方式 -->
+  <!-- 字符串绑定 -->
+  <div v-bind:class="normalClass"></div>
+
+  <!-- 对象语法 -->
+  <div :class="classObj"></div>
+
+  <!-- 数组方式 -->
+  <div :class="classList"></div>
+
+  <!-- 函数方式 -->
+  <div :class="initClass()"></div>
+</div>
+
+
+<script>
+  const app = new Vue({
+    el: "#app",
+    data() {
+      return {
+        normalClass: 'normal-class',
+        classObj: {
+          active: true,
+          'normal-class': false // normalClass
+        },
+        classList: [false ? 'active' : '', 'normal-class']
+      }
+    },
+    methods: {
+      initClass() {
+        return 'active'
+      }
+    },
+  })
+
+  setTimeout(() => {
+    app.classObj.active = false
+    app.classObj.normalClass = true
+  }, 3000)
+</script>
+</body>
+</html>

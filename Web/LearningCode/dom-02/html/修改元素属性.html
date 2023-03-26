@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>修改元素属性</title>
+</head>
+<body>
+<div>11111</div>
+
+<input type="text" value="100">
+<script>
+  // 修改元素属性
+  // dom 对象.属性名 = 属性值
+  var divDom = document.querySelector('div');
+
+  divDom.onclick = function () {
+    console.log(1111);
+  }
+
+  var inputDomOld = document.querySelector('input');
+  console.log(inputDomOld);
+  console.log(inputDomOld.value);
+  inputDomOld.value = "你被我篡改了";
+  var inputDomNew = document.querySelector('input');
+  console.log(inputDomNew);
+  console.log(inputDomNew.value);
+</script>
+</body>
+</html>

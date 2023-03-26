@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>循环遍历</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <h1>普通数据类型的数组</h1>
+  <div v-for="(item, index) in numList">
+    <span>数组元素：{{item}}</span>
+    <span>数组下标：{{index}}</span>
+  </div>
+
+  <h1>对象数组</h1>
+  <div v-for="(item, index) in userList">
+    <span>姓名：{{item.name}}</span>
+  </div>
+
+  <h1>对象</h1>
+  <div v-for="(item, key) in userInfo">
+    {{item}} {{key}}
+  </div>
+
+  <h1>缩写</h1>
+  <div v-for="item in numList">
+    {{item}}
+  </div>
+
+  <h1>v-for 标签上的 key</h1>
+  <!-- 要写上 key，并且尽量让 key 在当页面中不会有重复 -->
+  <div v-for="num in numList" :key="num">{{num}}</div>
+
+  <h1>数组变化检测</h1>
+  <button @click="changeArr">点击</button>
+
+  <script>
+    new Vue({
+      el: "#app",
+      data() {
+        return {
+          numList: [1, 2, 3, 4, 5, 6, 7, 8],
+          userList: [{name: "York"}, {name: "Index"}, {name: "Zhang"}],
+          userInfo: {
+            name: "York",
+            age: 18,
+            class: "2班"
+          }
+        }
+      },
+      methods: {
+        changeArr() {
+          // push - 插入
+          // this.numList.push(10);
+
+          // 修改元素的值
+          this.$set(this.numList, 0, 9999);
+          this.$set(this.userInfo, 'name', 'YORK');
+        }
+      },
+    })
+  </script>
+</body>
+</html>

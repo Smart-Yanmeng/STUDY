@@ -1,0 +1,31 @@
+.box-list {
+    width: 100vw; /* 宽度为100%的视口宽度 */
+    height: 100vh; /* 高度为100%的视口高度 */
+    display: flex; /* flex布局 */
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+}
+
+.box-list .box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 10px; /* 间距 */
+    padding: 10px; /* 内边距 */
+    transition: all 0.3s; /* 过渡效果 */
+}
+
+.box-list #box1:hover {
+    width: 200px;
+    height: 200px;
+    background-color: orange;
+}
+
+.box-list #box2:hover {
+    transform: scale(1.5);
+}
+
+.box-list #box3:hover {
+    box-shadow: 10px 10px 5px black;
+}

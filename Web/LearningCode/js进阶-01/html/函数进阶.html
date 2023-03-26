@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  // this -> window 对象
+  console.log(this);
+
+  // 函数
+  function fn() {
+    console.log(this);
+  }
+
+  // 对象 字面量
+  var obj = {
+    fn: fn
+  }
+
+  // 首字母是大写字母的一般是构造函数
+  function Init() {
+    this.fn = fn;
+    this.name = "构造函数";
+    console.log(this);
+  }
+
+  // 调用函数 this -> window 对象
+  fn();
+
+  // 方法形式 this -> 对象本身
+  obj.fn();
+
+  // 构造函数 this -> 对象本身
+  var test = new Init();
+  test.fn();
+</script>
+</body>
+</html>

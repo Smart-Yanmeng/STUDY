@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+        }
+        .header, .footer {
+            width: 100%;
+            background-color: aliceblue;
+        }
+        .header {
+            height: 60px;
+        }
+        .body {
+            width: 1024px;
+            height: calc(100vh - 60px - 100px);
+            /* 1vh = 1% 可视区高度 */
+            margin: auto;
+            background-color: #0c63e4;
+        }
+        .footer {
+            height: 100px;
+            border-top: 1px solid black;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+<div class="header"></div>
+<div class="body"></div>
+<div class="footer"></div>
+</body>
+</html>

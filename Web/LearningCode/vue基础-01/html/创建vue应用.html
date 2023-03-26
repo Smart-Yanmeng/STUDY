@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="vue-app" class="vue-container">
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</div>
+
+<script>
+  // 最简单的一个 vue 应用
+  const app = new Vue({
+    // 指定 vue 应用挂载的 dom，让 vue 基于该 dom 为根级建立 vue 应用，管理该 dom 所有的 dom
+    el: "#vue-app",
+  })
+</script>
+</body>
+
+</html>

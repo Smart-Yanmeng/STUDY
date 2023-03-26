@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>call-apply-bind</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  var obj = {
+    name: "张三"
+
+  }
+
+  <!-- call 更改 this 指向 -->
+  function fn(x, y) {
+    console.log(this);
+    console.log(x, y);
+  }
+
+  // 正常调用
+  fn(1, 2);
+  fn.call(obj, 1, 2);
+
+  // 使用情景
+  function Father() {
+    this.surnames = "张";
+    this.name = "三";
+  }
+
+  function child() {
+    this.name = "四";
+    console.log("我叫" + this.surnames + this.name);
+  }
+
+  fn2.apply(obj, [1, 2])
+  child.call(new Father());
+
+  <!-- apply -->
+  function fn2(x, y) {
+    console.log(x, y);
+  }
+
+  console.log(Math.max(1, 41, 0));
+
+  // 应用场景 多参数传参
+  var arr = [1, 41, 0, 10, 5, 1];
+  console.log(Math.max(1, 41, 0, 10, 5, 1))
+  console.log(Math.min.apply(null, arr))
+
+  <!-- bind -->
+  function fn3(x, y) {
+    console.log(this);
+    console.log(x, y);
+  }
+
+  // 正常调用
+  fn3(1, 2);
+
+  // 不会调用函数，返回值是 this 改变后的原函数的拷贝
+  var fn3Copy = fn3.bind(obj, 1, 2);
+  fn3Copy()
+
+  // 使用情景
+  function Father1() {
+    this.surnames = "张";
+    this.name = "三";
+  }
+
+  function child1() {
+    this.name = "四";
+    console.log("我叫" + this.surnames + this.name);
+  }
+
+  var child1Copy = child1.bind(new Father1());
+  child1Copy();
+
+  <!-- 获取参数 -->
+  function fn4(a, b, c, d) {
+    console.log(a);
+    console.log(b);
+    // 获取所有传入的实参，按传入顺序输出一个数组中
+    console.log(arguments);
+  }
+
+  fn4(4, 5, 10, 11, 12);
+</script>
+</html>

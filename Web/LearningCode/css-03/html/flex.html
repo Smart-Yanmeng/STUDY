@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .layout-flex {
+            width: 800px;
+            height: 500px;
+            background-color: aquamarine;
+            display: flex;
+
+            /* 指定容器内子集的 flex 排列方向 */
+            /* flex-direction: column; */
+            /* flex-direction: column-reverse; */
+
+            /* 排列布局 */
+            /* justify-content: center; */
+            /* justify-content: space-around; */
+            justify-content: space-between;
+
+            /* 内容居中 */
+            align-items: center;
+
+            /* flex-wrap: wrap; */
+        }
+
+        .layout-flex div {
+            border: 1px solid black;
+            background-color: aqua;
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+<div class="layout-flex">
+    <div>first</div>
+    <div>second</div>
+    <div>third</div>
+</div>
+</body>
+</html>

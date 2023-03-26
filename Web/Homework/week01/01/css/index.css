@@ -1,0 +1,40 @@
+.box-list{
+    width: 100vw; /* 宽度为100%的视口宽度 */
+    height: 100vh; /* 高度为100%的视口高度 */
+    display: flex;  /* flex布局 */
+    align-items: center;
+    justify-content: center;
+}
+.box-list .box{
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    margin: 10px; /* 间距 */
+    padding: 10px; /* 内边距 */
+    transition: all 0.3s; /* 过渡效果 */
+}
+
+/* TODO */
+/* 给所有的box添加鼠标移入的效果 要求在./css/index.css文件下编写 */
+/* 
+    1. 第一个box鼠标移入的时候，box的宽度和高度变小，背景色变成橘色
+    2. 第二个box鼠标移出的时候，box的宽度和高度变大但不影响别的box的位置
+    3. 第三个box鼠标移入的时候，给box添加阴影效果
+*/
+/* 修改.box-list 使box垂直倒叙排列 */
+.box-list .box:nth-child(1):hover{
+    width: 120px;
+    height: 120px;
+    background-color: red;
+}
+.box-list .box:nth-child(2):hover{
+    transform: scale(1.2);
+}
+.box-list .box:nth-child(3):hover{
+    box-shadow: 0 0 10px 5px #ccc;
+}
+.box-list {
+    flex-direction: column-reverse;
+}
+
+

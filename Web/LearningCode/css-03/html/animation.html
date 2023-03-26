@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body {
+            top: 0;
+            left: 0;
+        }
+
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: #cccccc;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        @keyframes move {
+            0% {
+            }
+            50% {
+            }
+            100% {
+                transform: translateX(1000px) translateY(1000px);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+            }
+            50% {
+            }
+            100% {
+                transform: rotate(960deg);
+            }
+        }
+
+        .move {
+            animation: move 5s infinite ease-in-out;
+        }
+
+        .rotate {
+            animation: rotate 5s infinite ease-in-out;
+        }
+    </style>
+</head>
+<body>
+<div class="move"></div>
+<div class="rotate"></div>
+</body>
+</html>

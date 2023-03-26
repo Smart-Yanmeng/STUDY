@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>定时器</title>
+</head>
+<body>
+
+
+<script>
+  // 延迟多久时间后执行
+  var timer1 = setTimeout(function () {
+    alert('过了五秒');
+
+    // 清除定时器
+    clearInterval(timer2)
+  }, 5000);
+
+  var timer2 = setInterval(function () {
+    console.log('过了一秒');
+  }, 1000);
+
+  // 清除定时器
+  clearTimeout(timer1);
+  clearInterval(timer2);
+
+  function sum(a, b) {
+    console.log(a + b);
+
+    // return a + b;
+  }
+
+  // 回调函数
+  function test(callback, text) {
+    console.log(text);
+
+    var a = 10, b = 10;
+    callback(a, b);
+  }
+
+  test(sum, '444');
+</script>
+</body>
+</html>

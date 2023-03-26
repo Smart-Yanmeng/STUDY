@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Built-By: yorky
+Created-By: IntelliJ IDEA
+Build-Jdk: Oracle OpenJDK version 1.8.0_333
+

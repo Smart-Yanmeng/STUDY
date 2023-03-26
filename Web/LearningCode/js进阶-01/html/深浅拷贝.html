@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>深浅拷贝</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  var a = 10;
+  // 拷贝
+  var b = a;
+  a = 0;
+
+  console.log(a);
+  console.log(b);
+
+  /* 深浅拷贝 ( 非常重要 )  主要是对于对象类型或者 JSON 类型数据的拷贝 */
+  // 对象拷贝
+  var obj1 = {
+    name: '张三',
+    age: 20,
+    sex: '男',
+    class: {
+      name: '2班',
+      count: 57
+    }
+  }
+
+  // 浅拷贝
+  // var obj2 = obj1;
+
+  // 深拷贝
+  // 标准 JSON 字符串转换成 JSON 对象 ( js 对象 )
+  // obj1 不能是 undefined 类型，并且里面不能带方法
+  var obj2 = JSON.parse(JSON.stringify(obj1));
+  obj1.name = '李四';
+
+  console.log(obj1);
+  console.log(obj2);
+
+  /* es6 */
+  // 浅拷贝 - 只拷贝一层
+  var obj3 = {...obj1};
+
+  obj1.age = 100;
+  obj1.class.count = 55;
+
+  console.log(obj1);
+  console.log(obj3);
+</script>
+</html>

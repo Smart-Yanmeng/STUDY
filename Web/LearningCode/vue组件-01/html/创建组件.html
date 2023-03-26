@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>创建组件</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <!-- counter 组件 -->
+  <add-counter></add-counter>
+  <sub-counter></sub-counter>
+</div>
+
+<script>
+  const cpn = Vue.extend({
+    template: `
+      <button @click="addCount">点击{{ count }}</button>`,
+    data() {
+      return {
+        count: 0,
+      }
+    },
+    methods: {
+      addCount() {
+        this.count++;
+      }
+    }
+  })
+
+  // 全局组件创建
+  Vue.component('add-counter', cpn)
+  // 传入对象方式
+  Vue.component('sub-counter', {
+    template: `
+      <button @click="subCount">点击{{ count }}</button>`,
+    data() {
+      return {
+        count: 0
+      }
+    },
+    methods: {
+      subCount() {
+        this.count--;
+      }
+    }
+  })
+
+  new Vue({
+    el: "#app",
+
+  })
+
+</script>
+</body>
+</html>
