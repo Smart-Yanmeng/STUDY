@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>构造函数</title>
+</head>
+<body>
+
+</body>
+
+<script>
+  function fn() {
+    var x = 1;
+    console.log(x);
+  }
+
+  function Init() {
+    this.name = '构造函数';
+    this.fn = fn;
+  }
+
+  var obj = new Init();
+  console.log(obj.name);
+  obj.fn();
+
+  var obj2 = new Init();
+  obj2.fn();
+</script>
+</html>

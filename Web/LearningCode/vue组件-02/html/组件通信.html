@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>组件通讯</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+
+<body>
+<div id="app">
+  <div ref="divDom" @handler="method">DIV</div>
+
+  <cpn-card ref="childCpn" @emit-title="getTitle" @handler="method" :title="title" :intro="intro"
+            :time="time"></cpn-card>
+</div>
+</body>
+
+<template id="cpn-global">
+  <div class="card" @click="handleClick">
+    <div class="cover">
+      <img src="">
+    </div>
+
+    <div class="title" @click="emitTitle">
+      <span>{{title}}</span>
+    </div>
+
+    <div class="intro">
+      <span>{{intro}}</span>
+    </div>
+
+    <div class="time">
+      <span>{{time}}</span>
+    </div>
+
+    <h1>对象prop</h1>
+    <div>{{userInfo.name}}</div>
+  </div>
+</template>
+
+<script>
+  Vue.component('cpn-card', {
+    template: "#cpn-global",
+    // 数组方式，只指定形参名 ( 自定义属性名 )
+    // props: ['title', 'intro', 'time'],
+
+    // 对象方式，可以指定默认值和父级传入的实参数据类型
+    props: {
+      // 最常用的情况，prop 是个对象
+      userInfo: {
+        type: Object,
+        // 默认值容错
+        default: () => ({
+          name: '暂无姓名'
+        })
+      },
+      title: {
+        // 数据类型 String Number Object Array
+        type: String,
+        default: '暂无标题'
+      },
+      intro: {
+        // 数据类型 String Number Object Array
+        type: String,
+        default: '暂无简介'
+      },
+      time: {
+        // 数据类型 String Number Object Array
+        type: Number,
+        default: '暂无时间'
+      }
+    },
+    data() {
+      return {
+        // title: "York",
+        // intro: "Man",
+        // time: "2023/02/21"
+      }
+    },
+    created() {
+      console.log(this.$parent);
+    },
+    methods: {
+      handleClick() {
+        console.log("组件内的点击事件");
+        this.$emit('handler', '你点到我这个可爱的小组件了');
+      },
+      emitTitle() {
+        this.$emit('emit-title', this.title)
+      }
+    }
+  })
+
+  new Vue({
+    el: "#app",
+    components: {},
+    data() {
+      return {
+        // title: "York",
+        intro: "",
+        // time: "2023/02/21"
+      }
+    },
+    methods: {
+      method(val) {
+        console.log('父级内的 log', 123456);
+        console.log('父级内 log 的自定义事件传参', val);
+        this.intro = "是你让我改的";
+      },
+      getTitle(val) {
+        console.log(val);
+      }
+    },
+    mounted() {
+      // 获取所有组件
+      console.log(this.$children);
+      // 获取指定的元素或者组件
+      console.log(this.$refs.childCpn.handleClick());
+      // 操作、修改 dom 的属性
+      console.log(this.$refs.divDom)
+      this.$refs.divDom.style.backgroundColor = 'red';
+    }
+  })
+</script>
+</html>

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 19:28:23 CST 2023
+aspectjweaver-1.9.7.jar>public=
+aspectjweaver-1.9.7-sources.jar>public=
+aspectjweaver-1.9.7.pom>public=

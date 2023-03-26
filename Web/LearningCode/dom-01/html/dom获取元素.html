@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>dom获取元素</title>
+
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: aquamarine;
+    }
+  </style>
+</head>
+<body>
+<div id="div1">这是个带有 id 的标签</div>
+<div class="div2">这是个带有 class 的标签</div>
+<div class="div2">这是个带有 class 的标签</div>
+
+<script>
+  // 通过 ID 获取元素，只会返回一个元素对象
+  var domById = document.getElementById("div1");
+  console.log(domById);
+
+  // 通过类型获取元素，获取的就是同类名的所有元素
+  var domByClass = document.getElementsByClassName("div2");
+  console.log(domByClass);
+
+  // 通过标签名获取元素
+  var domByTagName = document.getElementsByTagName("div");
+  console.log(domByTagName);
+
+  // 通过选择器形式获取元素 ( 用的比较多 )
+  var queryById = document.querySelector("#div2");
+  console.log(queryById);
+  var queryOneByClass = document.querySelector(".div2");
+  var queryAllBuClass = document.querySelectorAll(".div2");
+  console.log(queryOneByClass);
+  console.log(queryAllBuClass);
+  var queryOneByTagName = document.querySelector("div");
+  var queryAllByTagName = document.querySelectorAll("div");
+  console.log(queryOneByTagName);
+  console.log(queryAllByTagName);
+
+  // 对 html、body 的获取
+  var body = document.querySelector('body') // 获取到所有匹配到的元素
+  console.log(body);
+  console.log(document.body); // 获取 body 的简单写法
+  console.log(document.documentElement); // 获取 html 的简单写法
+</script>
+</body>
+</html>

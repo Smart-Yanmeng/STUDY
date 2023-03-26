@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <style>
+        .label{
+            display: flex;
+            margin-bottom: 10px;
+        }
+        .label input{
+            margin: 0 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: .25rem .5rem;
+            outline: none;
+            font-size: 12px;
+        }
+        .label span{
+            min-width: 5rem;
+            text-align: end;
+        }
+        button{
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="label">
+            <span>user:</span>
+            <input id="user" type="text" placeholder="请输入用户名">
+        </div>
+        <div class="label">
+            <span>password:</span>
+            <input id="psw" type="text" placeholder="请输入密码">
+        </div>
+        <button id="btn">click me!</button>
+        <div id="text">
+            empty
+        </div>
+    </div>
+    
+
+    <!-- TODO -->
+    <!-- 在body下方的script标签中使用 JavaScript编写需求 (20分)-->
+    <!-- 实现点击 button按钮 获取 input中的内容 并按如下格式替换掉#text中的文字 -->
+    <!-- 要求不能更改 html结构 -->
+
+    <!-- 
+        user input: 123
+        password input: 456
+     -->
+     <script>
+         const username = document.getElementById('user');
+         const password = document.getElementById('psw');
+         const btn = document.getElementById('btn');
+         const text = document.getElementById('text');
+
+         btn.onclick = function () {
+             text.innerText = 'user input: ' + username.value + '\n' + 'password input: ' + password.value;
+         }
+     </script>
+    
+    
+
+</body>
+</html>

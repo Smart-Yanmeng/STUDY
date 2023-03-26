@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="./../utils/vue.js"></script>
+    <style>
+        div {
+            background-color: #000006;
+        }
+    </style>
+</head>
+<body>
+<div id="app">
+    <!-- 普通的 style 属性方式 -->
+    <!-- kebab-case -->
+    <div style="height: 100px;width: 100px;background-color: aquamarine;"></div>
+
+    <!-- v-bind 绑定方式 -->
+    <!-- 对象语法 -->
+    <div v-bind:style="styleObj"></div>
+
+    <!-- 数组语法 -->
+    <div :style="styleArr"></div>
+
+    <!-- 函数语法 -->
+    <div :style="initStyle()"></div>
+</div>
+
+<script>
+    const app = new Vue({
+        el: "#app",
+        data() {
+            return {
+                // 对象语法
+                styleObj: {
+                    height: '100px',
+                    width: '100px',
+                    backgroundColor: '#654321'
+                },
+                // 数组语法，只会实现数组中的最后一个内容
+                // 条件改变能切换样式
+                styleArr: [false ? {
+                    height: '100px',
+                    width: '100px',
+                    backgroundColor: '#123456'
+                } : {
+                    height: '10px',
+                    width: '10px',
+                    backgroundColor: 'red'
+                }]
+            }
+        },
+        methods: {
+            // 函数语法
+            initStyle() {
+                // return 'height: 100px; width: 100px; backgroundColor: #654321;'
+                return {
+                    height: '100px',
+                    width: '100px',
+                    backgroundColor: '#123456'
+                }
+            }
+        }
+    })
+</script>
+</body>
+</html>

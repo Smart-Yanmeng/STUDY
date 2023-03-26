@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.springframework.security</groupId>
+  <artifactId>spring-security-bom</artifactId>
+  <version>6.1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20230321.101519</timestamp>
+      <buildNumber>219</buildNumber>
+    </snapshot>
+    <lastUpdated>20230321102105</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom.asc</extension>
+        <value>6.1.0-20230321.101519-219</value>
+        <updated>20230321101519</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>6.1.0-20230321.101519-219</value>
+        <updated>20230321101519</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module.asc</extension>
+        <value>6.1.0-20230321.101519-219</value>
+        <updated>20230321101519</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>module</extension>
+        <value>6.1.0-20230321.101519-219</value>
+        <updated>20230321101519</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>选择器和隐式迭代</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div class="block">123456</div>
+
+<div class="bk">1</div>
+<div class="bk">2</div>
+<div class="bk">3</div>
+<div class="bk">4</div>
+<div class="bk">5</div>
+
+<script>
+  $(function () {
+    /* 选择器 */
+    // document.querySelector('.block');
+    var blockDom = $('.block');
+    console.log(blockDom)
+
+    /* 隐式迭代 */
+
+    // 普通写法
+    // var bkDomLis = document.querySelectorAll('.bk');
+    // bkDomLis.forEach((item) => {
+    //   item.style.backgroundColor = 'red';
+    // })
+
+    // jq 写法
+    var bkLis = $('.bk');
+    bkLis.css('backgroundColor', 'red');
+
+    // 获取指定下标元素
+    console.log(bkLis.eq(1));
+
+    // document.addEventListener('click', function () {
+    //   console.log(this);
+    // })
+
+    bkLis.bind('click', function () {
+      // 转成 jQuery 对象
+      console.log($(this));
+    })
+  })
+</script>
+</body>
+</html>

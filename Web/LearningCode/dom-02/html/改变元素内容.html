@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>改变元素内容</title>
+</head>
+<body>
+<div class="div1">
+  这是 div
+  <span>这是 span1</span>
+  <span>这是 span2</span>
+  <span>这是 span3</span>
+</div>
+
+<input class="input1" type="text" value="110">
+
+<script>
+  var div1Dom = document.querySelector('.div1');
+
+  // innerText 获取该元素内容下的所有文本 ( 包括子标签的文本 )
+  console.log(div1Dom.innerText);
+
+  // innerHTML 获取该元素的所有内容 ( 可以拿到标签 )
+  console.log(div1Dom.innerHTML);
+
+  // 设置文本值  把该元素的所有内容替换掉，只能加入字符串
+  div1Dom.innerText = "被我给改掉内容了";
+  console.log(div1Dom.innerText);
+  console.log(div1Dom.innerHTML);
+  // 设置内容  把该元素的所有内容替换掉，可以加入标签
+  div1Dom.innerHTML = "又被我给改掉内容了<span>我是一个 span 标签</span>";
+  console.log(div1Dom.innerText);
+  console.log(div1Dom.innerHTML);
+
+  // 获取表单 value
+  // 普通标签没有 value 属性
+  var input1Dom = document.querySelector('.input1');
+  console.log(input1Dom.value);
+</script>
+</body>
+</html>

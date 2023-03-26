@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>加载事件</title>
+
+  <script>
+    window.onload = function () {
+      console.log('window onload 事件');
+      console.log(document.body);
+    }
+
+    window.addEventListener('load', function () {
+      console.log('event listener load');
+    })
+
+    console.log('头部输出1');
+    console.log(document.body);
+  </script>
+</head>
+<body>
+
+
+<script>
+  console.log('尾部输出2');
+  console.log(document.body);
+
+  window.onresize = function () {
+    console.log('浏览器大小改变了');
+    console.log(this.innerHeight);
+    console.log(this.innerWidth);
+  }
+</script>
+</body>
+</html>

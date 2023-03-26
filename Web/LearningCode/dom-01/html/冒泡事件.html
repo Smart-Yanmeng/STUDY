@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>冒泡事件</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      background-color: rebeccapurple;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <button>冒泡事件</button>
+</div>
+
+<!-- form 表单默认事件 点击 submit 的 input 或者 button 就会执行 action -->
+<form action="https://www.baidu.com">
+  <input type="text" id="username">
+  <input type="submit" id="submit">
+</form>
+</body>
+
+<script>
+  /* 阻止冒泡 */
+  var divDom = document.querySelector('div');
+  var btnDom = document.querySelector('button');
+  divDom.onclick = function () {
+    console.log(this);
+  }
+  btnDom.onclick = function () {
+    console.log(this);
+
+    // 阻止冒泡 ( 默认是冒泡行为 )
+    event.stopPropagation();
+  }
+
+  /* 其他默认事件 */
+  var userDom = document.querySelector('#username');
+  var subDom = document.querySelector('#submit');
+  subDom.onclick = function () {
+    // 获取 input 的输入值 通过 value
+    var username = userDom.value;
+    console.log(username);
+
+    if (username.length < 3) {
+      // 阻止 action 默认行为
+      event.preventDefault();
+      alert("用户名不能小于三个字符！")
+    } else {
+      console.log(username);
+    }
+  }
+</script>
+</html>

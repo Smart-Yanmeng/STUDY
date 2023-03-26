@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>表单事件</title>
+</head>
+<body>
+<form action="">
+  <select name="" id="">
+    <option value="110">小明</option>
+    <option value="119">小红</option>
+  </select>
+</form>
+</body>
+
+<script>
+  var selectDom = document.querySelector('select');
+  console.log(selectDom);
+  selectDom.onchange = function () {
+    console.log(event);
+    console.log(this.value);
+  }
+</script>
+</html>

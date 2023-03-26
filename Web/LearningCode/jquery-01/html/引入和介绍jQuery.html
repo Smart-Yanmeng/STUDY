@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>引入和介绍jQuery</title>
+  <!-- 本地文件引入 -->
+  <script src="./../utils/jquery-3.6.3.js"></script>
+  <!-- CDN 引入 -->
+  <!--  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>-->
+</head>
+<body>
+
+<div>
+  <img src="">
+</div>
+
+<script>
+  // window.onload 页面加载事件
+
+  /* 文档加载完毕、图片加载前 */
+  // 方式一
+  $(function () {
+
+  });
+  // 方式二
+  $(document).ready(function () {
+    console.log("文档加载完毕");
+  });
+
+  /* 和 window.onload 一样 页面、图片都加载完毕后 */
+  $(window).ready(function () {
+    console.log("文档、图片都加载完毕")
+  })
+
+  // window.onload = function () {
+  //
+  // }
+
+</script>
+</body>
+</html>

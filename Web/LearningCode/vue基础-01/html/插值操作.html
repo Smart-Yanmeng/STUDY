@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <script src="./../utils/vue.js" async="false"></script>
+  <style>
+    /* 设置 vue 未渲染的时候的样式 */
+    [v-cloak] {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+<div id="app" v-cloak>
+  <!-- Mustache 插值语法 -->
+  <div class="title">{{title}}</div>
+  <!-- 三元表达式、判断表达式等基础运算 -->
+  <div class="title">{{1 - 1}}</div>
+  <div class="title">{{isTrue ? "真的" : "假的"}}</div>
+
+  <!-- v-once: 执行一次性插值 -->
+  <div class="name" v-once>{{username}}</div>
+
+  <!-- v-html: 可以把字符串解析成标签，使用 mustache 是显示原本内容不会显示标签 -->
+  <div>{{htmlText}}</div>
+  <div v-html="htmlText"></div>
+
+  <!-- v-text: 执行一次性插值 -->
+  <!-- 当 vue 还未创建实例时，页面上不会出现 mustache 的字符串 -->
+  <div class="title" v-text="title"></div>
+
+  <!-- v-pre: 跳过 vue 的 mustache 语法解析 -->
+  <div v-pre>{{title}}</div>
+  <div v-text="'{{title}}'"></div>
+</div>
+
+<script>
+  window.onload = function () {
+    const app = new Vue({
+      el: "#app",
+      // data: {
+      //     title: "这是个 vue 应用"
+      // }
+
+      // 常用
+      data() {
+        return {
+          title: "这是个 vue 应用",
+          isTrue: false,
+          username: "York",
+          htmlText: `<div class="text">1 <span>2</span></div>`
+        }
+      }
+    })
+
+    // 利用实例更改数据，观察数据响应式变化
+    console.log(app);
+
+    setTimeout(() => {
+      app.title = "数据被我黑了吧"
+      app.username = "数据被我黑了吧"
+    }, 3000)
+  }
+</script>
+</body>
+</html>

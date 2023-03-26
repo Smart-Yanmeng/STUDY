@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>修改样式属性</title>
+</head>
+<body>
+<button onclick="moveLeft(document.querySelector('div'))">左移</button>
+<button onclick="moveRight(document.querySelector('div'))">右移</button>
+<div>我没有样式</div>
+
+<script>
+  var divDom = document.querySelector('div');
+  divDom.style.height = '100px';
+  divDom.style.backgroundColor = 'green';
+
+  var i = 0;
+
+  function moveLeft(dom) {
+    i -= 10;
+    dom.style.transform = 'translateX(' + i + 'px)';
+    dom.style.transition = 'all 1s';
+  }
+
+  function moveRight(dom) {
+    i += 10;
+    dom.style.transform = 'translateX(' + i + 'px)';
+    dom.style.transition = 'all 1s';
+  }
+</script>
+</body>
+</html>

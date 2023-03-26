@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+
+<script>
+    // 命名规范
+
+    // 变量：
+    // 可包含字母、数字、下划线和美元符号
+    // 名称必须以字母开头
+    // 名称也可以以 $ 和 _ 开头
+    // 名称对大小写敏感 ( a 和 A 是两个不同的变量 )
+    // 保留字、关键字不能作为变量的名称
+    // 驼峰式命名
+
+    // 常量：
+    // 全大写、下划线隔开
+
+    // 检测数据类型 typeof
+    var msg = 'awa';
+    console.log(typeof msg)
+
+    // 数据转换
+
+    // 赋值转换：
+    var a = 10;
+    var b = '50';
+    a = b;
+    console.log(a, typeof a);
+
+    // 隐式转换
+    var number1 = 10;
+    number1 += '';
+    console.log('隐式转换：', number1, typeof number1);
+
+    // 强制转换
+    var number2 = 10;
+    number2 = String(number2);
+    console.log('强制转换：', number2, typeof number2);
+    var string = '100';
+    string = parseInt(string);
+    console.log('强制转换：', string, typeof string);
+
+    // 转 ASCII 码
+    // 字符转 ASCII 码
+    var char = 'a';
+    console.log(char.charCodeAt(0));
+    // ASCII 码转字符
+    var num = 97;
+    console.log(String.fromCharCode(num))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>引入式</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <span class="demo" @click="handleClick">{{index}}</span>
+  <user :userinfo="'lady'" @handle-child="handleFather"></user>
+</div>
+
+<!-- 组件 user -->
+<template id="user">
+  <div>
+    {{userIndex}}
+    <h1 @click="handleChildClick">{{userinfo}}</h1>
+  </div>
+</template>
+
+</body>
+
+<script>
+  // user组件
+  const user = Vue.extend({
+    template: '#user',
+    data() {
+      return {
+        userIndex: 10
+      }
+    },
+    props: ['userinfo'],
+    methods: {
+      handleChildClick() {
+        this.$emit('handle-child', this.userIndex)
+      }
+    }
+  })
+
+  new Vue({
+    el: '#app',
+    data() {
+      return {
+        index: 1
+      }
+    },
+    components: {
+      user
+    },
+    created() {
+      // 能获取到 data 和 methods 的数据
+      // 请求接口、数据初始化
+      // 获取 dom bom
+      console.log('Created!');
+      // var i = document.querySelector('.demo')
+      // 获取不到dom
+      // console.log(document.querySelector('.demo'));
+      this.handleClick()
+    },
+    mounted() {
+      // 第一个能拿DOM的时刻
+      console.log('Mounted!');
+      // console.log(document.querySelector('.demo'));
+    },
+    // 在销毁之前
+    // 在页面销毁前 将data里面的index 发送给后端
+    beforeDestroy() {
+      // 最后一个可以获取到 data 和 methods
+      // 关闭计时器
+      // 记录用户的操作时间，比如停留时间、视频观看时长、视频有效观看次数
+    },
+    destroy() {
+
+    },
+    methods: {
+      handleClick() {
+        console.log(this.index);
+      },
+      handleFather(e) {
+        console.log('handleFather: ' + e);
+      }
+    }
+  })
+</script>
+</html>

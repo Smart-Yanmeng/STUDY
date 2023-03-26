@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>history对象</title>
+</head>
+<body>
+<button onclick="assign()">跳转</button>
+<button onClick="back()">跳转</button>
+<button onclick="forward()">前进</button>
+
+<script>
+  function assign() {
+    location.assign('https://www.baidu.com');
+  }
+
+  function back() {
+    window.history.back();
+  }
+
+  function forward() {
+    window.history.forward();
+  }
+</script>
+</body>
+</html>

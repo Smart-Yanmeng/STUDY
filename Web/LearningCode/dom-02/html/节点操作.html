@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>节点操作</title>
+</head>
+<body>
+<div class="father">
+  父亲
+  <div class="child">
+    儿子
+  </div>
+  <div class="brother">
+    兄弟
+  </div>
+  <div class="brother">
+    兄弟
+  </div>
+</div>
+
+<script>
+  var divDomText = document.querySelector('.father').innerText;
+  var divDomHTML = document.querySelector('.father').innerHTML;
+  console.log(divDomText);
+  console.log(divDomHTML);
+
+  var father = document.querySelector('.father');
+  var child = document.querySelector('.child');
+
+  var fathersChild = father.firstElementChild;
+  console.log("通过父亲拿儿子", fathersChild);
+  var grandFather = father.parentElement;
+  console.log("拿自己的父亲", grandFather);
+
+  var lastChild = father.lastElementChild;
+  console.log("通过父亲拿最后的孩子", lastChild);
+  var nextBrother = child.nextElementSibling;
+  console.log("通过儿子拿儿子的兄弟", nextBrother);
+  var preBrother = nextBrother.previousElementSibling;
+  console.log("通过兄弟拿上一个兄弟", preBrother);
+
+  var children = father.children;
+  console.log("获取所有儿子", children);
+
+  /* 创建元素 */
+  var div2 = document.createElement('div');
+  div2.innerText = '我是后来的';
+  console.log(div2);
+
+  /* 插入元素 */
+  father.appendChild(div2);
+
+  /* 删除元素 */
+  // 删除子元素，要指定 dom
+  // father.removeChild(div2);
+  // 删除指定整个 dom
+  father.remove();
+
+  /* 复制节点 */
+  // false  克隆元素 ( 默认值 )
+  // true   克隆元素和内容
+  var cloneDom = child.cloneNode(false);
+  console.log(cloneDom);
+</script>
+</body>
+</html>

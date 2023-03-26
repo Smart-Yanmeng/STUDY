@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        div {
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+
+        .father {
+            width: 500px;
+            height: 500px;
+
+            position: relative;
+        }
+
+        .child {
+            width: 100px;
+            height: 100px;
+
+            /* 子元素一层一层往上找带有 position 的上级，直到找到 body */
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+
+        .fix {
+            width: 100px;
+            height: 100px;
+
+            position: fixed;
+            bottom: 100px;
+            right: 100px;
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    father
+    <div class="child">
+        child
+    </div>
+</div>
+
+<div class="fix">fix</div>
+</body>
+</html>

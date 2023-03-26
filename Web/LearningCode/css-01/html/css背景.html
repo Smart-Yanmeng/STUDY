@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        div {
+            width: 1000px;
+            height: 1000px;
+        }
+
+        .bk {
+            background-color: #cccccc;
+        }
+
+        .bk-image {
+            background-color: #cccccc;
+            background-image: url("./../images/Logos.jpg");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            /* 精灵图的实现方式 */
+            background-position: 100px 200px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <!-- 标签要有内容 -->
+    <h1>背景颜色</h1>
+    <div class="bk"></div>
+
+    <h1>背景图片</h1>
+    <!-- 命名 类、id 命名：单词-单词 -->
+    <div class="bk-image"></div>
+</div>
+</body>
+</html>

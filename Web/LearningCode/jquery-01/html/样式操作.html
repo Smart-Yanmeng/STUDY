@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>样式操作</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+  <style>
+    .beauty-style {
+      background-color: aqua;
+    }
+  </style>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+
+<script>
+  $(function () {
+    /* 直接修改 css 达到修改样式的目的 */
+    var divList = $('div');
+    // 传一个参数，获取指定的 css 样式
+    console.log(divList.eq(0).css('width'));
+
+    // divList.css('backgroundColor', 'green');
+    // divList.css('border', '1px solid black');
+
+    // 属性: 值 --> 键值对
+    divList.css({
+      // css 中所有的-符号都转化为驼峰式写法
+      // backgroundColor: 'red',
+      // border: '2px solid green',
+    })
+
+    /* 修改类名达到修改样式的目的 */
+    $('div').eq(1).addClass('beauty-style');
+    $('div').eq(1).removeClass('beauty-style');
+
+    setInterval(function () {
+      $('div').eq(1).toggleClass('beauty-style')
+    }, 3000);
+  })
+</script>
+</body>
+</html>

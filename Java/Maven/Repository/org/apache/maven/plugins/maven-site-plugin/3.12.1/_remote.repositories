@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Mar 02 21:23:14 CST 2023
+maven-site-plugin-3.12.1.pom>central=
+maven-site-plugin-3.12.1.pom>public=
+maven-site-plugin-3.12.1.jar>public=
+maven-site-plugin-3.12.1.jar>central=

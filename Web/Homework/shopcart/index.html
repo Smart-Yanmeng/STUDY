@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop-cart</title>
+
+  <style>
+    /* commodity-list-style */
+    .commodity-list {
+      display: flex;
+      justify-content: space-around;
+    }
+
+    .commodity {
+      text-align: center;
+    }
+
+    .commodity-img {
+      width: 162px;
+      height: 162px;
+    }
+
+    .price {
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+
+    .btn-add-to-cart {
+      font-size: 17px;
+    }
+
+    /* empty-cart */
+    .empty-cart {
+      margin-top: 100px;
+      text-align: center;
+      color: #d2d2d2;
+    }
+
+    .empty-cart-text {
+      font-size: 40px;
+    }
+
+    /* cart-list-style */
+    .cart-list {
+      display: flex;
+      margin-top: 50px;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .cart {
+      margin: auto;
+    }
+
+    .cart {
+      display: flex;
+      flex-direction: row;
+      margin-top: 32px;
+    }
+
+    .cart-info-list {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .global-cart-info-label {
+      margin: 0 0 20px 19px;
+      font-size: 22px;
+    }
+
+    .cart-btn {
+      display: flex;
+      flex-direction: row;
+      justify-content: right;
+    }
+
+    .cart-img {
+      width: 120px;
+      height: 120px;
+    }
+
+    .global-cart-btn {
+      border: none;
+      border-radius: 5px;
+      margin-left: 23px;
+      padding: 5px 10px;
+
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+<div id="app">
+  <!-- commodity-list -->
+  <div class="commodity-list">
+    <div class="commodity" v-for="(obj, index) in goods" :key=index>
+      <div class="commodity-img-container">
+        <img class="commodity-img" :src="obj.pic">
+      </div>
+      <div class="commodity-info">
+        <h2 class="commodity-name">
+          name: {{obj.name}}
+        </h2>
+        <div class="price">
+          price: {{obj.price}}
+        </div>
+      </div>
+      <div class="commodity-btn">
+        <button class="btn-add-to-cart" @click="addToCart(index)">add to cart</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- empty-cart -->
+  <div class="empty-cart" :style="displayNone()">
+    <div class="empty-cart-text">cart is empty</div>
+    <div class="empty-cart-text">please add some goods</div>
+  </div>
+
+  <!-- cart-list -->
+  <div class="cart-list">
+    <div class="cart" v-for="(obj, index) in cart" :key="index">
+      <div class="cart-img-container">
+        <img class="cart-img" :src="obj.pic">
+      </div>
+      <div class="cart-info">
+        <div class="cart-info-list">
+          <div class="cart-name global-cart-info-label">
+            name: {{obj.name}}
+          </div>
+          <div class="cart-count global-cart-info-label">
+            count: {{obj.count}}
+          </div>
+          <div class="cart-total-price global-cart-info-label">
+            totalPrice: {{obj.totalPrice}}
+          </div>
+        </div>
+        <div class="cart-btn">
+          <button class="btn-add global-cart-btn" @click="addCount(index)">+</button>
+          <button class="btn-minus global-cart-btn" @click="minusCount(index)">-</button>
+          <button class="btn-delete global-cart-btn" @click="deleteCart(index)">delete</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="./vue.js"></script>
+<script>
+  // 购物车案例
+  // TODO: 1.实现商品的渲染
+  //       2.实现商品的添加
+  //       3.当商品重复添加时，只改变数量
+  //       4.实现商品的 增加 减少 删除 当数量为0时，删除商品
+  //       5.当购物车为空时，显示空的提示
+
+  var app = new Vue({
+    el: '#app',
+    data: {
+      goods: [
+        {name: 'apple', price: 10, pic: 'images/apple.jpg'},
+        {name: 'orange', price: 8, pic: 'images/orange.png'},
+        {name: 'banana', price: 12, pic: 'images/banana.jpg'},
+      ],
+      cart: []
+    },
+    methods: {
+      displayNone() {
+        if (this.cart.length !== 0) {
+          return 'display: none'
+        }
+      },
+      addToCart(index) {
+        var flag = false;
+
+        this.cart.forEach((item) => {
+          if (this.goods[index].name === item.name) {
+            item.count++;
+            item.totalPrice = item.singlePrice * item.count;
+
+            flag = true;
+          }
+        })
+
+        if (flag === false) {
+          this.cart.push({
+            name: this.goods[index].name,
+            count: 1,
+            singlePrice: this.goods[index].price,
+            totalPrice: this.goods[index].price,
+            pic: this.goods[index].pic
+          })
+        }
+      },
+      addCount(index) {
+        this.cart[index].count++;
+        this.cart[index].totalPrice = this.cart[index].singlePrice * this.cart[index].count;
+      },
+      minusCount(index) {
+        if (this.cart[index].count > 1) {
+          this.cart[index].count--;
+          this.cart[index].totalPrice = this.cart[index].singlePrice * this.cart[index].count;
+        } else this.deleteCart(index);
+      },
+      deleteCart(index) {
+        this.cart.splice(index, 1);
+      }
+    }
+  })
+</script>
+</body>
+</html>
