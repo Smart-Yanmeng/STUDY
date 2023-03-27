@@ -184,3 +184,124 @@ public static void main(String[] args) {
     }
 ```
 
+### 2.4 Instant类
+
+在JDK8中给我们新增的一个Instant类（时间戳/时间线），内部保存了从1970年1月1日 00:00:00以来的秒和纳秒
+
+```java
+public static void main(String[] args) throws InterruptedException {
+    /**
+     * Instant 时间戳
+     *     可以用来统计时间消耗
+     */
+    Instant now = Instant.now();
+    System.out.println("now = " + now);
+
+    // 获取从 1970年1月1日 00:00:00 到现在的纳秒偏移量
+    System.out.println(now.getNano());
+    Thread.sleep(5);
+}
+```
+
+### 2.5 计算日期时间差
+
+JDK8中提供了两个工具类Duration/Period：计算日期时间差
+
+1. Duration：用来计算两个时间差（LocalTime）
+2. Period：用来计算两个日期差（LocalDate）
+
+```java
+public static void main(String[] args) {
+    /**
+     * 计算日期时间差
+     */
+    // 计算时间差
+    LocalTime now = LocalTime.now();
+    LocalTime time = LocalTime.of(22, 48, 59);
+
+    // 通过 Duration 来计算时间差
+    Duration duration = Duration.between(now, time);
+    System.out.println("duration.toDays() = " + duration.toDays());
+    System.out.println("duration.toHours() = " + duration.toHours());
+    System.out.println("duration.toMinutes() = " + duration.toMinutes());
+    System.out.println("duration.toMillis() = " + duration.toMillis());
+
+    // 计算日期差
+    LocalDate nowDate = LocalDate.now();
+    LocalDate date = LocalDate.of(2017, 1, 1);
+    Period period = Period.between(date, nowDate);
+    System.out.println("period.getYears() = "+period.getYears());
+    System.out.println("period.getMonths() = "+period.getMonths());
+    System.out.println("period.getDays() = "+period.getDays());
+}
+```
+
+### 2.6 时间校正器
+
+有时候我们可能需要如下调整：将日期调整到“下个月的第一天等操作，这时我们通过时间校正器效果可能会更好
+
++ TemporalAdjuster：时间校正器
++ TemporalAdjusters：通过该类静态方法提供了大量的常用TemporalAdjuster的实现
+
+```java
+public static void main(String[] args) {
+        /**
+         * 时间校正器
+         */
+        LocalDateTime now = LocalDateTime.now();
+        // 将当前的日期调整到下个月的一号
+        TemporalAdjuster adjuster = (temporal) -> {
+            LocalDateTime dateTime = (LocalDateTime) temporal;
+            LocalDateTime nextMonth = dateTime.plusMonths(1).withDayOfMonth(1);
+            System.out.println("nextMonth = " + nextMonth);
+
+            return nextMonth;
+        };
+
+        // 我们还可以通过 TemporalAdjusters 来实现
+//        LocalDateTime nextMonth = now.with(adjuster);
+        LocalDateTime nextMonth = now.with(TemporalAdjusters.firstDayOfNextMonth());
+        System.out.println("nextMonth = " + nextMonth);
+    }
+```
+
+### 2.7 日期时间的时区
+
+​	java8中加入了对时区的支持，LocalDate、LocalTime、LocalDateTime是不带时区的，带时区的日期时间类分别为：ZonedDate、ZonedTime、ZonedDateTime
+
+其中每个时区都对应着ID，ID的格式为“区域/城市”。例如：Asia/Shanghai等
+
+ZoneId：该类中包含了所有的时区信息
+
+```java
+public static void main(String[] args) {
+    /**
+     * 时区操作
+     */
+    // 获取所有的时区id
+    // ZoneId.getAvailableZoneIds().forEach(System.out::println);
+
+    // 获取当前时间，中国使用的是东八区的时区，比标准时间要早8个小时
+    LocalDateTime now = LocalDateTime.now();
+    System.out.println("now = " + now);
+
+    // 获取标准时间
+    ZonedDateTime bz = ZonedDateTime.now(Clock.systemUTC());
+    System.out.println("bz = " + bz);
+
+    // 使用计算机默认的时区，创建日期时间
+    ZonedDateTime now1 = ZonedDateTime.now();
+    System.out.println("now1 = " + now1);
+
+    // 使用指定的时区创建日期时间
+    ZonedDateTime now2 = ZonedDateTime.now(ZoneId.of("America/Marigot"));
+    System.out.println("now2 = " + now2);
+}
+```
+
+JDK8新的日期和时间API的优势：
+
+1. 新版日期时间API中，日期和时间对象是不可变的，操作日期不会影响原来的值，而是生成一个新的实例
+2. 提供了不同的两种方式，有效地区分了人和机器的操作
+3. TemporalAdjuster可以更精确地操作日期，还可以自定义日期校正器
+4. 线程安全
