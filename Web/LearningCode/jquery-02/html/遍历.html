@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>遍历</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+
+<script>
+  $(function () {
+    /* 隐式迭代 */
+    $('div').addClass('none-class')
+
+    // each 只能对 jq 对象操作
+    $('div').each(function (index, element) {
+      // 参数顺序和 js 的 forEach 相反
+      // element 是普通的 dom 对象，不是 jq 对象
+      console.log(index);
+      console.log(element);
+    })
+
+    var arr = [1, 1, 1, 1, 1];
+
+    // 使用 jq 的循环
+    $.each(arr, function (index, element) {
+      console.log(index);
+      console.log(element);
+    })
+
+    // 还可以遍历对象
+    var obj = {
+      name: 'York',
+      sex: 'male'
+    }
+
+    $.each(obj, function (index, element) {
+      console.log(index);
+      console.log(element);
+    })
+  })
+</script>
+</body>
+</html>

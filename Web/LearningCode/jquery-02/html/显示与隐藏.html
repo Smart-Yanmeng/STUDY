@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>显示与隐藏</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+  <style>
+    div {
+      height: 50px;
+      background-color: aquamarine;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+<div>1</div>
+<div>2</div>
+<div>3</div>
+<div>4</div>
+<div>5</div>
+<div>6</div>
+<div>7</div>
+<div>8</div>
+<div>9</div>
+<div>10</div>
+<div>11</div>
+<div>12</div>
+<div>13</div>
+<div>14</div>
+<div>15</div>
+
+<script>
+  $(function () {
+    /* hover 事件 */
+    $('div').eq(0).hover(function () {
+      // 再次选择这个 div
+      $('div').eq(0).css({
+        backgroundColor: "red"
+      })
+    }, function () {
+      // 通过 this 直接构造成 jq 对象
+      $(this).css({
+        backgroundColor: "#ffffff"
+      })
+    })
+
+    /* 显示隐藏 */
+    // 隐藏已显示的元素
+    $('div').eq(1).hide(2000, function () {
+      console.log(this);
+    })
+    $('div').eq(2).hide(0);
+    // 显示已隐藏的元素
+    $('div').eq(2).show(2000, function () {
+      console.log(this);
+    })
+
+    // 反转
+    setInterval(function () {
+      $('div').eq(3).toggle(2000, function () {
+        console.log(this);
+      })
+    }, 2000)
+
+    /* 滑入滑出 */
+    // 滑入 - 从隐藏到显示的过程
+    $('div').eq(4).hide(0);
+    $('div').eq(4).slideDown(2000, function () {
+      console.log(this);
+    })
+    // 滑出 - 从显示到隐藏的过程
+    $('div').eq(5).slideUp(2000, function () {
+      console.log(this);
+    })
+    var timer = setInterval(function () {
+      $('div').eq(6).slideToggle(2000, function () {
+        console.log(this);
+      })
+    }, 2000)
+
+    // stop方法 - 停止指定元素正在运行的动画
+    setTimeout(function () {
+      clearInterval(timer);
+      $('div').eq(6).stop();
+    }, 5000)
+
+    /* 淡入淡出 */
+    // 淡入 - 从隐藏到显示的过程
+    $('div').eq(7).hide(0);
+    $('div').eq(7).fadeIn(2000, function () {
+      console.log(this);
+    })
+    // 淡出 - 从显示到隐藏的过程
+    $('div').eq(8).fadeOut(2000, function () {
+      console.log(this);
+    })
+    setInterval(function () {
+      $('div').eq(9).fadeToggle(2000, function () {
+        console.log(this);
+      })
+    }, 2000)
+
+    // fadeTo - 淡化到
+    $('div').eq(10).fadeTo(2000, 0.5, 'swing', function () {
+      console.log(this);
+    })
+    $('div').eq(11).fadeTo(2000, 0.5, 'linear', function () {
+      console.log(this);
+    })
+
+    /* 自定义动画 */
+    $('div').eq(12).animate({
+      height: '100px',
+      width: '100px',
+      backgroundColor: '#000000',
+    }, 2000, function () {
+      console.log(this);
+    })
+  })
+</script>
+</body>
+</html>

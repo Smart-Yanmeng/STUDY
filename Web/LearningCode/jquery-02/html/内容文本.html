@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>内容文本</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div class="father">
+  父亲
+  <div class="child">孩子</div>
+</div>
+
+<input type="text" value="哈哈哈哈哈">
+
+<script>
+  $(function () {
+    // 获取 innerHTML
+    console.log($('.father').html());
+    // 获取 innerText
+    console.log($('.father').text());
+
+    // 设置 innerHTML
+    $('.father').html('被改变的父亲<span>孩子</span>');
+    // 设置 innerText
+    $('.father').text('被改变的父亲<span>孩子</span>');
+
+    // 获取表单 value
+    console.log($('input').val());
+    $('input').val('嘿嘿嘿嘿嘿');
+  })
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>元素的操作</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div class="father" onclick="handleClick()">
+  父亲
+  <div class="child">孩子</div>
+  <div class="brother">兄弟</div>
+</div>
+
+<script>
+  function handleClick() {
+    console.log(1111)
+  }
+  $(function () {
+    /* 创建一个元素 */
+    var divJqDom = $('<div>我是被jq创建出来的</div>');
+    console.log(divJqDom);
+    /* 添加元素 */
+    // 加到选中元素的内部的最后一个位置
+    $('body').append(divJqDom);
+    // 加到选中元素的内部的第一个位置
+    $('body').prepend(divJqDom);
+
+    var spanJqDom = $('<span>我是被jq创建的span</span>');
+    // 加到选中元素的外部的前面
+    $('body').before(spanJqDom);
+    // 加到选中元素的外部的后面
+    $('body').after(spanJqDom);
+
+    /* 删除元素 */
+    var fatherJqDom = $('.father');
+    // empty 清空的是内容和子节点，保留自身 Dom 和绑定事件
+    $('.father').empty();
+    $('.father').text('我又回来了');
+
+    // remove 删除自身、文本域及子节点、绑定事件和 jq 相关数据
+    $('.father').remove();
+    $('body').append(fatherJqDom)
+    $('.father').text('我又回来了');
+
+    // detach 删除该节点自身、文本域和它的子节点，但会保留所有 jQuery 相关的数据和绑定的事件
+    $('.father').detach();
+  })
+</script>
+</body>
+</html>

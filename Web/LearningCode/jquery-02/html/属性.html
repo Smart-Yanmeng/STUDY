@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>属性</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+<div class="div">1</div>
+<div class="div">2</div>
+<div class="div">3</div>
+<div class="div">4</div>
+<div class="div">5</div>
+
+<script>
+  $(function () {
+    // 获取固有属性
+    console.log($('div').eq(0).prop('class'));
+
+    // 设置固有属性 - 只能设置标签的固有属性
+    console.log($('div').eq(0).prop('id'));
+    $('div').eq(0).prop('id', 'div1');
+    console.log($('div').eq(0).prop('id'));
+    $('div').eq(1).prop({
+      class: 'div2-changed',
+      id: 'div2-changed'
+    })
+    console.log($('div').eq(1).prop('id'));
+
+    /* 自定义属性 */
+    console.log($('div').eq(0).attr('class'));
+    // 设置固有属性
+    $('div').eq(2).attr('class', 'set-by-attr');
+    // 设置自定义属性，只能设置基础数据类型
+    $('div').eq(2).attr('username', '小明');
+    console.log($('div').eq(2).attr('username'));
+    // 设置多个自定义属性
+    $('div').eq(2).attr({
+      name: 'York',
+      sex: 'male'
+    })
+
+    /* 数据存储data */
+    // 设置
+    $('div').eq(3).data('userinfo', {
+      name: 'York',
+      sex: 'male'
+    })
+
+    console.log($('div').eq(3).data('userinfo'));
+  })
+</script>
+</body>
+</html>
