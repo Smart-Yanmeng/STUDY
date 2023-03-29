@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>尺寸、位置</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    .very-tall {
+      height: 1200px;
+      background-color: red;
+      width: 20px;
+    }
+
+    .to-top {
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      background-color: blue;
+      bottom: 50px;
+      right: 50px;
+    }
+  </style>
+</head>
+<body>
+<div></div>
+<div class="very-tall"></div>
+<div class="to-top" onclick="toTop()">置顶</div>
+
+<script>
+  $(function () {
+    $('div').css({
+      // display: 'inline-block',
+      // width: '200px',
+      // height: '200px',
+      // backgroundColor: '#123456',
+      // padding: '10px',
+      // margin : '20px',
+      // border: '5px solid black'
+    });
+    var divJqDom = $('div')
+    /* width() / height() 可以直接设置宽高 返回值是 number 类型 */
+    // width
+    console.log(divJqDom.css('width'));
+    // console.log(divJqDom.width(300));
+    // height
+    console.log(divJqDom.css('height'));
+    // console.log(divJqDom.height(300));
+
+    /* innerWidth() / innerHeight() */
+    // innerWidth
+    console.log(divJqDom.css('width'));
+    // console.log(divJqDom.width(300));
+    // innerHeight
+    console.log(divJqDom.innerWidth());
+    console.log(divJqDom.innerHeight());
+
+    /* outerWidth(true) / outerHeight(true) */
+    // outerWidth
+    console.log(divJqDom.outerWidth(true));
+    // outerHeight
+    console.log(divJqDom.outerHeight(true));
+
+    /* 位置 */
+    /* offset */
+    // 设置或返回被选元素相对于文档的偏移坐标，和父级没有关系
+    // 只能获取，不能设置
+    console.log(divJqDom.offset());
+  })
+
+  /* scrollTop() / scrollLeft() */
+  function toTop() {
+    // 方式一
+    // $('html').animate({
+    //   scrollTop: 0
+    // })
+    // 方式二
+    $('html').css({
+      scrollBehavior: 'smooth'
+    }).prop({
+      scrollTop: 0
+    })
+  }
+</script>
+</body>
+</html>
