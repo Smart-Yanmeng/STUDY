@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>vue-webpack-es6模块化</title>
+  <script src="./../js/模块化/api.js" type="module"></script>
+</head>
+
+<body>
+
+</body>
+
+<!-- model -->
+<!-- 模块化导入只支持 http, data, chrome, chrome-extension, https, 直接从浏览器打开属于 file 协议访问文件，会出现文件跨域问题 -->
+<script src="../js/模块化/a.js" type="module"></script>
+<script src="../js/模块化/b.js" type="module"></script>
+
+<!-- script，在 html 中要使用，在一个 script 模块中使用 import 导入 -->
+<script type="module">
+  import {baseAjax} from "./../js/模块化/api.js";
+
+  baseAjax();
+</script>
+</html>

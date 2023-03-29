@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>插槽</title>
+  <script src="./../utils/vue.js"></script>
+</head>
+<body>
+<div id="app">
+  <xiaomi-card-cpn :data="item" v-for="item in phoneCardList">
+    <!-- 默认插槽，默认有个 v-slot:default -->
+    <template #default>
+      123456
+    </template>
+
+    <!-- 具名插槽 -->
+    <template v-slot:title>
+      具名插槽 title
+    </template>
+
+  </xiaomi-card-cpn>
+</div>
+</body>
+
+<!-- card -->
+<template id="xiaomi-card">
+  <div class="xiaomi-card-container">
+    <slot name="top">
+      卡片
+    </slot>
+    <div class="cover">
+      <img src="" alt="" :src="data.cover">
+    </div>
+    <!-- title 是一个插槽 -->
+    <div class="title">
+      <!-- 一个组件内只能有一个默认插槽，避免插槽污染 -->
+      <slot>
+        {{data.title}}
+      </slot>
+      <slot name="title">
+        {{data.title}}
+      </slot>
+    </div>
+    <div class="intro">{{data.intro}}</div>
+    <div class="price">
+      <span class="selling-price">{{data.sellingPrice}}</span>
+      <span class="origin-price">{{data.originPrice}}</span>
+    </div>
+  </div>
+</template>
+
+<script>
+  // 卡片
+  const xiaomiCardCpn = Vue.extend({
+    template: "#xiaomi-card",
+    props: {
+      data: {
+        type: Object,
+        default: () => ({
+          cover: '',
+          title: '',
+          intro: '',
+          sellingPrice: '',
+          originPrice: ''
+        })
+      }
+    }
+  })
+  new Vue({
+    el: "#app",
+    data() {
+      return {
+        text: "1",
+        phoneCardList: [{
+          cover: '',
+          title: 'Redmi K40',
+          intro: '120Hz流速屏，全速热爱',
+          sellingPrice: '1599元',
+          originPrice: '2000元'
+        }, {
+          cover: '',
+          title: 'Redmi K40 5G',
+          intro: '双模5G，120Hz流速屏，全速热爱',
+          sellingPrice: '2599元',
+          originPrice: '3000元'
+        }]
+      }
+    },
+    components: {
+      xiaomiCardCpn
+    }
+  })
+</script>
+</html>
