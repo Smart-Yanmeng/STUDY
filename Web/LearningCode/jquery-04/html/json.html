@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+<body>
+
+
+<script>
+  var jsonObj = {
+    name: "小明",
+    age: 18,
+    course: [
+      "数学",
+      "语文"
+    ]
+  }
+
+  console.log(jsonObj);
+
+  // 把对象转换成标准 JSON 格式字符串
+  console.log(JSON.stringify(jsonObj));
+
+  // 把标准 JSON 格式字符串转化成对象
+  var jsonStr = '{"name":"小明","age":18,"course":["数学","语文"]}';
+  console.log(JSON.parse(jsonStr));
+</script>
+</body>
+</html>

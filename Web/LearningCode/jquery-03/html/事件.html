@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>事件</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+  <style>
+
+  </style>
+</head>
+<body>
+<button class="btn-1">click me</button>
+<button class="btn-2">click me</button>
+<ul>
+  <li>1</li>
+</ul>
+
+<script>
+  /* 单事件注册 */
+  // dom 方式
+  // document.querySelector('.btn-1').onclick;
+  // document.querySelector('.btn-1').addEventListener('click');
+
+  // jq 方式
+  $('.btn-1').click(function () {
+    console.log(this);
+  })
+  // $('.btn-1').dblclick(function () {
+  //   console.log('点击了两次');
+  // })
+  // one 只触发一次
+  $('.btn-1').one('dblclick', function () {
+    console.log('点击了两次');
+  })
+
+  /* 多事件注册 on */
+  // 可以对不同的事件绑定相同的处理程序
+  // $('.btn-2').on('click mouseenter mouseleave', function() {
+  //   console.log("多事件 click");
+  // })
+
+  // 不同的处理程序
+  $('.btn-2').on({
+    click: function () {
+      console.log('多事件 click');
+    },
+    mouseenter: function () {
+      console.log('多事件 mouseenter')
+    }
+  });
+
+  // 可以给动态生成的元素绑定事件程序 ( 三参形式 )
+  // $('ul li').click(function () {
+  //   console.log('单事件绑定 li 的点击')
+  // })
+  $('ul').on('click', 'li', function () {
+    console.log('on 事件绑定 li 的点击');
+    $('ul').off();
+  })
+  // 动态创建
+  $('ul').append('<li>3</li>')
+
+  /* off */
+  // 移除通过 on() 方法绑定的对象，添加的事件处理程序
+</script>
+</body>
+</html>

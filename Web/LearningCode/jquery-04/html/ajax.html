@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ajax</title>
+</head>
+<body>
+
+
+<script>
+  ajax();
+
+  function ajax() {
+    /* 原生 XMLHttpRequest */
+    // get 请求
+    // 生成一个对象
+    var xhrGet = new XMLHttpRequest();
+    xhrGet.open('get', 'https://apis.tianapi.com/networkhot/index?key=ed48f34a8e0b6f1fe4a100810c9415fd', true);
+    // 发送
+    // xhrGet.send();
+    // 获取到信息后执行以下代码
+    xhrGet.onload = function () {
+      console.log(JSON.parse(xhrGet.response));
+    }
+    // post 请求
+    var xhrPost = new XMLHttpRequest();
+    xhrPost.open('post', 'https://apis.tianapi.com/targa/index', true);
+    // 指定响应数据文本格式
+    xhrPost.responseType = 'json';
+    xhrPost.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+    // xhrPost.send('key=ed48f34a8e0b6f1fe4a100810c9415fd&word=apk');
+    xhrPost.onload = function () {
+      // 优先推荐使用 response
+      // console.log(xhrPost.responseText);
+      console.log(xhrPost.response);
+    }
+  }
+</script>
+</body>
+</html>

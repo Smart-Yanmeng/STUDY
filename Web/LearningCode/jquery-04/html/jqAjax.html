@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>jqAjax</title>
+  <script src="./../utils/jquery-3.6.3.js"></script>
+</head>
+<body>
+
+
+<script>
+  $(function () {
+    $.ajax({
+      url: 'https://apis.tianapi.com/networkhot/index',
+      async: true,
+      method: 'Get',
+      data: {
+        key: "ed48f34a8e0b6f1fe4a100810c9415fd"
+      },
+      success: function (res) {
+        console.log(res);
+      },
+      error: function (err) {
+        console.log(err);
+      }
+    })
+
+    $.ajax({
+      url: 'https://apis.tianapi.com/targa/index',
+      async: true,
+      method: 'Post',
+      data: {
+        key: "ed48f34a8e0b6f1fe4a100810c9415fd",
+        word: "txt"
+      },
+      success: function (res) {
+        console.log(res);
+      },
+      error: function (err) {
+        console.log(err);
+      }
+    })
+  })
+</script>
+</body>
+</html>
