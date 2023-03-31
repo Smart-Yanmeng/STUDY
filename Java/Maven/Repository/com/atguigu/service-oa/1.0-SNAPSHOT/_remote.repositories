@@ -1,0 +1,4 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Mar 31 22:59:13 CST 2023
+service-oa-1.0-SNAPSHOT.pom>=
+service-oa-1.0-SNAPSHOT.jar>=

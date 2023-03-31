@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 09 13:24:54 CST 2023
+#Fri Mar 31 22:37:45 CST 2023
+knife4j-spring-boot-starter-3.0.5.jar>central=
+knife4j-spring-boot-starter-3.0.5.pom>central=
 knife4j-spring-boot-starter-3.0.5.pom>public=
 knife4j-spring-boot-starter-3.0.5.jar>public=

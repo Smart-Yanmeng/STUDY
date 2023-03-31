@@ -5,16 +5,14 @@ import com.qztc.springboot.web.domain.entity.UserEntity;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
-import java.util.List;
-
 @Service
 public class UserService {
     @Resource
-    IUserDao userDao;
+    private IUserDao userDao;
 
-    public List<UserEntity> showUser() {
-        List<UserEntity> userEntities = userDao.queryUserList();
-
-        return userEntities;
+    public UserEntity login(UserEntity user) {
+        UserEntity userDB = userDao.login(user);
+        if (userDB != null) return userDB;
+        throw new RuntimeException("登录失败");
     }
 }
