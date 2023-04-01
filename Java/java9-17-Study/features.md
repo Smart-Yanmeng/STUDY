@@ -141,3 +141,229 @@ public static void main(String[] args) {
 }
 ```
 该功能并不是一把万能钥匙，我们还需要因地制宜的去使用它，这是一把双刃剑。用的好，可以简化代码，减少复杂度并提高可读性。用错了地方可能会造成反效果
+
+# JDK 11
+
+### 1. 简化启动单个源代码文件的方式
++ 从前的方法
+```bash
+javac Main.java
+java Main
+```
++ java 11 以后
+```bash
+java Main.java
+```
+但是只能直接运行单个文件，也无法调用外部的类  
+同时，当一个文件中有两个 main 方法时，只运行其中的第一个 main 方法
+```java
+public static void main(String[] args) {
+    // 无法调用外部的类
+    // Test test = new Test();
+
+    // 可以调用内部的类
+    PrintName name = new PrintName();
+
+    System.out.println("Hello world!");
+}
+
+static class PrintName {
+    public PrintName() {
+        System.out.println("My name is ...");
+    }
+
+    // 直接运行时只能获取到第一个查找到的 main 方法
+    public static void main(String[] args) {
+        System.out.println("This is PrintName()'s main");
+    }
+}
+```
+
+并且，Java 11 以后也能通过"shebang"文件和相关技术在脚本中使用（Linux中直接运行）
+
+# JDK 14
+
+### 1. 改进的 NullPointerExceptions
+目的是为了通过准确地描述哪个变量为空来提高 JVM 生成的 NullPointerExceptions 的可用性
+
+# JDK 15
+
+### 1. 文字块
+为了支持多行字符串文字，避免大多数转义、换行、拼接操作，以可预测的方式自动格式化字符串，并在需要的时候让开发人员控制格式
+```java
+    String html = """
+    @Data
+    public class CommonResponse {
+        /**
+         * 返回业务码用来判断成功失败
+         * 200 成功
+         * 500 失败
+         */
+        private String code;
+                    
+        /** 描述 */
+        private String massage;
+                    
+        /** 描述 */
+        private Object date;
+                    
+        public CommonResponse(String code, String massage, Object date) {
+            this.code = code;
+            this.massage = massage;
+            this.date = date;
+        }
+                    
+        public static CommonResponse succeed(){
+            return getCommonResponse(CodeEnum.SUCCESS.getCode(), CodeEnum.SUCCESS.getMassage(), null);
+        }
+        public static CommonResponse succeed(Object date){
+            return getCommonResponse(CodeEnum.SUCCESS.getCode(), CodeEnum.SUCCESS.getMassage(), date);
+        }
+        public static CommonResponse succeed(String massage,Object date){
+            return getCommonResponse(CodeEnum.SUCCESS.getCode(), massage, date);
+        }
+                    
+        public static CommonResponse error(String massage){
+            return getCommonResponse(CodeEnum.ERROR.getCode(), massage, null);
+        }
+        public static CommonResponse error(String code,String massage){
+            return getCommonResponse(code, massage, null);
+        }
+        public static CommonResponse error(){
+            return getCommonResponse(CodeEnum.ERROR.getCode(), CodeEnum.ERROR.getMassage(), null);
+        }
+                    
+        public static CommonResponse getCommonResponse(String code, String massage, Object date){
+            return new CommonResponse(code,massage,date);
+        }
+    }
+    """;
+```
+
+# JDK 16
+
+### 1. instanceof 模式匹配
+从对象条件中提取组件，可以更加简洁和安全地表达
+
+### 2. 档案类
+为了充当不可变数据的透明载体的类，并避免我们去写这些重复的代码，同时拥有不可变的特性可以天然支持我们的高并发操作，因为它是线程安全的
+```java
+// Java 16 之前
+// 不可变的对象
+public final class RecordTest1 {
+    final String name;
+
+    final Integer age;
+
+    public RecordTest1(String name, Integer age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "RecordTest1{" +
+                "name='" + name + '\'' +
+                ", age='" + age + '\'' +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        RecordTest1 that = (RecordTest1) o;
+        return Objects.equals(name, that.name) && Objects.equals(age, that.age);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, age);
+    }
+}
+```
+```java
+// Java 16 之后
+// Record 类
+public record RecordTest2(String name, Integer age) {
+    public RecordTest2 {
+        System.out.println("My name is " + name);
+    }
+}
+```
+
+### 3. 封闭类
+为了解决在可扩展性上实现更细粒度的控制，这种更细粒度的扩展性限制可以防止调用方进行无限扩展，从而造成不可预计的BUG出现，拥有较好的稳定性和安全性
++ Fruit 接口
+```java
+public sealed interface Fruit permits Apple {
+}
+```
++ 实现接口方法 1
+```java
+public final class Banana implements Fruit {
+}
+```
++ 实现接口方法 2
+```java
+public non-sealed class Apple implements Fruit {
+}
+```
++ 嵌套使用
+```java
+public final class QingApple extends Apple {
+}
+```
+### 4. Switch 表达式
+为了解决 switch 语句的一些不规则性称为障碍，比如 case 标签之间的默认控制流行为，case 块中的默认范围，无意义的 break 语句
+```java
+public static void main(String[] args) {
+    int level = new Random().nextInt(4);
+    String cnLevel;
+
+    // Java 8
+    switch (level) {
+        case 1:
+            cnLevel = "优秀";
+            break;
+        case 2:
+            cnLevel = "良好";
+            break;
+        case 3:
+            cnLevel = "一般";
+            break;
+        default:
+            cnLevel = "进步空间很大";
+            break;
+    }
+}
+```
+```java
+public static void main(String[] args) {
+    var level = new Random().nextInt(4);
+    var cnLevel = "";
+
+    // Java 16
+    switch (level) {
+        case 1 -> cnLevel = "优秀";
+        case 2 -> cnLevel = "良好";
+        case 3 -> cnLevel = "一般";
+        default -> cnLevel = "进步空间很大";
+    }
+
+    var cnLevel2 = switch (level) {
+        case 1 -> {
+            System.out.println("优秀");
+            yield "优秀";
+        }
+        case 2 -> "良好";
+        case 3 -> "一般";
+        default -> "进步空间很大";
+    };
+}
+```
+
+# JDK 18
+
+### 1. 简单的 Web 服务器
+提供命令行工具来启动仅提供静态文件的最小 Web 服务器。没有可用的 CGI 或类似 servlet 的功能。该工具可用于原型设计、临时编码和测试目的，尤其是在教育环境中
