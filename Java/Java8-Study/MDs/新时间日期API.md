@@ -31,7 +31,7 @@ public static void main(String[] args) throws ParseException {
 2. 非线程安全，java.util.Date是非线程安全的，所有的日期类都是可变的，这是java日期类最大的问题之一
 3. 时区处理麻烦，日期类并不提供国际化，没有时区支持
 
-## 2. 新日期时间API介绍
+## 2. 新日期时间 API 介绍
 
 JDK8中增加了一套全新的日期时间API，这套API设计合理，是线程安全的。新的日期及时间API位于java.time包中，下面是一些关键类：
 
