@@ -367,3 +367,19 @@ public static void main(String[] args) {
 
 ### 1. 简单的 Web 服务器
 提供命令行工具来启动仅提供静态文件的最小 Web 服务器。没有可用的 CGI 或类似 servlet 的功能。该工具可用于原型设计、临时编码和测试目的，尤其是在教育环境中
+```bash
+jwebserver
+```
+
+# JVM 的升级
+
+1. 统一 JVM 日志
+2. 并行全垃圾回收器 G1 取代 CMS 设置为默认垃圾收集器
+3. 统一的垃圾回收接口
+4. 基于 Java 的实验性 JIT 编译器
+5. Epsilon：低开销垃圾回收器
+6. 低开销的 Heap Profiling
+7. ZGC：可伸缩低延迟垃圾收集器
+8. Microbenchmark 测试套件
+9. G1 的可中断 mixed GC
+10. Shenandoah：低暂停时间垃圾收集器
