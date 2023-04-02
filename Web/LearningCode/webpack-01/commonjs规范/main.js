@@ -1,0 +1,1 @@
+const moudleB = require("./b")

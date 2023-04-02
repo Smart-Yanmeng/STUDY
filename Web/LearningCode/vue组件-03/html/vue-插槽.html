@@ -5,17 +5,24 @@
   <title>插槽</title>
   <script src="./../utils/vue.js"></script>
 </head>
+
 <body>
 <div id="app">
+  <!-- 组件默认是没有内容区的 -->
   <xiaomi-card-cpn :data="item" v-for="item in phoneCardList">
     <!-- 默认插槽，默认有个 v-slot:default -->
     <template #default>
-      123456
+      <span style="font-size: 20px; color: green">默认插槽</span>
     </template>
 
     <!-- 具名插槽 -->
     <template v-slot:title>
-      具名插槽 title
+      <span style="font-size: 20px; color: red">具名插槽 title</span>
+    </template>
+
+    <!-- 缩写的 slot 指令 -->
+    <template #top>
+      top 的插槽位（#简写法）
     </template>
 
   </xiaomi-card-cpn>
@@ -25,18 +32,22 @@
 <!-- card -->
 <template id="xiaomi-card">
   <div class="xiaomi-card-container">
-    <slot name="top">
-      卡片
-    </slot>
+    <div>
+      <slot name="top">
+        卡片
+      </slot>
+    </div>
     <div class="cover">
       <img src="" alt="" :src="data.cover">
     </div>
     <!-- title 是一个插槽 -->
     <div class="title">
       <!-- 一个组件内只能有一个默认插槽，避免插槽污染 -->
+      <h5>没有名字的插槽 - 默认插槽</h5>
       <slot>
         {{data.title}}
       </slot>
+      <h5>有名字的插槽 - 具名插槽</h5>
       <slot name="title">
         {{data.title}}
       </slot>

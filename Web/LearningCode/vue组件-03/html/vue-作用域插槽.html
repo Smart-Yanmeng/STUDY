@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>插槽</title>
+  <script src="./../utils/vue.js"></script>
+  <!-- 时间格式化工具 -->
+  <script src="https://unpkg.com/dayjs@1.8.21/dayjs.min.js"></script>
+</head>
+
+<body>
+<div id="app">
+  <xiaomi-card-cpn :data="item" v-for="item in phoneCardList">
+    <template #title="card">
+      <div style="font-size: 30px; color: green">
+        {{card.cardTitle}}
+      </div>
+    </template>
+    <template #date="scope">
+      <div>
+        {{formatTime(scope.createTime)}}
+        <!--        {{scope}}-->
+      </div>
+    </template>
+  </xiaomi-card-cpn>
+</div>
+</body>
+
+<!-- card -->
+<template id="xiaomi-card">
+  <div class="xiaomi-card-container">
+    <div class="cover">
+      <img src="" alt="" :src="data.cover">
+    </div>
+    <!-- title 是一个插槽 -->
+    <div class="title">
+      <!-- 插槽上的自定义属性，返回到父级中 -->
+      <slot name="title" :card-title="data.title" index="2">
+        {{data.title}}
+      </slot>
+    </div>
+    <div class="intro">{{data.intro}}</div>
+    <div class="price">
+      <span class="selling-price">{{data.sellingPrice}}</span>
+      <span class="origin-price">{{data.originPrice}}</span>
+    </div>
+    <div>
+      创建时间
+      <slot name="date" :create-time="data.createTime">
+        {{data.createTime}}
+      </slot>
+    </div>
+  </div>
+</template>
+
+<script>
+  // 卡片
+  const xiaomiCardCpn = Vue.extend({
+    template: "#xiaomi-card",
+    props: {
+      data: {
+        type: Object,
+        default: () => ({
+          cover: '',
+          title: '',
+          intro: '',
+          sellingPrice: '',
+          originPrice: '',
+          createTime: ''
+        })
+      }
+    }
+  })
+  new Vue({
+    el: "#app",
+    data() {
+      return {
+        text: "1",
+        phoneCardList: [{
+          cover: '',
+          title: 'Redmi K40',
+          intro: '120Hz流速屏，全速热爱',
+          sellingPrice: '1599元',
+          originPrice: '2000元',
+          createTime: new Date().getTime()
+        }, {
+          cover: '',
+          title: 'Redmi K40 5G',
+          intro: '双模5G，120Hz流速屏，全速热爱',
+          sellingPrice: '2599元',
+          originPrice: '3000元',
+          createTime: new Date().getTime()
+        }]
+      }
+    },
+    computed: {
+      formatTime() {
+        return function(timeStamp) {
+          return dayjs(timeStamp).format('YYYY/MM/DD HH:mm:ss:SSS');
+          // return timeStamp;
+        };
+      }
+    },
+    components: {
+      xiaomiCardCpn
+    }
+  })
+</script>
+</html>

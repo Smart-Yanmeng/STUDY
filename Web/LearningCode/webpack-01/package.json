@@ -1,0 +1,11 @@
+{
+  "dependencies": {
+    "chokidar": "^3.5.3",
+    "querystring": "^0.2.1",
+    "resolve-url": "^0.2.1",
+    "source-map-resolve": "^0.6.0",
+    "source-map-url": "^0.4.1",
+    "urix": "^0.1.0",
+    "vue": "^2.7.14"
+  }
+}

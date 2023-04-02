@@ -1,0 +1,13 @@
+/* 公共样式 */
+div {
+  width: 100px;
+  height: 100px;
+}
+
+.bk-color-red {
+  background-color: red;
+}
+
+.bk-img {
+  background-image: url("./../img/1.png");
+}
