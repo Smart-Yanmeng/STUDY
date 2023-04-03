@@ -8,5 +8,13 @@
     "build": "webpack"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "vue": "^2.7.14",
+    "vue-loader": "^14.2.4",
+    "vue-template-compiler": "^2.7.14"
+  },
+  "devDependencies": {
+    "webpack-cli": "^5.0.1"
+  }
 }

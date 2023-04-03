@@ -16,6 +16,18 @@ module.exports = {
   },
   // 加入 loader
   module: {
-    rules: []
+    rules: [
+      // vue loader
+      {
+        test: /\.vue$/,
+        use: ['vue-loader']
+      }
+    ]
+  },
+  resolve: {
+    alias: {
+      // 指定使用 vue 包中的版本
+      'vue$': 'vue/dist/vue.esm.js'
+    }
   }
 }
