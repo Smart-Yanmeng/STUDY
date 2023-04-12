@@ -6,6 +6,9 @@ import (
 )
 
 func main() {
-	s := model.Student{"York", 18}
-	fmt.Println(s)
+	// 创建一个 person 结构体实例
+	p := model.NewPerson("York", 18)
+	p.SetAge(20)
+
+	fmt.Println((*p).GetAge())
 }
