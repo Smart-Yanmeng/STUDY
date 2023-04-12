@@ -25,6 +25,7 @@ func (am America) sayHello() {
 	fmt.Println("Hello")
 }
 
+// 函数调用接口
 func greet(s SayHello) {
 	s.sayHello()
 }
@@ -32,9 +33,9 @@ func greet(s SayHello) {
 func main() {
 	// 创建一个中国人
 	c := Chinese{}
-	c.sayHello()
+	greet(c)
 
 	// 创建一个美国人
 	a := America{}
-	a.sayHello()
+	greet(a)
 }
