@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"gocode/unit10/demo05/model"
+	"gocode/goBase/unit10/demo05/model"
 )
 
 func main() {
