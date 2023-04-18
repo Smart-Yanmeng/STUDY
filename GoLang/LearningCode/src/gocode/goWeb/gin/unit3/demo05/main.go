@@ -3,10 +3,14 @@ package main
 import "github.com/gin-gonic/gin"
 
 type UserInfo struct {
-	Name       string `json:"name"`        // 用户名
-	Age        int    `json:"age"`         // 年龄
-	Password   string `json:"password"`    // 密码
-	RePassword string `json:"re_password"` // 确认密码
+	// required - 不能为空，且不能没有这个字段
+	// min/max/len - 针对字符串的长度，最小/最大/等于字符数
+	Name string `json:"name" binding:"required,min=4,max=8,len=6"` // 用户名
+	// gte/lte - 针对数字大小，大于等于/小于等于数字
+	Age      int    `json:"age" binding:"gte=18,lte=30"` // 年龄
+	Password string `json:"password"`                    // 密码
+	// eqfield - 针对同级字段，需要两个字段的值相同
+	RePassword string `json:"re_password" binding:"eqfield=Password"` // 确认密码
 }
 
 func main() {
