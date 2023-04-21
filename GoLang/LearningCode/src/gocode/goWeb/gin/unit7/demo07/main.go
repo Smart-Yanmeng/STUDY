@@ -18,7 +18,7 @@ func (hook MyHook) Levels() []logrus.Level {
 func (hook MyHook) Fire(entry *logrus.Entry) error {
 	entry.Data["app"] = "York"
 
-	file, _ := os.OpenFile("goWeb/logrus/unit1/demo07/err.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
+	file, _ := os.OpenFile("goWeb/gin/unit7/demo07/err.log", os.O_CREATE|os.O_WRONLY|os.O_APPEND, 0666)
 	line, _ := entry.String()
 
 	file.Write([]byte(line))

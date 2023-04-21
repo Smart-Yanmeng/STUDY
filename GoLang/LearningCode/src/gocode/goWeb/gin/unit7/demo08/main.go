@@ -66,7 +66,7 @@ func InitFile(logPath, appName string) {
 }
 
 func main() {
-	InitFile("goWeb/logrus/unit1/demo08/log", "York")
+	InitFile("goWeb/gin/unit7/demo08/log", "York")
 
 	for {
 		logrus.Error("York")
