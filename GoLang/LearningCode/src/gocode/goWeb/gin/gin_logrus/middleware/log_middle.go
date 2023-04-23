@@ -40,6 +40,8 @@ func LogMiddleware() gin.HandlerFunc {
 			statusColor = fmt.Sprintf("\033[%dm %d \033[0m", status200, statusCode)
 		case 404:
 			statusColor = fmt.Sprintf("\033[%dm %d \033[0m", status404, statusCode)
+		case 500:
+			statusColor = fmt.Sprintf("\033[%dm %d \033[0m", status500, statusCode)
 		}
 
 		var methodColor string
