@@ -1,4 +1,6 @@
 # ninja log v5
-1	134	7051750275494169	build.ninja	d18554643d746ab2
+1	134	7051830823587176	build.ninja	d18554643d746ab2
 257	320	6990794721936736	test.exe	ba27f0a285c298c2
 2	256	6990794721328769	CMakeFiles/test.dir/Learning_Code/DecimalToBinary.cpp.obj	deef7583c236c6c5
+1	331	7051832183327812	CMakeFiles/test.dir/Learning_Code/DecimalToBinary.cpp.obj	8064ed7b625c5670
+332	468	7051832184653206	test.exe	4bfa88181e1bfe2b
