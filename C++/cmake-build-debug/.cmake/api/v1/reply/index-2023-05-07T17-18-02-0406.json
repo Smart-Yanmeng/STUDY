@@ -1,0 +1,108 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Ninja"
+		},
+		"paths" : 
+		{
+			"cmake" : "C:/Users/yorky/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/win/x64/bin/cmake.exe",
+			"cpack" : "C:/Users/yorky/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/win/x64/bin/cpack.exe",
+			"ctest" : "C:/Users/yorky/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/win/x64/bin/ctest.exe",
+			"root" : "C:/Users/yorky/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/231.8770.66/bin/cmake/win/x64/share/cmake-3.25"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 25,
+			"patch" : 2,
+			"string" : "3.25.2",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+			"jsonFile" : "codemodel-v2-0c8e5c4b2f69199e1f10.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 4
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-9a8d15759fe09a0aada2.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-c802a3feccdb2c0953b4.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "toolchains-v1-1dae79f0f28aa62519d3.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-9a8d15759fe09a0aada2.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-c802a3feccdb2c0953b4.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+			"jsonFile" : "codemodel-v2-0c8e5c4b2f69199e1f10.json",
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 4
+			}
+		},
+		"toolchains-v1" : 
+		{
+			"jsonFile" : "toolchains-v1-1dae79f0f28aa62519d3.json",
+			"kind" : "toolchains",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	}
+}
