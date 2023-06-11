@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:33:00 CST 2023
+#Wed May 31 17:18:34 CST 2023
+xpp3_min-1.1.4c.jar>central=
 xpp3_min-1.1.4c.jar>public=
+xpp3_min-1.1.4c.pom>central=
 xpp3_min-1.1.4c.pom>public=
