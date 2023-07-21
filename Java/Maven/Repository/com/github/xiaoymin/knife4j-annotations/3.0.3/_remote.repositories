@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Mar 31 23:16:13 CST 2023
+#Sat Jun 17 22:56:25 CST 2023
+knife4j-annotations-3.0.3.jar>central=
+knife4j-annotations-3.0.3.jar>public=
 knife4j-annotations-3.0.3.pom>central=
 knife4j-annotations-3.0.3.pom>public=
-knife4j-annotations-3.0.3.jar>public=

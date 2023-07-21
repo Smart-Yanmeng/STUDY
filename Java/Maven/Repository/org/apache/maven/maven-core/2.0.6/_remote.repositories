@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:31:08 CST 2023
-maven-core-2.0.6.pom>public=
+#Sat Jun 17 23:02:08 CST 2023
 maven-core-2.0.6.jar>public=
+maven-core-2.0.6.pom>central=
+maven-core-2.0.6.pom>public=

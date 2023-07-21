@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:31:08 CST 2023
+#Sat Jun 17 23:02:08 CST 2023
 doxia-sink-api-1.0-alpha-7.jar>public=
+doxia-sink-api-1.0-alpha-7.pom>central=
 doxia-sink-api-1.0-alpha-7.pom>public=
