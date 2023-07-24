@@ -4,7 +4,7 @@
 # Project Name - Learning code
 
 # judge the parity of input numbers
-x = int(input("please enter en number: "))
+x = int(input("please enter a number: "))
 if x % 2 == 0:
     print('even!')
 else:

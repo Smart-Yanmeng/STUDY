@@ -26,5 +26,3 @@ random.shuffle(shuffleList)
 print("shuffle list ->", shuffleList)
 
 print("sample list ->", random.sample(shuffleList, 3))
-
-

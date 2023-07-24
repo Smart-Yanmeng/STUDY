@@ -5,7 +5,7 @@
 import math
 
 # input
-a = input("please enter an number: ")
+a = input("please enter a number: ")
 
 # print
 print("a ->", a)
