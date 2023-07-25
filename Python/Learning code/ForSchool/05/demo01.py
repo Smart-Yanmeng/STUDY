@@ -17,4 +17,4 @@ print("fruits ->", fruits)
 s1 = {2, 3, 5, 7}
 s2 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 0}
 print("s1 is s2's subset ->", s1.issubset(s2))
-print("s2 is s1's superset ->", s1.issuperset(s2))
+print("s2 is s1's superset ->", s2.issuperset(s1))
