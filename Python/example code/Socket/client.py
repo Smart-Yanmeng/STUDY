@@ -9,7 +9,7 @@ myQueue = Queue(1)
 myQueue.put_nowait('app')
 sock = socket.socket()
 
-sock.connect(('127.0.0.2', 10000))
+sock.connect(('39.105.219.78', 1000))
 
 sock.send(myQueue.get_nowait().encode('utf-8'))
 
