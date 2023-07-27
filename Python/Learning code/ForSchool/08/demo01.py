@@ -5,6 +5,9 @@
 
 # class
 class Student:
+    name = "Default"
+    number = "Default"
+
     def __init__(self, name, number):
         self.name = name
         self.number = number
@@ -13,8 +16,23 @@ class Student:
     def getInfo(cls):
         print("name ->", cls.name, "\nnumber ->", cls.number)
 
+    @staticmethod
+    def printInfo(self):
+        print("name ->", self.name, "\nnumber ->", self.number)
+
+
+class ExcStudent(Student):
+    def __init__(self, name, number):
+        super().__init__(name, number)
+        self.score = 90
+
+    @classmethod
+    def getInfo(cls):
+        print("exc name ->", cls.name, "\nexc number ->", cls.number)
+
 
 stu1 = Student("York", "01")
-stu1.getInfo()
+Student.getInfo()
+Student.printInfo(stu1)
 
 print("stu1 is a student? ->", isinstance(stu1, Student))
