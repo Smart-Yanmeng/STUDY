@@ -37,7 +37,7 @@ if __name__ == '__main__':
             "username": "root",
             "password": "12345678Lc",
             "port": 22,
-            "cmd": ["python3 ./server.py"]
+            "cmd": ["docker run -d -it python-seq bash"]
         }
     }
     # 使用items方法遍历，使用ip 和info把字典里的键和值遍历赋值，传给函数sshExeCMD
