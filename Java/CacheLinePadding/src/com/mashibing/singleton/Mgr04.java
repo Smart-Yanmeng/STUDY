@@ -9,19 +9,15 @@ public class Mgr04 {
     private Mgr04() {
     }
 
-    public static Mgr04 getInstance() {
+    public synchronized static Mgr04 getInstance() {
         if (INSTANCE == null) {
-            synchronized (Mgr04.class) {
-                if (INSTANCE == null) {
-                    try {
-                        Thread.sleep(1);
-                    } catch (InterruptedException e) {
-                        e.printStackTrace();
-                    }
-
-                    INSTANCE = new Mgr04();
-                }
+            try {
+                Thread.sleep(1);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+
+            INSTANCE = new Mgr04();
         }
 
         return INSTANCE;
@@ -33,7 +29,7 @@ public class Mgr04 {
 
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {
-            new Thread(() -> System.out.println(Mgr03.getInstance().hashCode())).start();
+            new Thread(() -> System.out.println(Mgr04.getInstance().hashCode())).start();
         }
     }
 }
