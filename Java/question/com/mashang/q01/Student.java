@@ -1,8 +1,5 @@
 package com.mashang.q01;
 
-import java.math.BigDecimal;
-import java.text.DecimalFormat;
-
 public class Student {
     // student number
     private String number;
