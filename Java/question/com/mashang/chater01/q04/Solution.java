@@ -1,4 +1,4 @@
-package com.mashang.q02;
+package com.mashang.chater01.q04;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package com.mashang.q01;
+package com.mashang.chater01.q01;
 
 public class Student {
     // student number
