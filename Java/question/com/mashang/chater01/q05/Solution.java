@@ -18,7 +18,10 @@ public class Solution {
     }
 
     private static List<Student> removeDuplicateOrder(List<Student> orderList) {
-        Set<Student> set = new TreeSet<>(Comparator.comparing(Student::id));
+        Set<Student> set = new TreeSet<>((o1, o2) -> {
+            if (!Objects.equals(o1.id(), o2.id())) return Long.compare(o1.age(), o2.age());
+            else return o1.id().compareTo(o2.id());
+        });
         set.addAll(orderList);
         return new ArrayList<>(set);
     }
