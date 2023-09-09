@@ -1,4 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 20:04:28 CST 2023
+#Tue Sep 05 22:59:43 CST 2023
 jakarta.activation-api-1.2.2.jar>central=
+jakarta.activation-api-1.2.2.pom>huaweicloud=
 jakarta.activation-api-1.2.2.pom>central=
+jakarta.activation-api-1.2.2-sources.jar>public=
+jakarta.activation-api-1.2.2.jar>huaweicloud=

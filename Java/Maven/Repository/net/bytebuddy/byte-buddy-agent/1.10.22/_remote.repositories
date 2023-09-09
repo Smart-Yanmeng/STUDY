@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 09 13:24:54 CST 2023
-byte-buddy-agent-1.10.22.pom>public=
+#Fri Aug 11 16:51:52 CST 2023
+byte-buddy-agent-1.10.22-sources.jar>public=
 byte-buddy-agent-1.10.22.jar>public=
+byte-buddy-agent-1.10.22.pom>public=

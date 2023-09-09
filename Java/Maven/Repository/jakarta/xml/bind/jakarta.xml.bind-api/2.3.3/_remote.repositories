@@ -1,4 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 20:04:28 CST 2023
+#Tue Sep 05 22:59:43 CST 2023
 jakarta.xml.bind-api-2.3.3.jar>central=
+jakarta.xml.bind-api-2.3.3.jar>huaweicloud=
 jakarta.xml.bind-api-2.3.3.pom>central=
+jakarta.xml.bind-api-2.3.3-sources.jar>public=
+jakarta.xml.bind-api-2.3.3.pom>huaweicloud=

@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:19:34 CST 2023
-javax.inject-1.pom>central=
-javax.inject-1.pom>public=
+#Tue Sep 05 22:59:43 CST 2023
 javax.inject-1.jar>central=
+javax.inject-1.pom>huaweicloud=
+javax.inject-1.pom>public=
+javax.inject-1.pom>central=
 javax.inject-1.jar>public=
+javax.inject-1.jar>huaweicloud=

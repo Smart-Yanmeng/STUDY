@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
+#Tue Sep 05 22:59:43 CST 2023
 error_prone_annotations-2.3.4.jar>central=
+error_prone_annotations-2.3.4.jar>huaweicloud=
 error_prone_annotations-2.3.4.pom>central=
+error_prone_annotations-2.3.4.pom>huaweicloud=

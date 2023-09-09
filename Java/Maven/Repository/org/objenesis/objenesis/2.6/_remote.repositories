@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed May 31 17:18:34 CST 2023
+#Tue Sep 05 22:59:43 CST 2023
 objenesis-2.6.jar>central=
-objenesis-2.6.pom>central=
 objenesis-2.6.pom>public=
+objenesis-2.6.pom>central=
+objenesis-2.6.pom>huaweicloud=
+objenesis-2.6.jar>huaweicloud=
