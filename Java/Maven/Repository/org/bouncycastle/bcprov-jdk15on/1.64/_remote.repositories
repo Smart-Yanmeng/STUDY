@@ -1,0 +1,9 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+bcprov-jdk15on-1.64.jar>huaweicloud=
+bcprov-jdk15on-1.64.pom>public=
+bcprov-jdk15on-1.64.pom>huaweicloud=
+bcprov-jdk15on-1.64.jar>public=
+bcprov-jdk15on-1.64.jar>central=
+bcprov-jdk15on-1.64.pom>central=
+bcprov-jdk15on-1.64-sources.jar>public=

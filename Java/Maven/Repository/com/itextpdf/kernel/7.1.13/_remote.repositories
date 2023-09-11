@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:52:11 CST 2023
+kernel-7.1.13-sources.jar>public=
+kernel-7.1.13.jar>public=
+kernel-7.1.13.pom>public=
