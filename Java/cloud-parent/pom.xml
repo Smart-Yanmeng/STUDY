@@ -20,6 +20,7 @@
         <module>common</module>
         <module>student</module>
         <module>clazz</module>
+        <module>gateway</module>
     </modules>
 
     <properties>
