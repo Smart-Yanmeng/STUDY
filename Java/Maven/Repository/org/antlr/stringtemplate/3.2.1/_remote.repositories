@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:50:12 CST 2023
+stringtemplate-3.2.1-sources.jar>public=
+stringtemplate-3.2.1.jar>public=
+stringtemplate-3.2.1.pom>public=

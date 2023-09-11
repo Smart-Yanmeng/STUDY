@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:51:51 CST 2023
+checker-qual-2.8.1-sources.jar>public=
+checker-qual-2.8.1.jar>public=
+checker-qual-2.8.1.pom>public=

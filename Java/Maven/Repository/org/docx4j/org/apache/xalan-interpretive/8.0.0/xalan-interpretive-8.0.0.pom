@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd" xmlns="http://maven.apache.org/POM/4.0.0"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.docx4j.org.apache</groupId>
+  <artifactId>xalan-interpretive</artifactId>
+  <version>8.0.0</version>
+  <name>xalan-interpretive</name>
+  <description>xalan-interpretive</description>
+  <url>http://xml.apache.org/xalan-j/</url>
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <name>Jason Harrop</name>
+      <email>jason@plutext.org</email>
+      <organization>Plutext</organization>
+      <organizationUrl>http://www.plutext.com</organizationUrl>
+    </developer>
+    <developer>
+      <name>Xalan committers</name>
+      <email>dev@xalan.apache.org</email>
+      <organization>Apache</organization>
+      <organizationUrl>http://people.apache.org/committers-by-project.html#xalan</organizationUrl>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:svn:http://svn.sonatype.org/spice/trunk/oss/oss-parenti-9/xalan-parent/xalan-interpretive</connection>
+    <developerConnection>scm:git|git@github.com:plutext/xalan-j.git/xalan-interpretive</developerConnection>
+    <tag>xalan-parent-8.0.0</tag>
+    <url>http://svn.sonatype.org/spice/trunk/oss/oss-parent-9/xalan-parent/xalan-interpretive</url>
+  </scm>
+  <distributionManagement>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+    </repository>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+    </snapshotRepository>
+  </distributionManagement>
+  <dependencies>
+    <dependency>
+      <groupId>org.docx4j.org.apache</groupId>
+      <artifactId>xalan-serializer</artifactId>
+      <version>8.0.0</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>xerces</groupId>
+      <artifactId>xercesImpl</artifactId>
+      <version>2.9.1</version>
+      <scope>compile</scope>
+      <optional>true</optional>
+    </dependency>
+  </dependencies>
+  <repositories>
+    <repository>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Sonatype Nexus Snapshots</name>
+      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+    </repository>
+  </repositories>
+</project>

@@ -1,0 +1,16 @@
+2023-09-06 00:02:31,848 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='clazz', ephemeral=true, revision=3}, 172.20.48.1:10023#true
+
+2023-09-06 00:02:33,876 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=11}, 172.20.48.1:10022#true
+
+2023-09-06 00:03:02,863 INFO Client connection 192.168.31.220:57649#true disconnect, remove instances and subscribers
+
+2023-09-06 00:03:02,863 INFO Client connection 172.20.48.1:10023#true disconnect, remove instances and subscribers
+
+2023-09-06 00:03:07,877 INFO Client connection 172.20.48.1:10022#true disconnect, remove instances and subscribers
+
+2023-09-06 00:03:07,877 INFO Client connection 192.168.31.220:57650#true disconnect, remove instances and subscribers
+
+2023-09-06 00:03:47,266 WARN namespace : public, [DEFAULT_GROUP@@clazz] services are automatically cleaned
+
+2023-09-06 00:03:47,266 WARN namespace : public, [DEFAULT_GROUP@@student] services are automatically cleaned
+

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:52:07 CST 2023
+reflections-0.9.9-sources.jar>public=
+reflections-0.9.9.jar>public=
+reflections-0.9.9.pom>public=

@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Aug 12 10:05:24 CST 2023
+@default-maven-restlet-https\://maven.restlet.org/.lastUpdated=1691805923756
+https\://maven.restlet.org/.error=Could not transfer artifact io.rsocket\:rsocket-transport-local\:pom\:1.1.3 from/to maven-restlet (https\://maven.restlet.org)\: PKIX path validation failed\: java.security.cert.CertPathValidatorException\: validity check failed
+https\://repo.maven.apache.org/maven2/.lastUpdated=1691805924119

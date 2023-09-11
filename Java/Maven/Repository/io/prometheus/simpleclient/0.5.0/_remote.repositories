@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+simpleclient-0.5.0.jar>central=
+simpleclient-0.5.0.pom>central=
+simpleclient-0.5.0.jar>huaweicloud=
+simpleclient-0.5.0.pom>huaweicloud=

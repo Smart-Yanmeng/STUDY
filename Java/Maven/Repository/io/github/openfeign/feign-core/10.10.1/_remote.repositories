@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+feign-core-10.10.1.jar>huaweicloud=
+feign-core-10.10.1.jar>central=
+feign-core-10.10.1.pom>central=
+feign-core-10.10.1.pom>huaweicloud=

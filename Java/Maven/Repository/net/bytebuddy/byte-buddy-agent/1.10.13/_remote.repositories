@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+byte-buddy-agent-1.10.13.pom>huaweicloud=
+byte-buddy-agent-1.10.13.jar>central=
+byte-buddy-agent-1.10.13.pom>central=
+byte-buddy-agent-1.10.13.jar>huaweicloud=

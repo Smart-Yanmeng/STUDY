@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Aug 12 10:05:27 CST 2023
+@default-maven-restlet-https\://maven.restlet.org/.lastUpdated=1691805926641
+https\://maven.restlet.org/.error=Could not transfer artifact io.undertow\:undertow-parent\:pom\:2.2.24.Final from/to maven-restlet (https\://maven.restlet.org)\: PKIX path validation failed\: java.security.cert.CertPathValidatorException\: validity check failed
+https\://repo.maven.apache.org/maven2/.lastUpdated=1691805927321

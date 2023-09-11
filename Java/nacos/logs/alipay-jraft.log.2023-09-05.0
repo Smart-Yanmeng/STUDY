@@ -1,0 +1,130 @@
+2023-09-05 21:17:15,554 INFO SPI service [com.alipay.sofa.jraft.JRaftServiceFactory - com.alipay.sofa.jraft.core.DefaultJRaftServiceFactory] loading.
+
+2023-09-05 21:17:15,626 INFO SPI service [com.alipay.sofa.jraft.rpc.RaftRpcFactory - com.alipay.sofa.jraft.rpc.impl.GrpcRaftRpcFactory] loading.
+
+2023-09-05 21:17:15,753 INFO SPI service [com.alipay.sofa.jraft.util.timer.RaftTimerFactory - com.alipay.sofa.jraft.util.timer.DefaultRaftTimerFactory] loading.
+
+2023-09-05 21:17:15,757 INFO The number of active nodes increment to 1.
+
+2023-09-05 21:17:15,934 INFO Starts FSMCaller successfully.
+
+2023-09-05 21:17:15,939 WARN No data for snapshot reader C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot.
+
+2023-09-05 21:17:15,948 INFO Node <naming_persistent_service_v2/172.20.48.1:17849> init, term=0, lastLogId=LogId [index=0, term=0], conf=172.20.48.1:17849, oldConf=.
+
+2023-09-05 21:17:15,950 INFO Node <naming_persistent_service_v2/172.20.48.1:17849> start vote and grant vote self, term=0.
+
+2023-09-05 21:17:15,967 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data on windows.
+
+2023-09-05 21:17:15,972 INFO Save raft meta, path=C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\meta-data, term=1, votedFor=172.20.48.1:17849, cost time=16 ms
+
+2023-09-05 21:17:15,972 INFO Node <naming_persistent_service_v2/172.20.48.1:17849> become leader of group, term=1, conf=172.20.48.1:17849, oldConf=.
+
+2023-09-05 21:17:15,974 INFO -Djraft.recyclers.maxCapacityPerThread: 4096.
+
+2023-09-05 21:17:15,977 WARN RPC server is not started in RaftGroupService.
+
+2023-09-05 21:17:15,977 INFO Start the RaftGroupService successfully.
+
+2023-09-05 21:17:15,989 INFO onLeaderStart: term=1.
+
+2023-09-05 21:17:15,995 INFO The number of active nodes increment to 2.
+
+2023-09-05 21:17:16,031 INFO Starts FSMCaller successfully.
+
+2023-09-05 21:17:16,031 WARN No data for snapshot reader C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot.
+
+2023-09-05 21:17:16,032 INFO Node <naming_instance_metadata/172.20.48.1:17849> init, term=0, lastLogId=LogId [index=0, term=0], conf=172.20.48.1:17849, oldConf=.
+
+2023-09-05 21:17:16,032 INFO Node <naming_instance_metadata/172.20.48.1:17849> start vote and grant vote self, term=0.
+
+2023-09-05 21:17:16,035 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\meta-data on windows.
+
+2023-09-05 21:17:16,036 INFO Save raft meta, path=C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\meta-data, term=1, votedFor=172.20.48.1:17849, cost time=4 ms
+
+2023-09-05 21:17:16,036 INFO Node <naming_instance_metadata/172.20.48.1:17849> become leader of group, term=1, conf=172.20.48.1:17849, oldConf=.
+
+2023-09-05 21:17:16,036 WARN RPC server is not started in RaftGroupService.
+
+2023-09-05 21:17:16,036 INFO Start the RaftGroupService successfully.
+
+2023-09-05 21:17:16,038 INFO onLeaderStart: term=1.
+
+2023-09-05 21:17:16,041 INFO The number of active nodes increment to 3.
+
+2023-09-05 21:17:16,066 INFO Creating new channel to: 172.20.48.1:17849.
+
+2023-09-05 21:17:16,073 INFO Starts FSMCaller successfully.
+
+2023-09-05 21:17:16,073 WARN No data for snapshot reader C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot.
+
+2023-09-05 21:17:16,074 INFO Node <naming_service_metadata/172.20.48.1:17849> init, term=0, lastLogId=LogId [index=0, term=0], conf=172.20.48.1:17849, oldConf=.
+
+2023-09-05 21:17:16,074 INFO Node <naming_service_metadata/172.20.48.1:17849> start vote and grant vote self, term=0.
+
+2023-09-05 21:17:16,077 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\meta-data on windows.
+
+2023-09-05 21:17:16,077 INFO Save raft meta, path=C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\meta-data, term=1, votedFor=172.20.48.1:17849, cost time=3 ms
+
+2023-09-05 21:17:16,078 INFO Node <naming_service_metadata/172.20.48.1:17849> become leader of group, term=1, conf=172.20.48.1:17849, oldConf=.
+
+2023-09-05 21:17:16,078 WARN RPC server is not started in RaftGroupService.
+
+2023-09-05 21:17:16,078 INFO Start the RaftGroupService successfully.
+
+2023-09-05 21:17:16,079 INFO onLeaderStart: term=1.
+
+2023-09-05 21:17:16,107 INFO The channel 172.20.48.1:17849 is in state: CONNECTING.
+
+2023-09-05 21:17:16,262 INFO The channel 172.20.48.1:17849 is in state: READY.
+
+2023-09-05 21:17:16,262 INFO The channel 172.20.48.1:17849 has successfully established.
+
+2023-09-05 21:34:38,849 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp on windows.
+
+2023-09-05 21:34:38,849 INFO Deleting snapshot C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_1.
+
+2023-09-05 21:34:38,849 INFO Renaming C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\temp to C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot\snapshot_1.
+
+2023-09-05 21:34:38,850 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\snapshot on windows.
+
+2023-09-05 21:36:42,702 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp on windows.
+
+2023-09-05 21:36:42,702 INFO Deleting snapshot C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_1.
+
+2023-09-05 21:36:42,702 INFO Renaming C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\temp to C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot\snapshot_1.
+
+2023-09-05 21:36:42,704 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\snapshot on windows.
+
+2023-09-05 21:41:01,099 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp on windows.
+
+2023-09-05 21:41:01,099 INFO Deleting snapshot C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_1.
+
+2023-09-05 21:41:01,099 INFO Renaming C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\temp to C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot\snapshot_1.
+
+2023-09-05 21:41:01,100 WARN Unable to fsync directory C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\snapshot on windows.
+
+2023-09-05 22:04:38,842 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 1 to 2, cost 1 ms.
+
+2023-09-05 22:06:42,705 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 1 to 2, cost 1 ms.
+
+2023-09-05 22:11:01,104 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 1 to 2, cost 0 ms.
+
+2023-09-05 22:34:38,844 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 22:36:42,711 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 22:41:01,116 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 23:04:38,844 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 23:06:42,710 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 23:11:01,129 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 23:34:38,857 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 23:36:42,722 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-05 23:41:01,136 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+

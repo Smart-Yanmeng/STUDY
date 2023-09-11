@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+servo-core-0.12.21.jar>central=
+servo-core-0.12.21.jar>huaweicloud=
+servo-core-0.12.21.pom>central=
+servo-core-0.12.21.pom>huaweicloud=

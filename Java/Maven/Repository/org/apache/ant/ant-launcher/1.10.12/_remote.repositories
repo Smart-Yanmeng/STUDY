@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:51:23 CST 2023
+ant-launcher-1.10.12-sources.jar>public=
+ant-launcher-1.10.12.jar>public=
+ant-launcher-1.10.12.pom>public=

@@ -1,0 +1,138 @@
+2023-09-06 00:04:38,872 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 00:06:42,724 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 00:11:01,139 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 00:34:38,877 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 00:36:42,731 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 00:41:01,150 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 01:04:38,877 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 01:06:42,745 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 01:11:01,155 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 01:34:38,889 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 01:36:42,754 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 01:41:01,172 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 02:04:38,894 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 02:06:42,762 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 1 ms.
+
+2023-09-06 02:11:01,182 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 02:34:38,906 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 02:36:42,772 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 02:41:01,185 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 03:04:38,908 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 03:06:42,778 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 03:11:01,187 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 03:34:38,914 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 03:36:42,777 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 03:41:01,198 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 04:04:38,929 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 04:06:42,781 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 04:11:01,212 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 04:34:38,932 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 04:36:42,788 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 04:41:01,224 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 05:04:38,935 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 05:06:42,790 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 05:11:01,230 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 05:34:38,943 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 05:36:42,795 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 05:41:01,242 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 06:04:38,957 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 06:06:42,795 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 06:11:01,249 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 06:34:38,966 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 1 ms.
+
+2023-09-06 06:36:42,797 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 06:41:01,257 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 07:04:38,970 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 07:06:42,808 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 07:11:01,265 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 07:34:38,972 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 07:36:42,809 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 1 ms.
+
+2023-09-06 07:41:01,271 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 08:04:38,975 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 08:06:42,821 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 08:11:01,277 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 08:34:38,978 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 08:36:42,824 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 08:41:01,284 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 09:04:38,991 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 09:06:42,823 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 09:11:01,298 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 09:34:38,998 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 09:36:42,831 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 09:41:01,298 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 10:04:39,004 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 10:06:42,841 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 10:11:01,306 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 10:34:39,014 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 10:36:42,852 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 10:41:01,309 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 11:04:39,019 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_instance_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 11:06:42,861 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_service_metadata\log from log index 2 to 2, cost 0 ms.
+
+2023-09-06 11:11:01,310 INFO Truncated prefix logs in data path: C:\Users\yorky\Desktop\nacos\data\protocol\raft\naming_persistent_service_v2\log from log index 2 to 2, cost 0 ms.
+

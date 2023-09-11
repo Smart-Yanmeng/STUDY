@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:52:40 CST 2023
+antlr4-runtime-4.5.3-sources.jar>public=
+antlr4-runtime-4.5.3.jar>public=
+antlr4-runtime-4.5.3.pom>public=

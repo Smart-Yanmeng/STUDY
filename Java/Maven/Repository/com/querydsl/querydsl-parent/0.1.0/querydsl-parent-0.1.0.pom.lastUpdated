@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Aug 12 10:04:22 CST 2023
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1691805862619
+http\://0.0.0.0/.error=Could not transfer artifact com.querydsl\:querydsl-parent\:pom\:0.1.0 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [spring roo repository (http\://spring-roo-repository.springsource.org/release, default, releases+snapshots), querydsl (http\://www.querydsl.com/maven, default, releases+snapshots)]
+https\://repo.maven.apache.org/maven2/.lastUpdated=1691805862737

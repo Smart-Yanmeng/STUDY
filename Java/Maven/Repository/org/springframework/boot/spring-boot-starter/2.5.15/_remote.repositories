@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:51:38 CST 2023
+spring-boot-starter-2.5.15-sources.jar>public=
+spring-boot-starter-2.5.15.jar>public=
+spring-boot-starter-2.5.15.pom>public=

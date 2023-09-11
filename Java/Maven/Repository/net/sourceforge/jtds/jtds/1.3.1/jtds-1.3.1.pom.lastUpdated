@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Sat Aug 12 10:05:44 CST 2023
+@default-maven-default-http-blocker-http\://0.0.0.0/.lastUpdated=1691805944418
+http\://0.0.0.0/.error=Could not transfer artifact net.sourceforge.jtds\:jtds\:pom\:1.3.1 from/to maven-default-http-blocker (http\://0.0.0.0/)\: Blocked mirror for repositories\: [terracotta-snapshots (http\://www.terracotta.org/download/reflector/snapshots, default, releases+snapshots), terracotta-releases (http\://www.terracotta.org/download/reflector/releases, default, releases+snapshots)]
+https\://repo.maven.apache.org/maven2/.lastUpdated=1691805944506

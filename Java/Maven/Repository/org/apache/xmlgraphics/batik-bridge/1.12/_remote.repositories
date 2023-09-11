@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:52:27 CST 2023
+batik-bridge-1.12-sources.jar>public=
+batik-bridge-1.12.jar>public=
+batik-bridge-1.12.pom>public=

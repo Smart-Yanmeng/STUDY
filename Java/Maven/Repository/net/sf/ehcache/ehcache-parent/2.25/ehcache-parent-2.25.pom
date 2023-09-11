@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>net.sf.ehcache</groupId>
+  <artifactId>ehcache-parent</artifactId>
+  <packaging>pom</packaging>
+  <version>2.25</version>
+
+  <name>Ehcache Parent</name>
+  <description>Ehcache is a widely used, pure Java, in-process, distributed cache</description>
+  <url>http://ehcache.org</url>
+  <inceptionYear>2003</inceptionYear>
+  <organization>
+    <name>Terracotta, Inc.</name>
+    <url>http://www.terracotta.org</url>
+  </organization>
+
+  <properties>
+    <!-- NOTE: to override these when using maven release plugin use this format:
+      -Darguments=-Djava.build.version=1.7 -->
+    <java.build.version>1.8</java.build.version>
+    <!-- The vendor value to look for in toolchains.xml -->
+    <java.build.vendor>zulu</java.build.vendor>
+
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <surefire.version>3.0.0-M4</surefire.version> <!-- will be disabled in favor of maven-forge-plugin -->
+    <maven-forge-plugin.version>1.2.30</maven-forge-plugin.version>
+    <java.test.version>${java.build.version}</java.test.version>
+    <java.test.vendor>${java.build.vendor}</java.test.vendor>
+    <skipDeploy>false</skipDeploy>
+    <skipJavadoc>false</skipJavadoc>
+
+    <checkstyle-groupId>org.terracotta.checkstyle</checkstyle-groupId>
+    <checkstyle-artifactId>terracotta-checkstyle</checkstyle-artifactId>
+    <checkstyle-version>1.4</checkstyle-version>
+    <checkstyle-config-file>terracotta-checkstyle/checkstyle.xml</checkstyle-config-file>
+    <checkstyle-header-file>terracotta-checkstyle/header.txt</checkstyle-header-file>
+
+    <terracotta-os-snapshots-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-os-snapshots</terracotta-os-snapshots-url>
+    <terracotta-snapshots-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-snapshots</terracotta-snapshots-url>
+    <terracotta-ee-snapshots-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-ee-snapshots</terracotta-ee-snapshots-url>
+    <terracotta-staging-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-staging</terracotta-staging-url>
+    <terracotta-os-releases-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-os-releases</terracotta-os-releases-url>
+    <terracotta-releases-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-releases</terracotta-releases-url>
+    <terracotta-ee-releases-url>http://nexus.terracotta.eur.ad.sag/content/repositories/terracotta-ee-releases</terracotta-ee-releases-url>
+    <terracotta-nexus-staging-url>http://nexus.terracotta.eur.ad.sag/service/local/staging/deploy/maven2</terracotta-nexus-staging-url>
+  </properties>
+
+  <build>
+    <pluginManagement>
+      <plugins>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-release-plugin</artifactId>
+          <version>2.5.3</version>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>3.1.1</version>
+          <configuration>
+            <skip>${skipJavadoc}</skip>
+          </configuration>
+          <executions>
+            <execution>
+              <id>attach-javadocs</id>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-source-plugin</artifactId>
+          <version>3.1.0</version>
+          <executions>
+            <execution>
+              <id>attach-sources</id>
+              <phase>package</phase>
+              <goals>
+                <goal>jar</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>findbugs-maven-plugin</artifactId>
+          <version>3.0.5</version>
+          <configuration>
+            <findbugsXmlOutput>true</findbugsXmlOutput>
+            <xmlOutput>true</xmlOutput>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>3.0.0-M1</version>
+          <configuration>
+            <skip>${skipDeploy}</skip>
+          </configuration>
+        </plugin>
+
+        <plugin>
+          <groupId>org.terracotta</groupId>
+          <artifactId>maven-forge-plugin</artifactId>
+          <version>${maven-forge-plugin.version}</version>
+          <configuration>
+            <jdk>
+              <version>${java.test.version}</version>
+              <vendor>${java.test.vendor}</vendor>
+            </jdk>
+          </configuration>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+
+    <plugins>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.1</version>
+        <configuration>
+          <source>${java.build.version}</source>
+          <target>${java.build.version}</target>
+        </configuration>
+      </plugin>
+      <!-- Ensure that we are compiling with the correct JDK even if we are running on a later version -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-toolchains-plugin</artifactId>
+        <version>3.0.0</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>toolchain</goal>
+            </goals>
+          </execution>
+        </executions>
+        <configuration>
+          <toolchains>
+            <jdk>
+              <version>${java.build.version}</version>
+              <vendor>${java.build.vendor}</vendor>
+            </jdk>
+          </toolchains>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-deploy-plugin</artifactId>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>${surefire.version}</version>
+        <configuration>
+          <skip>true</skip>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+
+  <profiles>
+    <profile>
+      <!-- Profile to sign artifacts with a PGP key (using GPG). -->
+      <id>sign-artifacts</id>
+      <activation>
+        <property>
+          <name>performRelease</name>
+          <value>true</value>
+        </property>
+      </activation>
+      <build>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.4</version>
+            <executions>
+              <execution>
+                <id>sign-artifacts</id>
+                <phase>verify</phase>
+                <goals>
+                  <goal>sign</goal>
+                </goals>
+                <configuration>
+                  <keyname>Terracotta Release Engineer</keyname>
+                </configuration>
+              </execution>
+            </executions>
+          </plugin>
+        </plugins>
+      </build>
+    </profile>
+    <profile>
+      <id>deploy-sonatype</id>
+      <distributionManagement>
+        <repository>
+          <id>sonatype-nexus-staging</id>
+          <url>http://oss.sonatype.org/service/local/staging/deploy/maven2</url>
+        </repository>
+        <snapshotRepository>
+          <id>sonatype-nexus-snapshots</id>
+          <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+      </distributionManagement>
+    </profile>
+  </profiles>
+
+  <distributionManagement>
+    <repository>
+      <id>terracotta-os-releases</id>
+      <name>Terracotta OS Releases Repository</name>
+      <url>${terracotta-os-releases-url}</url>
+    </repository>
+    <snapshotRepository>
+      <id>terracotta-os-snapshots</id>
+      <uniqueVersion>false</uniqueVersion>
+      <name>Terracotta OS Snapshots Repository</name>
+      <url>${terracotta-os-snapshots-url}</url>
+    </snapshotRepository>
+  </distributionManagement>
+
+  <pluginRepositories>
+    <pluginRepository>
+      <id>terracotta-releases</id>
+      <url>http://www.terracotta.org/download/reflector/releases</url>
+    </pluginRepository>
+  </pluginRepositories>
+
+  <developers>
+    <developer>
+      <id>gregluck</id>
+      <name>Greg Luck</name>
+      <roles>
+        <role>Maintainer</role>
+        <role>Developer</role>
+      </roles>
+      <timezone>10</timezone>
+      <properties>
+        <skype>gregrluck</skype>
+        <yahoo>gregrluck</yahoo>
+      </properties>
+    </developer>
+    <developer>
+      <id>ssuravarapu</id>
+      <name>Surya Suravarapu</name>
+      <url />
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>-5</timezone>
+    </developer>
+    <developer>
+      <id>oneovthafew</id>
+      <name>Gavin King</name>
+      <roles>
+        <role>Developer</role>
+      </roles>
+      <timezone>10</timezone>
+    </developer>
+    <developer>
+      <name>Mauro Talevi</name>
+      <email />
+      <url />
+      <organization />
+      <organizationUrl />
+      <roles>
+        <role>Maven Guru</role>
+      </roles>
+      <timezone />
+    </developer>
+  </developers>
+
+  <contributors>
+    <contributor>
+      <name>Adam Murdoch</name>
+      <email />
+      <url />
+      <organization />
+      <organizationUrl />
+      <roles>
+        <role>Former Developer</role>
+      </roles>
+      <timezone>10</timezone>
+    </contributor>
+    <contributor>
+      <name>Ben Houston</name>
+      <email />
+      <url />
+      <organization />
+      <organizationUrl />
+      <roles />
+      <timezone />
+      <properties />
+    </contributor>
+    <contributor>
+      <name>Claus Ibsen</name>
+      <email />
+      <url />
+      <organization />
+      <organizationUrl />
+      <roles />
+      <timezone />
+      <properties>
+        <contribution>Patches</contribution>
+      </properties>
+    </contributor>
+    <contributor>
+      <name>Jody Brownell</name>
+      <email />
+      <url />
+      <organization />
+      <organizationUrl />
+      <roles />
+      <timezone />
+      <properties>
+        <contribution>Patches</contribution>
+      </properties>
+    </contributor>
+  </contributors>
+
+  <licenses>
+    <license>
+      <name>The Apache Software License, Version 2.0</name>
+      <url>http://www.ehcache.org/about/license</url>
+      <distribution>repo</distribution>
+      <comments>The license is the standard wording from the Apache license.
+                Terracotta, Inc. is the copyright owner.
+      </comments>
+    </license>
+  </licenses>
+
+  <issueManagement>
+    <system>Terracotta's JIRA</system>
+    <url>https://jira.terracotta.org/jira/browse/EHC</url>
+  </issueManagement>
+
+  <mailingLists>
+    <mailingList>
+      <name>Ehcache Mailing List</name>
+      <subscribe>https://groups.google.com/forum/#!forum/ehcache-users</subscribe>
+      <unsubscribe>https://groups.google.com/forum/#!forum/ehcache-users</unsubscribe>
+      <post>ehcache-users@googlegroups.com</post>
+      <archive>https://groups.google.com/forum/#!forum/ehcache-users</archive>
+    </mailingList>
+    <mailingList>
+      <name>Old SourceForge Mailing List - closed due to spam attacks</name>
+      <subscribe>http://lists.sourceforge.net/lists/listinfo/ehcache-list</subscribe>
+      <unsubscribe>http://lists.sourceforge.net/lists/listinfo/ehcache-list</unsubscribe>
+      <post>ehcache-list@lists.sourceforge.net</post>
+      <archive>http://sourceforge.net/mailarchive/forum.php?forum=ehcache-list</archive>
+    </mailingList>
+  </mailingLists>
+
+  <scm>
+    <connection>scm:svn:http://svn.terracotta.org/svn/ehcache/tags/ehcache-parent-2.25</connection>
+    <developerConnection>scm:svn:https://svn.terracotta.org/repo/ehcache/tags/ehcache-parent-2.25</developerConnection>
+    <url>http://svn.terracotta.org/svn/ehcache/tags/ehcache-parent-2.25</url>
+  </scm>
+
+</project>

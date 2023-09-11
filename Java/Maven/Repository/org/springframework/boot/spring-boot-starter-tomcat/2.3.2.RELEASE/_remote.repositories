@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+spring-boot-starter-tomcat-2.3.2.RELEASE.jar>central=
+spring-boot-starter-tomcat-2.3.2.RELEASE.jar>huaweicloud=
+spring-boot-starter-tomcat-2.3.2.RELEASE.pom>central=
+spring-boot-starter-tomcat-2.3.2.RELEASE.pom>huaweicloud=

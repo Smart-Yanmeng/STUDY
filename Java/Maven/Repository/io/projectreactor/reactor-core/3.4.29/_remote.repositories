@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:52:08 CST 2023
+reactor-core-3.4.29-sources.jar>public=
+reactor-core-3.4.29.jar>public=
+reactor-core-3.4.29.pom>public=

@@ -1,0 +1,24 @@
+2023-09-06 00:02:32,395 INFO DEFAULT_GROUP@@clazz is changed, add it to push queue.
+
+2023-09-06 00:02:32,397 INFO serviceName: DEFAULT_GROUP@@clazz@@DEFAULT changed, schedule push for: 192.168.31.220:57649, agent: Nacos-Java-Client:v1.4.2, key: 192.168.31.220,57649,236990188783000
+
+2023-09-06 00:02:32,398 INFO DEFAULT_GROUP@@clazz is changed, add it to push queue.
+
+2023-09-06 00:02:32,398 INFO send udp packet: 192.168.31.220,57649,236990188783000
+
+2023-09-06 00:02:32,398 INFO serviceName: DEFAULT_GROUP@@clazz changed, schedule push for: 192.168.31.220:57650, agent: Nacos-Java-Client:v1.4.2, key: 192.168.31.220,57650,236990189093400
+
+2023-09-06 00:02:32,399 INFO send udp packet: 192.168.31.220,57650,236990189093400
+
+2023-09-06 00:02:32,400 INFO [PUSH-SUCC] 5ms, all delay time 552ms, SLA 552ms, Service{namespace='public', group='DEFAULT_GROUP', name='clazz', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.31.220
+
+2023-09-06 00:02:32,401 INFO [PUSH-SUCC] 3ms, all delay time 553ms, SLA 553ms, Service{namespace='public', group='DEFAULT_GROUP', name='clazz', ephemeral=true, revision=4}, originalSize=0, DataSize=0, target=192.168.31.220
+
+2023-09-06 00:02:34,447 INFO DEFAULT_GROUP@@student is changed, add it to push queue.
+
+2023-09-06 00:02:34,447 INFO serviceName: DEFAULT_GROUP@@student@@DEFAULT changed, schedule push for: 192.168.31.220:57650, agent: Nacos-Java-Client:v1.4.2, key: 192.168.31.220,57650,236992238790100
+
+2023-09-06 00:02:34,447 INFO send udp packet: 192.168.31.220,57650,236992238790100
+
+2023-09-06 00:02:34,449 INFO [PUSH-SUCC] 2ms, all delay time 573ms, SLA 573ms, Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=12}, originalSize=0, DataSize=0, target=192.168.31.220
+

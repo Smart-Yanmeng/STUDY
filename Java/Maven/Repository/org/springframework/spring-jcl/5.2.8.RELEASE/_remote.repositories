@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+spring-jcl-5.2.8.RELEASE.jar>huaweicloud=
+spring-jcl-5.2.8.RELEASE.jar>central=
+spring-jcl-5.2.8.RELEASE.pom>central=
+spring-jcl-5.2.8.RELEASE.pom>huaweicloud=

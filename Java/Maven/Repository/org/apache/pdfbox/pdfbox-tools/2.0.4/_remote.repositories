@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:50:57 CST 2023
+pdfbox-tools-2.0.4-sources.jar>public=
+pdfbox-tools-2.0.4.jar>public=
+pdfbox-tools-2.0.4.pom>public=

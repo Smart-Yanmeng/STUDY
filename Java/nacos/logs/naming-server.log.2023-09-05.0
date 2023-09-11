@@ -1,0 +1,70 @@
+2023-09-05 21:17:15,467 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.CmdbSelectorContextBuilder) contextType(CMDB) successfully.
+
+2023-09-05 21:17:15,467 INFO [SelectorManager] Load SelectorContextBuilder(class com.alibaba.nacos.naming.selector.context.NoneSelectorContextBuilder) contextType(NONE) successfully.
+
+2023-09-05 21:17:15,468 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.LabelSelector) type(label) contextType(CMDB) successfully.
+
+2023-09-05 21:17:15,468 INFO [SelectorManager] Load Selector(class com.alibaba.nacos.naming.selector.NoneSelector) type(none) contextType(NONE) successfully.
+
+2023-09-05 21:17:16,138 INFO Load instance extension handler []
+
+2023-09-05 21:49:57,754 INFO Client connection 192.168.31.220:51232#true connect
+
+2023-09-05 21:49:57,831 INFO Client connection 172.20.48.1:10023#true connect
+
+2023-09-05 21:49:57,832 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='clazz', ephemeral=true, revision=0}, 172.20.48.1:10023#true
+
+2023-09-05 21:50:06,124 INFO Client connection 192.168.31.220:60171#true connect
+
+2023-09-05 21:50:06,176 INFO Client connection 172.20.48.1:10022#true connect
+
+2023-09-05 21:50:06,177 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=0}, 172.20.48.1:10022#true
+
+2023-09-05 23:06:35,946 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=1}, 172.20.48.1:10022#true
+
+2023-09-05 23:06:54,677 INFO Client connection 192.168.31.220:64916#true connect
+
+2023-09-05 23:06:54,723 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=2}, 172.20.48.1:10022#true
+
+2023-09-05 23:07:12,647 INFO Client connection 192.168.31.220:60171#true disconnect, remove instances and subscribers
+
+2023-09-05 23:29:47,489 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=3}, 172.20.48.1:10022#true
+
+2023-09-05 23:29:57,344 INFO Client connection 192.168.31.220:59823#true connect
+
+2023-09-05 23:29:57,394 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=4}, 172.20.48.1:10022#true
+
+2023-09-05 23:30:19,851 INFO Client connection 192.168.31.220:64916#true disconnect, remove instances and subscribers
+
+2023-09-05 23:43:51,375 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=5}, 172.20.48.1:10022#true
+
+2023-09-05 23:44:03,402 INFO Client connection 192.168.31.220:58551#true connect
+
+2023-09-05 23:44:03,448 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=6}, 172.20.48.1:10022#true
+
+2023-09-05 23:44:21,200 INFO Client connection 192.168.31.220:59823#true disconnect, remove instances and subscribers
+
+2023-09-05 23:47:38,182 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=7}, 172.20.48.1:10022#true
+
+2023-09-05 23:47:53,205 INFO Client connection 192.168.31.220:64742#true connect
+
+2023-09-05 23:47:53,260 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=8}, 172.20.48.1:10022#true
+
+2023-09-05 23:48:06,508 INFO Client connection 192.168.31.220:58551#true disconnect, remove instances and subscribers
+
+2023-09-05 23:48:09,178 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=9}, 172.20.48.1:10022#true
+
+2023-09-05 23:48:09,202 INFO Client remove for service Service{namespace='public', group='DEFAULT_GROUP', name='clazz', ephemeral=true, revision=1}, 172.20.48.1:10023#true
+
+2023-09-05 23:48:29,910 INFO Client connection 192.168.31.220:57649#true connect
+
+2023-09-05 23:48:29,960 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='clazz', ephemeral=true, revision=2}, 172.20.48.1:10023#true
+
+2023-09-05 23:48:35,139 INFO Client connection 192.168.31.220:57650#true connect
+
+2023-09-05 23:48:35,190 INFO Client change for service Service{namespace='public', group='DEFAULT_GROUP', name='student', ephemeral=true, revision=10}, 172.20.48.1:10022#true
+
+2023-09-05 23:48:36,555 INFO Client connection 192.168.31.220:51232#true disconnect, remove instances and subscribers
+
+2023-09-05 23:48:46,576 INFO Client connection 192.168.31.220:64742#true disconnect, remove instances and subscribers
+

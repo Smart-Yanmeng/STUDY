@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.luhuiguo</groupId>
+    <artifactId>aspose-words</artifactId>
+    <version>23.1</version>
+    <packaging>pom</packaging>
+
+    <name>Aspose.Words for Java</name>
+    <description>
+        Aspose.Words for Java is a full-featured Word Processing API.
+        It allows to read, modify, convert, generate, format, render
+        and print human-readable documents. Aspose.Words for Java
+        supports all the popular Word Processing file formats.
+    </description>
+    <url>https://products.aspose.com/words/java</url>
+    <scm>
+        <url>https://github.com/aspose/aspose-words-java</url>
+    </scm>
+    <issueManagement>
+        <url>https://forum.aspose.com/c/words</url>
+    </issueManagement>
+    <licenses>
+        <license>
+            <name>Aspose EULA</name>
+            <url>https://company.aspose.com/legal/eula</url>
+        </license>
+    </licenses>
+	<properties>
+		<jogl.version>2.3.2</jogl.version>
+	</properties>
+
+    <organization>
+        <name>Aspose Pty Ltd</name>
+        <url>https://www.aspose.com/</url>
+    </organization>
+    <developers>
+        <developer>
+            <id>aspose</id>
+            <name>Aspose Pty Ltd</name>
+            <email>aspose@aspose.com</email>
+        </developer>
+    </developers>
+
+    <dependencies>
+
+		<!-- JogAmp JOGL library is used for hardware-accelerated OpenGL rendering. -->
+		<!-- JogAmp's .pom configured for "portability": it just loads all native jar files for all supported platforms. -->
+		<!-- See https://jogamp.org/wiki/index.php/Maven -->
+		<!-- If you don't like these spare jars on your disk, you have 2 options: -->
+		<!-- 1. Remove both org.jogamp.jogl and org.jogamp.gluegen dependencies if you don't need OpenGL. -->
+		<!-- 2. OR Edit the full list of JoGL dependencies to preserve only needed jars. (the full commented-out list is below) -->
+		
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all-main</artifactId>
+			<version>${jogl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt-main</artifactId>
+			<version>${jogl.version}</version>
+		</dependency>
+
+<!--
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all</artifactId>
+			<version>${jogl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-windows-i586</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-windows-amd64</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-linux-i586</classifier>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jogamp.jogl</groupId>
+			<artifactId>jogl-all</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-linux-amd64</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt</artifactId>
+			<version>${jogl.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-windows-i586</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-windows-amd64</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-linux-i586</classifier>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.jogamp.gluegen</groupId>
+			<artifactId>gluegen-rt</artifactId>
+			<version>${jogl.version}</version>
+			<classifier>natives-linux-amd64</classifier>
+		</dependency>
+-->
+
+    </dependencies>
+</project>

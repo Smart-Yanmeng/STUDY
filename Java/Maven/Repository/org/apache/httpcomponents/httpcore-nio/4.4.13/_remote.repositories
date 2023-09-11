@@ -1,0 +1,6 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Tue Sep 05 22:59:43 CST 2023
+httpcore-nio-4.4.13.jar>huaweicloud=
+httpcore-nio-4.4.13.jar>central=
+httpcore-nio-4.4.13.pom>central=
+httpcore-nio-4.4.13.pom>huaweicloud=

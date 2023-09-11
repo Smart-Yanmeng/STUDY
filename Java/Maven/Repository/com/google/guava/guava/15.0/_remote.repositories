@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:50:10 CST 2023
+guava-15.0-sources.jar>public=
+guava-15.0.jar>public=
+guava-15.0.pom>public=

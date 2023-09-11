@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Fri Aug 11 16:50:15 CST 2023
+xmlgraphics-commons-2.3-sources.jar>public=
+xmlgraphics-commons-2.3.jar>public=
+xmlgraphics-commons-2.3.pom>public=
