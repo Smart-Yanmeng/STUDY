@@ -15,5 +15,3 @@ for name in age:
 print("before del ->", age)
 del age['York']
 print("after del ->", age)
-
-
