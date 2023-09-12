@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 05 20:43:27 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
+spring-beans-5.3.29.pom>huaweicloud=
 spring-beans-5.3.29.jar>central=
 spring-beans-5.3.29.pom>central=
+spring-beans-5.3.29.jar>huaweicloud=

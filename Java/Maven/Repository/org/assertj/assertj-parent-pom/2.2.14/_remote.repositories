@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:47:50 CST 2023
+#Tue Sep 12 21:56:00 CST 2023
 assertj-parent-pom-2.2.14.pom>central=
+assertj-parent-pom-2.2.14.pom>huaweicloud=

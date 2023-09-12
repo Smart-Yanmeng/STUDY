@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 05 20:42:45 CST 2023
+#Tue Sep 12 21:55:54 CST 2023
 spring-integration-bom-5.5.18.pom>public=
 spring-integration-bom-5.5.18.pom>central=
+spring-integration-bom-5.5.18.pom>huaweicloud=

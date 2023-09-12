@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 05 20:43:46 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
+spring-boot-2.7.15.jar>huaweicloud=
 spring-boot-2.7.15.jar>central=
 spring-boot-2.7.15.pom>central=
+spring-boot-2.7.15.pom>huaweicloud=

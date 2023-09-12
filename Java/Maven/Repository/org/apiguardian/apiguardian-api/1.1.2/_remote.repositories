@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 20:04:28 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
 apiguardian-api-1.1.2.pom>central=
 apiguardian-api-1.1.2.jar>central=
+apiguardian-api-1.1.2.pom>huaweicloud=
+apiguardian-api-1.1.2.jar>huaweicloud=

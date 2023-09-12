@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 20:04:28 CST 2023
-snakeyaml-1.30.pom>central=
+#Tue Sep 12 21:56:02 CST 2023
 snakeyaml-1.30.jar>central=
+snakeyaml-1.30.pom>huaweicloud=
+snakeyaml-1.30.pom>central=
+snakeyaml-1.30.jar>huaweicloud=

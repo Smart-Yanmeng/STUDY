@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:46:51 CST 2023
-mockito-bom-4.5.1.pom>central=
+#Tue Sep 12 21:55:53 CST 2023
 mockito-bom-4.5.1.pom>public=
+mockito-bom-4.5.1.pom>central=
+mockito-bom-4.5.1.pom>huaweicloud=

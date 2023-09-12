@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:46:50 CST 2023
+#Tue Sep 12 21:55:53 CST 2023
+log4j-bom-2.17.2.pom>huaweicloud=
 log4j-bom-2.17.2.pom>central=
 log4j-bom-2.17.2.pom>public=

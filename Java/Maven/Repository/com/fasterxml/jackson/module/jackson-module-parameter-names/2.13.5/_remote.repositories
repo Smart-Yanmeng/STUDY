@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 05 20:43:07 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
+jackson-module-parameter-names-2.13.5.jar>huaweicloud=
 jackson-module-parameter-names-2.13.5.jar>central=
 jackson-module-parameter-names-2.13.5.pom>central=
+jackson-module-parameter-names-2.13.5.pom>huaweicloud=

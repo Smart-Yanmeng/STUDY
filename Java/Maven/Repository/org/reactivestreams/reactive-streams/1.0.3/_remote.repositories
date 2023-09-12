@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:27:26 CST 2023
-reactive-streams-1.0.3.jar>public=
+#Tue Sep 12 12:11:59 CST 2023
 reactive-streams-1.0.3-sources.jar>public=
+reactive-streams-1.0.3.jar>huaweicloud=
+reactive-streams-1.0.3.jar>public=
+reactive-streams-1.0.3.pom>huaweicloud=
 reactive-streams-1.0.3.pom>public=

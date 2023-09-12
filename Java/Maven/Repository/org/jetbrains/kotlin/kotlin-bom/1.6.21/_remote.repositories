@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:46:49 CST 2023
+#Tue Sep 12 21:55:53 CST 2023
+kotlin-bom-1.6.21.pom>huaweicloud=
 kotlin-bom-1.6.21.pom>central=
 kotlin-bom-1.6.21.pom>public=

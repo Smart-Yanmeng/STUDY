@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 20:18:04 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
+assertj-core-3.22.0.jar>huaweicloud=
+assertj-core-3.22.0.pom>huaweicloud=
 assertj-core-3.22.0.jar>central=
 assertj-core-3.22.0.pom>central=

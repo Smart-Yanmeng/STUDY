@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:10:33 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
+junit-jupiter-params-5.8.2.pom>huaweicloud=
+junit-jupiter-params-5.8.2.jar>huaweicloud=
 junit-jupiter-params-5.8.2.jar>central=
 junit-jupiter-params-5.8.2.pom>central=

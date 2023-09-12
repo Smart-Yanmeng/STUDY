@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:46:48 CST 2023
-jersey-bom-2.35.pom>central=
+#Tue Sep 12 21:55:53 CST 2023
 jersey-bom-2.35.pom>public=
+jersey-bom-2.35.pom>huaweicloud=
+jersey-bom-2.35.pom>central=

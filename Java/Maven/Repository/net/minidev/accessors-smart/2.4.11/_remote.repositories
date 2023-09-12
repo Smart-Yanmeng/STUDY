@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 04 12:01:17 CST 2023
+#Tue Sep 12 21:56:02 CST 2023
+accessors-smart-2.4.11.jar>huaweicloud=
 accessors-smart-2.4.11.jar>central=
 accessors-smart-2.4.11.pom>central=
+accessors-smart-2.4.11.pom>huaweicloud=

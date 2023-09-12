@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:46:52 CST 2023
-simpleclient_bom-0.15.0.pom>public=
+#Tue Sep 12 21:55:54 CST 2023
 simpleclient_bom-0.15.0.pom>central=
+simpleclient_bom-0.15.0.pom>public=
+simpleclient_bom-0.15.0.pom>huaweicloud=
