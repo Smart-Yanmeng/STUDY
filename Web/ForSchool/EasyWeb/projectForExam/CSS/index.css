@@ -1,0 +1,1003 @@
+/* SCREEN-WIDTH > 1140px */
+@media screen and (min-width: 1140px) {
+    #header {
+        width: 100%;
+        height: 191px;
+    }
+
+    #header .head-bar {
+        width: 100%;
+        height: 35px;
+
+        line-height: 35px;
+
+        background-color: #cdc8b1;
+    }
+
+    #header .head-bar .header-box {
+        height: 35px;
+    }
+
+    #header .head-bar .body {
+        background-color: #cdc8b1;
+    }
+
+    #header .head-bar .header-box .search-box {
+        width: 220px;
+        height: 25px;
+        margin: auto 0 auto 0;
+
+        display: flex;
+        background-image: url(./../IMAGE/search.png);
+    }
+
+    #header .head-bar .header-box .search-box .input {
+        width: 189px;
+        height: 25px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #header .head-bar .header-box .search-box .input label {
+        margin: auto 0 auto 0;
+    }
+
+    #header .head-bar .header-box .search-box .input input {
+        width: 180px;
+        height: 15px;
+        margin: 0 0 0 5px;
+    }
+
+    #header .head-bar .header-box .search-box .submit {
+        width: 28px;
+        height: 25px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #header .head-bar .header-box .search-box .submit input {
+        width: 28px;
+        height: 22px;
+        padding: 1px 6px;
+        background: none;
+    }
+
+    #header .head-image {
+        width: 100%;
+        height: 112px;
+    }
+
+    #header .header-image-box {
+        background: url(./../IMAGE/head.png);
+    }
+
+    #header .nav {
+        width: 100%;
+        height: 44px;
+    }
+
+    #header .nav .nav-box .nav-btn {
+        width: 127px;
+
+        font-size: 15px;
+        text-align: center;
+        line-height: 44px;
+    }
+
+    #header .nav .nav-box .nav-btn:hover {
+        color: #ff9900;
+    }
+
+    #header .nav .nav-box .nav-btn:nth-child(1) {
+        border-radius: 5px 0 0 5px;
+    }
+
+    #header .nav .nav-box .nav-btn:nth-child(9) {
+        border-radius: 0 5px 5px 0;
+    }
+
+    #container {
+        width: 100%;
+        height: 745px;
+    }
+
+    #container .mod-first {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 校园新闻 */
+    #container .campus-news {
+        width: 744px;
+        height: 271px;
+
+        margin: 16px 0 0 16px;
+    }
+
+    #container .campus-news .title {
+        width: 744px;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .campus-news .title .more {
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .campus-news .content-box {
+        width: 744px;
+        height: 237px;
+    }
+
+    #container .campus-news .content-box .rotation {
+        width: 313px;
+        height: 207px;
+        margin: 15px 0;
+
+        position: relative;
+    }
+
+    #container .campus-news .content-box .rotation .image-select {
+        width: 132px;
+
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+    }
+
+    #container .campus-news .content-box .rotation .image-select a {
+        width: 18px;
+        height: 18px;
+
+        line-height: 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #ffffff;
+
+        border: 1px solid #ffffff;
+        background-color: #6c6d6e;
+        opacity: 0.7;
+    }
+
+    #container .campus-news .content-box .rotation img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container .campus-news .content-box .news-list {
+        width: 400px;
+        height: 207px;
+        margin: 15px 0;
+    }
+
+    #container .campus-news .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .campus-news .content-box .news-list .news-box .news-title {
+        width: 320px;
+        height: 24px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .campus-news .content-box .news-list .news-box .news-date {
+        line-height: 24px;
+    }
+
+    #container .campus-news .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    /* 媒体聚焦 */
+    #container .media-focus .title {
+        width: 318px;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .media-focus .title .more {
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .media-focus {
+        width: 318px;
+        height: 256px;
+
+        margin: 16px 16px 16px 0;
+    }
+
+    #container .media-focus .content-box .news-list {
+        width: 400px;
+        height: 207px;
+        margin: 15px 0;
+    }
+
+    #container .media-focus .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .media-focus .content-box .news-list .news-box .news-title {
+        width: 300px;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .media-focus .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    #container .mod-second {
+        height: 258px;
+        padding: 10px 0;
+    }
+
+    /* 通知通告 */
+    #container .notification .title {
+        width: 314px;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .notification .title .more {
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .notification {
+        width: 346px;
+        height: 238px;
+        padding: 26px 16px 0 16px;
+
+        float: left;
+    }
+
+    #container .notification .content-box .news-list {
+        width: 314px;
+        height: 188px;
+
+        padding: 5px 0;
+    }
+
+    #container .notification .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .notification .content-box .news-list .news-box .news-title {
+        width: 247px;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .notification .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    #container .notification .content-box .news-list .news-box .news-date {
+        line-height: 24px;
+    }
+
+    /* 学习新思想 */
+    #container .learn-news .title {
+        width: 398px;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .learn-news .title .more {
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .learn-news {
+        width: 430px;
+        height: 238px;
+        padding: 16px 16px 0 16px;
+    }
+
+    #container .learn-news .content-box .news-list {
+        width: 389px;
+        height: 188px;
+
+        padding: 5px 0;
+    }
+
+    #container .learn-news .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .learn-news .content-box .news-list .news-box .news-title {
+        width: 389px;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .learn-news .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    /* 精神文明 */
+    #container .spiritual-civilization .title {
+        width: 318px;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .spiritual-civilization .title .more {
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .spiritual-civilization {
+        width: 346px;
+        height: 238px;
+        padding: 16px 16px 0 16px;
+    }
+
+    #container .spiritual-civilization .content-box .news-list {
+        width: 318px;
+        height: 188px;
+
+        padding: 5px 0;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box .news-title {
+        width: 250px;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box .news-date {
+        line-height: 24px;
+    }
+
+    #container .mod-third {
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    #container .mod-third .rolling {
+        width: 1108px;
+        height: 180px;
+
+        overflow: hidden;
+
+        margin: 0 16px 16px 16px;
+    }
+
+    #container .mod-third .rolling .img-container .img-box {
+        width: 200px;
+        height: 150px;
+
+        margin: 0 2px;
+    }
+
+    #container .mod-third .rolling .img-container .img-box img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    #container .mod-third .rolling .img-container .rolling-title {
+        width: 190px;
+        height: 16px;
+
+        line-height: 16px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .mod-third .rolling .img-container .rolling-title:hover {
+        color: #cd0200;
+    }
+
+    /* FOOTER */
+    #footer {
+        height: 120px;
+    }
+
+    #footer .inner {
+        height: 120px;
+        padding: 20px 0;
+    }
+
+    #footer .inner .content-box {
+        height: 80px;
+        padding: 20px 0;
+    }
+
+    #footer .inner .content-box .content {
+        height: 20px;
+        line-height: 20px;
+    }
+}
+
+/* SCREEN-WIDTH > 0px */
+@media screen and (min-width: 0) and (max-width: 1139px) {
+    div {
+        width: 100%;
+    }
+
+    #header {
+        max-width: 1140px;
+        height: 191px;
+    }
+
+    #header .head-bar {
+        width: 100%;
+        height: 35px;
+        padding: 0 15px;
+
+        line-height: 35px;
+
+        background-color: #cdc8b1;
+    }
+
+    #header .head-bar .header-box {
+        height: 35px;
+    }
+
+    #header .head-bar .body {
+        background-color: #cdc8b1;
+    }
+
+    #header .head-bar .header-box .search-box {
+        width: 220px;
+        height: 25px;
+        margin: auto 0 auto 0;
+
+        display: flex;
+        background-image: url(./../IMAGE/search.png);
+    }
+
+    #header .head-bar .header-box .search-box .input {
+        width: 189px;
+        height: 25px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #header .head-bar .header-box .search-box .input label {
+        margin: auto 0 auto 0;
+    }
+
+    #header .head-bar .header-box .search-box .input input {
+        width: 180px;
+        height: 15px;
+        margin: 0 0 0 5px;
+    }
+
+    #header .head-bar .header-box .search-box .submit {
+        width: 28px;
+        height: 25px;
+
+        display: flex;
+        align-items: center;
+    }
+
+    #header .head-bar .header-box .search-box .submit input {
+        width: 28px;
+        height: 22px;
+        padding: 1px 6px;
+        background: none;
+    }
+
+    #header .head-image {
+        width: 100%;
+        height: 112px;
+    }
+
+    #header .header-image-box {
+        background: url(./../IMAGE/head.png);
+    }
+
+    #header .nav {
+        width: 100%;
+        height: 44px;
+    }
+
+    #header .nav .nav-box .nav-btn {
+        width: 127px;
+
+        font-size: 15px;
+        text-align: center;
+        line-height: 44px;
+    }
+
+    #header .nav .nav-box .nav-btn:hover {
+        color: #ff9900;
+    }
+
+    #header .nav .nav-box .nav-btn:nth-child(1) {
+        border-radius: 5px 0 0 5px;
+    }
+
+    #header .nav .nav-box .nav-btn:nth-child(9) {
+        border-radius: 0 5px 5px 0;
+    }
+
+    #container {
+        width: 100%;
+        height: 991px;
+    }
+
+    #container .campus-news {
+        max-width: 1120px;
+        height: 271px;
+
+        padding: 16px 10px 0 10px;
+    }
+
+    #container .campus-news .title {
+        max-width: 1100px;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .campus-news .title .more {
+        width: 62px;
+
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .campus-news .content-box {
+        height: 237px;
+    }
+
+    #container .campus-news .content-box .rotation {
+        max-width: 473px;
+        min-width: 330px;
+        height: 207px;
+        margin: 15px 20px 15px 0;
+
+        position: relative;
+    }
+
+    #container .campus-news .content-box .rotation .image-select {
+        width: 132px;
+
+        position: absolute;
+        right: 10px;
+        bottom: 5px;
+    }
+
+    #container .campus-news .content-box .rotation .image-select a {
+        width: 18px;
+        height: 18px;
+
+        line-height: 18px;
+        text-align: center;
+        font-size: 12px;
+        color: #ffffff;
+
+        border: 1px solid #ffffff;
+        background-color: #6c6d6e;
+        opacity: 0.7;
+    }
+
+    #container .campus-news .content-box .rotation img {
+        width: 100%;
+        height: 100%;
+    }
+
+    #container .campus-news .content-box .news-list {
+        width: 50%;
+        height: 207px;
+        margin: 15px 0 15px 20px;
+    }
+
+    #container .campus-news .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .campus-news .content-box .news-list .news-box .news-title {
+        width: 80%;
+        height: 24px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .campus-news .content-box .news-list .news-box .news-date {
+        width: 20%;
+        height: 24px;
+
+        text-align: right;
+
+        line-height: 24px;
+    }
+
+    #container .campus-news .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    /* 媒体聚焦 */
+    #container .media-focus {
+        width: 47%;
+        height: 256px;
+
+        margin: 16px 10px 0 0;
+
+        float: right;
+    }
+
+    #container .media-focus .title {
+        width: 100%;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .media-focus .title .more {
+        width: 62px;
+
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .media-focus .content-box .news-list {
+        width: 100%;
+        height: 207px;
+        margin: 15px 0 0 0;
+    }
+
+    #container .media-focus .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .media-focus .content-box .news-list .news-box .news-title {
+        width: 300px;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .media-focus .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    #container .mod-second {
+        height: 238px;
+        margin: 10px 0;
+    }
+
+    /* 通知通告 */
+    #container .notification {
+        width: 47%;
+        height: 238px;
+        margin: 16px 16px 0 10px;
+    }
+
+    #container .notification .title {
+        width: 100%;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .notification .title .more {
+        width: 62px;
+
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .notification .content-box .news-list {
+        width: 100%;
+        height: 188px;
+
+        padding: 5px 0;
+    }
+
+    #container .notification .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .notification .content-box .news-list .news-box .news-title {
+        width: 80%;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .notification .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    #container .notification .content-box .news-list .news-box .news-date {
+        width: 20%;
+        text-align: right;
+    }
+
+    /* 学习新思想 */
+    #container .learn-news {
+        width: 48%;
+        height: 238px;
+        padding: 10px 0 0 10px;
+    }
+
+    #container .learn-news .title {
+        width: 100%;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .learn-news .title .more {
+        width: 62px;
+
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .learn-news .content-box .news-list {
+        width: 389px;
+        height: 188px;
+
+        padding: 5px 0;
+    }
+
+    #container .learn-news .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .learn-news .content-box .news-list .news-box .news-title {
+        width: 389px;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .learn-news .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    /* 精神文明 */
+    #container .spiritual-civilization {
+        width: 48%;
+        height: 238px;
+        padding: 10px 10px 0 0;
+    }
+
+    #container .spiritual-civilization .title {
+        width: 100%;
+        height: 34px;
+        padding-left: 10px;
+        line-height: 34px;
+        color: #ba0500;
+
+        border-left: 4px solid #ba0500;
+
+        background-color: #e7e5dc;
+    }
+
+    #container .spiritual-civilization .title .more {
+        width: 62px;
+
+        padding: 0 10px;
+        color: #af8e39;
+    }
+
+    #container .spiritual-civilization .content-box .news-list {
+        width: 100%;
+        height: 188px;
+
+        padding: 5px 0;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box {
+        width: 100%;
+        height: 24px;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box .news-title {
+        width: 80%;
+        height: 24px;
+        padding-left: 4px;
+
+        line-height: 24px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box .news-title a:hover {
+        color: #cd0200;
+    }
+
+    #container .spiritual-civilization .content-box .news-list .news-box .news-date {
+        width: 20%;
+        text-align: right;
+    }
+
+    #container .mod-third {
+        height: 200px;
+        padding: 10px 0;
+    }
+
+    #container .mod-third .rolling {
+        width: calc(100% - 32px);
+        height: 180px;
+
+        overflow: hidden;
+
+        margin: 0 16px 16px 16px;
+    }
+
+    #container .mod-third .rolling .img-container {
+        width: 1224px;
+    }
+
+    #container .mod-third .rolling .img-container .img-box {
+        width: 200px;
+        height: 150px;
+
+        margin: 0 2px;
+    }
+
+    #container .mod-third .rolling .img-container .img-box img {
+        width: 100%;
+        height: 100%;
+
+        object-fit: cover;
+    }
+
+    #container .mod-third .rolling .img-container .rolling-title {
+        width: 190px;
+        height: 16px;
+
+        line-height: 16px;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #container .mod-third .rolling .img-container .rolling-title:hover {
+        color: #cd0200;
+    }
+
+    /* FOOTER */
+    #footer {
+        height: 120px;
+    }
+
+    #footer .inner {
+        height: 120px;
+        padding: 20px 0;
+    }
+
+    #footer .inner .content-box {
+        height: 80px;
+        padding: 20px 0;
+    }
+
+    #footer .inner .content-box .content {
+        height: 20px;
+        line-height: 20px;
+    }
+}

@@ -1,0 +1,39 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+body {
+    width: 100%;
+    background: #fff;
+    font-family: 'Roboto Slab', serif;
+}
+
+a {
+    text-decoration: none;
+    transition: all .5s;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    vertical-align: middle;
+}
+
+.clearfix {
+    clear: both;
+}

@@ -1,0 +1,124 @@
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+    width: 100%;
+}
+
+.header {
+    width: 100%;
+    background: white;
+    padding: 33px 0;
+}
+
+nav ul li {
+    margin: 0 35px;
+    display: inline-block;
+}
+
+nav ul li a {
+    color: #000;
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+nav ul li a:hover, nav ul li a:active {
+    color: #999;
+}
+
+nav input[type=checkbox] {
+    display: none;
+}
+
+.menu {
+    position: absolute;
+    left: 2%;
+    top: 10px;
+    display: none;
+}
+
+.logo {
+    position: absolute;
+    right: 10%;
+    top: 0;
+}
+
+.banner {
+    width: 100%;
+    background: url(../images/banner.png) no-repeat center center;
+}
+
+.mission {
+    background: #fbffec;
+    padding: 60px 0;
+}
+
+.mission-header h3 {
+    font-family: 'Droid Serif', serif;
+    font-size: 2em;
+    color: #159400;
+    text-align: center;
+}
+
+.mission-container {
+    margin-top: 35px;
+}
+
+.mission_div {
+    width: 50%;
+    float: left;
+    padding: 0 15px;
+}
+
+.mission-left img {
+    width: 100%;
+}
+
+.mis-one {
+    margin-bottom: 2rem;
+}
+
+.mis-left {
+    width: 15%;
+    float: left;
+}
+
+.mis-left img {
+    width: 100%;
+}
+
+.mis-right {
+    width: 82%;
+    float: right;
+}
+
+.mis-right h3 {
+    font-size: 1.25em;
+    color: #7ddf6c;
+}
+
+.mis-right p {
+    font-size: 0.875em;
+    color: #000;
+    line-height: 1.8em;
+    margin: 12px 0 0 0;
+}
+
+.footer {
+    padding: 18px 0;
+    background: #000;
+}
+
+.footer p {
+    margin: 9px 0 0 0;
+    font-size: 0.875em;
+    color: #fff;
+    text-align: center;
+}
+
+.footer p a {
+    color: #fff;
+}
+
+.footer p a:hover, .footer p a:active {
+    color: #000;
+}

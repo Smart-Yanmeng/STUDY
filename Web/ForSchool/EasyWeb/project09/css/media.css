@@ -1,0 +1,186 @@
+/* 超小屏幕（小于等于575px） */
+@media (max-width: 575px) {
+    .header {
+        padding: 25px 0;
+    }
+
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+
+    nav > ul {
+        display: none;
+    }
+
+    nav input[type=checkbox]:checked ~ ul {
+        display: block;
+    }
+
+    nav ul li {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .logo {
+        width: 17%;
+        right: 4%;
+    }
+
+    .banner {
+        min-height: 200px;
+    }
+
+    .mission {
+        padding: 20px 0;
+    }
+
+    .mission-container {
+        margin-top: 15px;
+    }
+
+    .mission-header h3 {
+        font-size: 1.25em;
+    }
+
+    .mis-right h3 {
+        font-size: 1em;
+    }
+
+    .mission-left, .mission-right {
+        padding: 0;
+        float: left;
+        width: 100%;
+    }
+
+    .mission-right {
+        margin: 30px 0 0 0;
+    }
+
+    .mission-left {
+        width: 13%;
+        margin-top: 3px;
+    }
+
+    .mis-right {
+        width: 82%;
+    }
+
+    .mis-right p {
+        margin: 10px 0 0 0;
+    }
+
+    .mis-one {
+        margin-bottom: 24px;
+    }
+
+    .mis-one:nth-child(3) {
+        margin: 0;
+    }
+}
+
+/* 小屏幕（大于等于576px） */
+@media (min-width: 576px) {
+    nav > ul li a {
+        font-size: 1em;
+    }
+
+    nav > ul li {
+        margin: 0 10px;
+    }
+
+    .logo {
+        width: 18%;
+        right: 4%;
+    }
+
+    .banner {
+        min-height: 240px;
+    }
+
+    .footer p {
+        margin: 0 0 20px 0;
+    }
+}
+
+/* 中等屏幕（大于等于768px） */
+@media (min-width: 768px) {
+    .header {
+        padding: 24px 0;
+    }
+
+    .logo {
+        width: 13%;
+        right: 6%;
+    }
+
+    nav > ul li {
+        margin: 0 20px;
+    }
+
+    nav > ul li a {
+        font-size: 1.1em;
+    }
+
+    .banner {
+        min-height: 300px;
+    }
+
+    .mission_div {
+        padding: 0 5px;
+    }
+
+    .mis-right p {
+        margin-top: 2px;
+    }
+
+    .mis-one {
+        margin-bottom: 0.5rem;
+    }
+}
+
+/* 大屏幕（大于等于992px） */
+@media (min-width: 992px) {
+    nav > ul li {
+        margin: 0 35px;
+    }
+
+    nav > ul li a {
+        font-size: 1.25em;
+    }
+
+    .banner {
+        min-height: 360px;
+    }
+
+    .mission_div {
+        padding: 0 15px;
+    }
+
+    .mis-right p {
+        margin-top: 10px;
+    }
+
+    .mis-one {
+        margin-bottom: 1.8rem;
+    }
+}
+
+/* 超大屏幕（大于等于1200px） */
+@media (min-width: 1200px) {
+    nav > ul li {
+        margin: 0 40px;
+    }
+
+    .banner {
+        min-height: 540px;
+    }
+}
