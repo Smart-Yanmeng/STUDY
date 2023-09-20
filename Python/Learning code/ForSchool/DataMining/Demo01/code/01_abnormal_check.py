@@ -2,14 +2,13 @@
 
 # 代码3-1 使用describe()方法即可查看数据的基本情况
 import pandas as pd
+import matplotlib.pyplot as plt  # 导入图像库
 
 catering_sale = '../data/catering_sale.xls'  # 餐饮数据
 data = pd.read_excel(catering_sale, index_col=u'日期')  # 读取数据，指定“日期”列为索引列
-print(data.describe())
+# print(data.describe())
 
 # 代码3-2 餐饮销额数据异常值检测
-import matplotlib.pyplot as plt  # 导入图像库
-
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.rcParams['axes.unicode_minus'] = False  # 用来正常显示负号
 
@@ -19,7 +18,6 @@ x = p['fliers'][0].get_xdata()  # 'flies'即为异常值的标签
 y = p['fliers'][0].get_ydata()
 y.sort()  # 从小到大排序，该方法直接改变原对象
 '''
-用annotate添加注释
 其中有些相近的点，注解会出现重叠，难以看清，需要一些技巧来控制
 以下参数都是经过调试的，需要具体问题具体调试。
 '''

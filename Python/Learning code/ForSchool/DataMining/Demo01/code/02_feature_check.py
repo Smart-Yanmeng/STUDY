@@ -4,10 +4,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # 代码3-3 捞起生鱼片的季度销售情况
-
 catering_sale = '../data/catering_fish_congee.xls'  # 餐饮数据
 data = pd.read_excel(catering_sale, names=['date', 'sale'])  # 读取数据，指定“日期”列为索引
-
 
 d = 500  # 设置组距
 num_bins = round((max(data['sale']) - min(data['sale'])) / d)  # 计算组数
@@ -48,7 +46,6 @@ plt.show()  # 展示图片
 
 # 代码3-5 不同部门在各月份的销售对比情况
 # 部门之间销售金额比较
-
 data = pd.read_excel("../data/dish_sale.xls")
 plt.figure(figsize=(8, 4))
 plt.plot(data['月份'], data['A部门'], color='green', label='A部门', marker='o')
@@ -69,7 +66,6 @@ plt.ylabel('销售额（万元）')
 plt.show()
 
 # 代码3-6 餐饮销量数据统计量分析
-
 # 餐饮销量数据统计量分析
 catering_sale = '../data/catering_sale.xls'  # 餐饮数据
 data = pd.read_excel(catering_sale, index_col='日期')  # 读取数据，指定“日期”列为索引列
@@ -83,7 +79,6 @@ statistics.loc['dis'] = statistics.loc['75%'] - statistics.loc['25%']  # 四分�
 print(statistics)
 
 # 代码3-7 某单位日用电量预测分析
-
 df_normal = pd.read_csv("../data/user.csv")
 plt.figure(figsize=(8, 4))
 plt.plot(df_normal["Date"], df_normal["Eletricity"])
@@ -112,9 +107,7 @@ plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.show()  # 展示图片
 
 # 代码3-8 菜品盈利帕累托图
-
 # 菜品盈利数据 帕累托图
-
 # 初始化参数
 dish_profit = '../data/catering_dish_profit.xls'  # 餐饮菜品盈利数据
 data = pd.read_excel(dish_profit, index_col='菜品名')
@@ -135,9 +128,7 @@ plt.ylabel('盈利（比例）')
 plt.show()
 
 # 代码3-9 餐饮销量数据相关性分析
-
 # 餐饮销量数据相关性分析
-
 catering_sale = '../data/catering_sale_all.xls'  # 餐饮数据，含有其他属性
 data = pd.read_excel(catering_sale, index_col='日期')  # 读取数据，指定“日期”列为索引列
 
