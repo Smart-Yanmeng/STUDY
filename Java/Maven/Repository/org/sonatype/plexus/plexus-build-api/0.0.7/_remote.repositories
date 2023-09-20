@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:19:34 CST 2023
+#Tue Sep 19 10:09:32 CST 2023
+plexus-build-api-0.0.7.pom>huaweicloud=
 plexus-build-api-0.0.7.pom>public=
 plexus-build-api-0.0.7.pom>central=
+plexus-build-api-0.0.7.jar>huaweicloud=
 plexus-build-api-0.0.7.jar>central=
 plexus-build-api-0.0.7.jar>public=

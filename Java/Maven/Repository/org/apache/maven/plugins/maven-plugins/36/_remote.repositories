@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:23:13 CST 2023
+#Tue Sep 19 10:08:24 CST 2023
 maven-plugins-36.pom>public=
+maven-plugins-36.pom>huaweicloud=
 maven-plugins-36.pom>central=

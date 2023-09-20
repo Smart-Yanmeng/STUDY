@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:45 CST 2023
+#Tue Sep 19 10:09:47 CST 2023
 guice-bean-1.4.2.pom>central=
 guice-bean-1.4.2.pom>public=
+guice-bean-1.4.2.pom>huaweicloud=

@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:06 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 doxia-logging-api-1.11.1.jar>public=
 doxia-logging-api-1.11.1.pom>public=
+doxia-logging-api-1.11.1.pom>huaweicloud=
+doxia-logging-api-1.11.1.jar>huaweicloud=
 doxia-logging-api-1.11.1.pom>central=
 doxia-logging-api-1.11.1.jar>central=

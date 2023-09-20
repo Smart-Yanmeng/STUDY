@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:16:25 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 snappy-0.4.jar>central=
+snappy-0.4.jar>huaweicloud=
+snappy-0.4.pom>huaweicloud=
 snappy-0.4.pom>public=
 snappy-0.4.pom>central=
 snappy-0.4.jar>public=

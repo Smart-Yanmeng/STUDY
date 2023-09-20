@@ -1,6 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:35 CST 2023
+#Tue Sep 19 10:09:18 CST 2023
 maven-reporting-api-3.0.pom>public=
+maven-reporting-api-3.0.pom>huaweicloud=
 maven-reporting-api-3.0.jar>central=
 maven-reporting-api-3.0.jar>public=
 maven-reporting-api-3.0.pom>central=

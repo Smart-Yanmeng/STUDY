@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:16:01 CST 2023
+#Tue Sep 19 10:09:58 CST 2023
 maven-shared-components-21.pom>public=
 maven-shared-components-21.pom>central=
+maven-shared-components-21.pom>huaweicloud=

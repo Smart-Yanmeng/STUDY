@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:07 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
+oro-2.0.8.jar>huaweicloud=
 oro-2.0.8.jar>public=
+oro-2.0.8.pom>huaweicloud=
 oro-2.0.8.pom>public=
 oro-2.0.8.pom>central=
 oro-2.0.8.jar>central=

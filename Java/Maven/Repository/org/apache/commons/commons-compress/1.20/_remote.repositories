@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:16:25 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 commons-compress-1.20.jar>central=
 commons-compress-1.20.pom>central=
+commons-compress-1.20.pom>huaweicloud=
+commons-compress-1.20.jar>huaweicloud=
 commons-compress-1.20.pom>public=
 commons-compress-1.20.jar>public=

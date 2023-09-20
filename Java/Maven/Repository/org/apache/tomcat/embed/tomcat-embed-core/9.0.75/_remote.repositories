@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 11 16:51:11 CST 2023
-tomcat-embed-core-9.0.75-sources.jar>public=
+#Tue Sep 19 11:55:20 CST 2023
 tomcat-embed-core-9.0.75.jar>public=
 tomcat-embed-core-9.0.75.pom>public=
+tomcat-embed-core-9.0.75-sources.jar>public=
+tomcat-embed-core-9.0.75.pom>huaweicloud=
+tomcat-embed-core-9.0.75.jar>huaweicloud=

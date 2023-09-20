@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed May 31 17:18:06 CST 2023
-plexus-interpolation-1.22.jar>public=
+#Tue Sep 19 10:10:04 CST 2023
+plexus-interpolation-1.22.pom>huaweicloud=
 plexus-interpolation-1.22.pom>central=
+plexus-interpolation-1.22.jar>public=
 plexus-interpolation-1.22.pom>public=

@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:43 CST 2023
+#Tue Sep 19 10:10:09 CST 2023
 maven-parent-27.pom>central=
 maven-parent-27.pom>public=
+maven-parent-27.pom>huaweicloud=

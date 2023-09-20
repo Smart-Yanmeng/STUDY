@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:23:49 CST 2023
+#Tue Sep 19 10:09:23 CST 2023
 infinispan-bom-11.0.15.Final.pom>central=
 infinispan-bom-11.0.15.Final.pom>public=
+infinispan-bom-11.0.15.Final.pom>huaweicloud=

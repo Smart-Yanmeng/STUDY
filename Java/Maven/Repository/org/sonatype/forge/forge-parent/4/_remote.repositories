@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:09:29 CST 2023
+#Tue Sep 19 10:08:32 CST 2023
 forge-parent-4.pom>public=
 forge-parent-4.pom>central=
+forge-parent-4.pom>huaweicloud=

@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed May 31 17:18:35 CST 2023
+#Tue Sep 19 10:10:15 CST 2023
 maven-mapping-3.0.0.jar>central=
 maven-mapping-3.0.0.jar>public=
-maven-mapping-3.0.0.pom>central=
 maven-mapping-3.0.0.pom>public=
+maven-mapping-3.0.0.jar>huaweicloud=
+maven-mapping-3.0.0.pom>central=
+maven-mapping-3.0.0.pom>huaweicloud=

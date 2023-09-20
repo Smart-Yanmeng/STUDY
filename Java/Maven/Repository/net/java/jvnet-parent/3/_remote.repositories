@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:23:18 CST 2023
+#Tue Sep 19 10:08:33 CST 2023
 jvnet-parent-3.pom>central=
+jvnet-parent-3.pom>huaweicloud=
 jvnet-parent-3.pom>public=

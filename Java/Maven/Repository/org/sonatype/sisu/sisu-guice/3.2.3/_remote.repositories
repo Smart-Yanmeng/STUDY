@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:06 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 sisu-guice-3.2.3-no_aop.jar>central=
+sisu-guice-3.2.3.pom>huaweicloud=
 sisu-guice-3.2.3.pom>public=
 sisu-guice-3.2.3.pom>central=
 sisu-guice-3.2.3-no_aop.jar>public=
+sisu-guice-3.2.3-no_aop.jar>huaweicloud=

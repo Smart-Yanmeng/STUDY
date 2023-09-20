@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:07 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
+google-collections-1.0.jar>huaweicloud=
 google-collections-1.0.pom>central=
 google-collections-1.0.pom>public=
 google-collections-1.0.jar>public=
 google-collections-1.0.jar>central=
+google-collections-1.0.pom>huaweicloud=

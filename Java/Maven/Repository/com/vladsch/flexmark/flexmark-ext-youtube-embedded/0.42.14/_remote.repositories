@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:07 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 flexmark-ext-youtube-embedded-0.42.14.jar>central=
 flexmark-ext-youtube-embedded-0.42.14.pom>public=
 flexmark-ext-youtube-embedded-0.42.14.jar>public=
+flexmark-ext-youtube-embedded-0.42.14.jar>huaweicloud=
 flexmark-ext-youtube-embedded-0.42.14.pom>central=
+flexmark-ext-youtube-embedded-0.42.14.pom>huaweicloud=

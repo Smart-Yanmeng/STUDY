@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:07 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 commons-lang-2.4.jar>public=
 commons-lang-2.4.jar>central=
+commons-lang-2.4.jar>huaweicloud=
 commons-lang-2.4.pom>central=
 commons-lang-2.4.pom>public=
+commons-lang-2.4.pom>huaweicloud=

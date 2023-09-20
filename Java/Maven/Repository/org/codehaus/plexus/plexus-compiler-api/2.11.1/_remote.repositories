@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:13:49 CST 2023
+#Tue Sep 19 10:08:40 CST 2023
 plexus-compiler-api-2.11.1.pom>central=
+plexus-compiler-api-2.11.1.pom>huaweicloud=
+plexus-compiler-api-2.11.1.jar>huaweicloud=
 plexus-compiler-api-2.11.1.jar>central=

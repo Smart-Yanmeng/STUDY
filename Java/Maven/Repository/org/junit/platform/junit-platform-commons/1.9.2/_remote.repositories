@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:00 CST 2023
+#Tue Sep 19 10:08:16 CST 2023
 junit-platform-commons-1.9.2.pom>central=
+junit-platform-commons-1.9.2.jar>huaweicloud=
 junit-platform-commons-1.9.2.jar>central=
+junit-platform-commons-1.9.2.pom>huaweicloud=

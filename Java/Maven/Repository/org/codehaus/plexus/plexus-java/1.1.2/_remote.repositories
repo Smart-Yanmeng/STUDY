@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:11 CST 2023
+#Tue Sep 19 10:08:36 CST 2023
 plexus-java-1.1.2.jar>central=
 plexus-java-1.1.2.pom>public=
+plexus-java-1.1.2.jar>huaweicloud=
 plexus-java-1.1.2.jar>public=
 plexus-java-1.1.2.pom>central=
+plexus-java-1.1.2.pom>huaweicloud=

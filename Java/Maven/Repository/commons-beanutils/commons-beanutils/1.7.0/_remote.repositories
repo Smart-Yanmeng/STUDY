@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:07 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 commons-beanutils-1.7.0.pom>central=
 commons-beanutils-1.7.0.jar>public=
 commons-beanutils-1.7.0.pom>public=
+commons-beanutils-1.7.0.jar>huaweicloud=
 commons-beanutils-1.7.0.jar>central=
+commons-beanutils-1.7.0.pom>huaweicloud=

@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:48:42 CST 2023
+#Tue Sep 19 10:09:31 CST 2023
+junit-bom-5.7.1.pom>huaweicloud=
 junit-bom-5.7.1.pom>public=
 junit-bom-5.7.1.pom>central=

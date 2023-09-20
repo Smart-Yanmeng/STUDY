@@ -1,6 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
+#Tue Sep 19 10:09:45 CST 2023
 maven-model-3.0.jar>public=
 maven-model-3.0.jar>central=
 maven-model-3.0.pom>public=
 maven-model-3.0.pom>central=
+maven-model-3.0.pom>huaweicloud=

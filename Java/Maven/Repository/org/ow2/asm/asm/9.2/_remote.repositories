@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:13:49 CST 2023
+#Tue Sep 19 10:08:40 CST 2023
+asm-9.2.jar>huaweicloud=
 asm-9.2.pom>central=
+asm-9.2.pom>huaweicloud=
 asm-9.2.jar>central=

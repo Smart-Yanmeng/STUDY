@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:06 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
+maven-artifact-3.2.5.pom>huaweicloud=
 maven-artifact-3.2.5.jar>central=
 maven-artifact-3.2.5.pom>public=
 maven-artifact-3.2.5.jar>public=
 maven-artifact-3.2.5.pom>central=
+maven-artifact-3.2.5.jar>huaweicloud=

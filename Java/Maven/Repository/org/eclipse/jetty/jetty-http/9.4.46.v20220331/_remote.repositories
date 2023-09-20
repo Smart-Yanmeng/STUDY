@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:07 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
+jetty-http-9.4.46.v20220331.jar>huaweicloud=
 jetty-http-9.4.46.v20220331.jar>central=
 jetty-http-9.4.46.v20220331.pom>public=
 jetty-http-9.4.46.v20220331.jar>public=
+jetty-http-9.4.46.v20220331.pom>huaweicloud=
 jetty-http-9.4.46.v20220331.pom>central=

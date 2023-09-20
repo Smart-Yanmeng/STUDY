@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:19:34 CST 2023
+#Tue Sep 19 10:10:15 CST 2023
 jsr250-api-1.0.jar>central=
+jsr250-api-1.0.pom>huaweicloud=
+jsr250-api-1.0.jar>huaweicloud=
 jsr250-api-1.0.pom>central=
 jsr250-api-1.0.jar>public=
 jsr250-api-1.0.pom>public=

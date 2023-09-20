@@ -1,6 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
+#Tue Sep 19 10:09:56 CST 2023
 aether-api-1.7.jar>central=
 aether-api-1.7.pom>public=
+aether-api-1.7.pom>huaweicloud=
 aether-api-1.7.jar>public=
 aether-api-1.7.pom>central=

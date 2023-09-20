@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:24:06 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 cdi-api-1.2.jar>public=
 cdi-api-1.2.pom>public=
 cdi-api-1.2.pom>central=
+cdi-api-1.2.pom>huaweicloud=
 cdi-api-1.2.jar>central=
+cdi-api-1.2.jar>huaweicloud=

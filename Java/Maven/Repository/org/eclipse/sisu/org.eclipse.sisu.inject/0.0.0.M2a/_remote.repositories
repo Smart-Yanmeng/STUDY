@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:19:34 CST 2023
+#Tue Sep 19 10:10:15 CST 2023
+org.eclipse.sisu.inject-0.0.0.M2a.jar>huaweicloud=
+org.eclipse.sisu.inject-0.0.0.M2a.pom>huaweicloud=
 org.eclipse.sisu.inject-0.0.0.M2a.jar>central=
 org.eclipse.sisu.inject-0.0.0.M2a.pom>central=

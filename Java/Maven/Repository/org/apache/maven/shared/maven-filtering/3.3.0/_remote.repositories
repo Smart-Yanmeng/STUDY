@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:03 CST 2023
+#Tue Sep 19 10:09:32 CST 2023
 maven-filtering-3.3.0.jar>public=
+maven-filtering-3.3.0.pom>huaweicloud=
 maven-filtering-3.3.0.pom>public=
 maven-filtering-3.3.0.pom>central=
 maven-filtering-3.3.0.jar>central=
+maven-filtering-3.3.0.jar>huaweicloud=

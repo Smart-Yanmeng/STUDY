@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:13:49 CST 2023
+#Tue Sep 19 10:08:40 CST 2023
+qdox-2.0.1.pom>huaweicloud=
 qdox-2.0.1.jar>central=
 qdox-2.0.1.pom>central=
+qdox-2.0.1.jar>huaweicloud=

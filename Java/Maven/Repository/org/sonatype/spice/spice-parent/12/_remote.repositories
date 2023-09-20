@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:09:27 CST 2023
+#Tue Sep 19 10:08:32 CST 2023
 spice-parent-12.pom>central=
 spice-parent-12.pom>public=
+spice-parent-12.pom>huaweicloud=

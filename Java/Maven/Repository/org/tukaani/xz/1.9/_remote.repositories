@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:16:25 CST 2023
+#Tue Sep 19 10:09:30 CST 2023
 xz-1.9.pom>public=
+xz-1.9.pom>huaweicloud=
 xz-1.9.pom>central=
 xz-1.9.jar>public=
+xz-1.9.jar>huaweicloud=
 xz-1.9.jar>central=
