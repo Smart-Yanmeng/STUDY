@@ -56,4 +56,5 @@ def find_rule(d, support, confidence, ms='--'):
     result = result.T.sort_values(['confidence', 'support'], ascending=False)  # 结果整理，输出
     print('\n结果为：')
     print(result)
+
     return result

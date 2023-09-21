@@ -11,9 +11,16 @@ d = 500  # 设置组距
 num_bins = round((max(data['sale']) - min(data['sale'])) / d)  # 计算组数
 plt.figure(figsize=(10, 6))  # 设置图框大小尺寸
 plt.hist(data['sale'], num_bins)
+
+# 设置刻度大小
 plt.xticks(range(0, 4000, d))
+
+# x 轴标签
 plt.xlabel('sale分层')
+
+# 在图上显示方格
 plt.grid()
+
 plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
 plt.title('季度销售额频率分布直方图', fontsize=20)
 plt.show()
