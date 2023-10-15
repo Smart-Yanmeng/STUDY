@@ -1,0 +1,11 @@
+# ninja log v5
+0	294	7190722067413349	CMakeFiles/Algo.dir/QuickSort.cpp.obj	f5a9cb9fbcba7f94
+1	143	7190767399696664	build.ninja	8009d072742ef13d
+1	267	7190723889133129	CMakeFiles/Algo.dir/SelectSort.cpp.obj	d17a20ded2b9b96a
+278	397	7190766908400604	Algo.exe	acdb9736843bbdea
+2	306	7190722067543357	CMakeFiles/Algo.dir/MergeSort.cpp.obj	3f962987ba520b9b
+1	257	7190763295936116	CMakeFiles/Algo.dir/Violence.cpp.obj	bba53cbe3d469770
+4	327	7190722067753398	CMakeFiles/Algo.dir/BubleSort.cpp.obj	6c0422cb72008dd
+1	256	7190728956116569	CMakeFiles/Algo.dir/BubbleSort.cpp.obj	70e5b430306466f1
+1	272	7190746778979276	CMakeFiles/Algo.dir/MaximumSubsequenceSum.cpp.obj	761a62c37c09537c
+0	278	7190766907250710	CMakeFiles/Algo.dir/TheStrongest.cpp.obj	bad4b7f29aad55c7

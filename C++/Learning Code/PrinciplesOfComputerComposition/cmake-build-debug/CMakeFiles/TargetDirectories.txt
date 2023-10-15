@@ -1,0 +1,3 @@
+C:/Users/yorky/Desktop/STUDY/C++/Learning Code/PrinciplesOfComputerComposition/cmake-build-debug/CMakeFiles/PrinciplesOfComputerComposition.dir
+C:/Users/yorky/Desktop/STUDY/C++/Learning Code/PrinciplesOfComputerComposition/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/yorky/Desktop/STUDY/C++/Learning Code/PrinciplesOfComputerComposition/cmake-build-debug/CMakeFiles/rebuild_cache.dir
