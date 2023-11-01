@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 11 16:50:56 CST 2023
+#Wed Nov 01 12:55:31 CST 2023
 json-smart-2.4.10-sources.jar>public=
 json-smart-2.4.10.jar>central=
+json-smart-2.4.10.jar>huaweicloud=
 json-smart-2.4.10.pom>central=
+json-smart-2.4.10.pom>huaweicloud=

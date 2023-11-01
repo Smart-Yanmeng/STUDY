@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:00 CST 2023
+#Wed Nov 01 12:55:31 CST 2023
 jakarta.annotation-api-2.1.1.jar>central=
+jakarta.annotation-api-2.1.1.jar>huaweicloud=
 jakarta.annotation-api-2.1.1.pom>central=
+jakarta.annotation-api-2.1.1.pom>huaweicloud=

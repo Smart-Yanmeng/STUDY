@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
+#Wed Nov 01 12:57:02 CST 2023
 maven-shade-plugin-3.2.4.jar>central=
+maven-shade-plugin-3.2.4.jar>huaweicloud=
 maven-shade-plugin-3.2.4.pom>central=
+maven-shade-plugin-3.2.4.pom>huaweicloud=

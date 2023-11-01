@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:04:54 CST 2023
+#Wed Nov 01 12:54:39 CST 2023
 log4j-2.19.0.pom>central=
+log4j-2.19.0.pom>huaweicloud=

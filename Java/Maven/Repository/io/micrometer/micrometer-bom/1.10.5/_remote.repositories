@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:04:41 CST 2023
+#Wed Nov 01 12:54:22 CST 2023
 micrometer-bom-1.10.5.pom>central=
+micrometer-bom-1.10.5.pom>huaweicloud=

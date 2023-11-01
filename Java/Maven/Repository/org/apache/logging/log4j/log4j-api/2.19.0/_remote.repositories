@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:09:37 CST 2023
-log4j-api-2.19.0.pom>central=
+#Wed Nov 01 12:55:31 CST 2023
 log4j-api-2.19.0.jar>central=
+log4j-api-2.19.0.jar>huaweicloud=
+log4j-api-2.19.0.pom>central=
+log4j-api-2.19.0.pom>huaweicloud=

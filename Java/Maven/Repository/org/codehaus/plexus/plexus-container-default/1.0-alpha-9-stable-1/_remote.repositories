@@ -1,7 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:10 CST 2023
-plexus-container-default-1.0-alpha-9-stable-1.pom>central=
+#Wed Nov 01 12:56:12 CST 2023
 plexus-container-default-1.0-alpha-9-stable-1.jar>central=
-plexus-container-default-1.0-alpha-9-stable-1.pom>huaweicloud=
+plexus-container-default-1.0-alpha-9-stable-1.jar>huaweicloud=
 plexus-container-default-1.0-alpha-9-stable-1.jar>public=
+plexus-container-default-1.0-alpha-9-stable-1.pom>central=
+plexus-container-default-1.0-alpha-9-stable-1.pom>huaweicloud=
 plexus-container-default-1.0-alpha-9-stable-1.pom>public=

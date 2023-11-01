@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:27 CST 2023
+#Wed Nov 01 12:56:12 CST 2023
 surefire-booter-2.22.2.jar>central=
+surefire-booter-2.22.2.jar>huaweicloud=
 surefire-booter-2.22.2.pom>central=
+surefire-booter-2.22.2.pom>huaweicloud=

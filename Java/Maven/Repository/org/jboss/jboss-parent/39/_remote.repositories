@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:49:00 CST 2023
-jboss-parent-39.pom>public=
+#Wed Nov 01 12:54:18 CST 2023
 jboss-parent-39.pom>central=
+jboss-parent-39.pom>huaweicloud=
+jboss-parent-39.pom>public=

@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
-plexus-component-annotations-1.5.5.pom>central=
+#Wed Nov 01 12:57:02 CST 2023
 plexus-component-annotations-1.5.5.jar>central=
+plexus-component-annotations-1.5.5.jar>huaweicloud=
 plexus-component-annotations-1.5.5.jar>public=
+plexus-component-annotations-1.5.5.pom>central=
+plexus-component-annotations-1.5.5.pom>huaweicloud=
 plexus-component-annotations-1.5.5.pom>public=

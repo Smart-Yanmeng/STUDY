@@ -1,6 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:10:04 CST 2023
-plexus-utils-1.5.8.pom>public=
+#Wed Nov 01 12:57:02 CST 2023
 plexus-utils-1.5.8.jar>central=
-plexus-utils-1.5.8.pom>huaweicloud=
+plexus-utils-1.5.8.jar>huaweicloud=
 plexus-utils-1.5.8.pom>central=
+plexus-utils-1.5.8.pom>huaweicloud=
+plexus-utils-1.5.8.pom>public=

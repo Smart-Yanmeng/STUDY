@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:04:39 CST 2023
+#Wed Nov 01 12:54:14 CST 2023
 brave-bom-5.14.1.pom>central=
+brave-bom-5.14.1.pom>huaweicloud=

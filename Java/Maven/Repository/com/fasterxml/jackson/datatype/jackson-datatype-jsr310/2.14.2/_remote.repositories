@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:09:37 CST 2023
-jackson-datatype-jsr310-2.14.2.pom>central=
+#Wed Nov 01 12:55:31 CST 2023
 jackson-datatype-jsr310-2.14.2.jar>central=
+jackson-datatype-jsr310-2.14.2.jar>huaweicloud=
+jackson-datatype-jsr310-2.14.2.pom>central=
+jackson-datatype-jsr310-2.14.2.pom>huaweicloud=

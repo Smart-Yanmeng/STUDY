@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:00 CST 2023
+#Wed Nov 01 12:55:31 CST 2023
 spring-beans-6.0.7.jar>central=
+spring-beans-6.0.7.jar>huaweicloud=
 spring-beans-6.0.7.pom>central=
+spring-beans-6.0.7.pom>huaweicloud=

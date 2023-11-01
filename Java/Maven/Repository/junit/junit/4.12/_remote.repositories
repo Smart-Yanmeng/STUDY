@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:27 CST 2023
+#Wed Nov 01 12:56:12 CST 2023
 junit-4.12.jar>central=
+junit-4.12.jar>huaweicloud=
 junit-4.12.pom>central=
+junit-4.12.pom>huaweicloud=

@@ -1,7 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:56 CST 2023
-maven-aether-provider-3.0.pom>huaweicloud=
+#Wed Nov 01 12:57:02 CST 2023
 maven-aether-provider-3.0.jar>central=
-maven-aether-provider-3.0.pom>public=
+maven-aether-provider-3.0.jar>huaweicloud=
 maven-aether-provider-3.0.jar>public=
 maven-aether-provider-3.0.pom>central=
+maven-aether-provider-3.0.pom>huaweicloud=
+maven-aether-provider-3.0.pom>public=

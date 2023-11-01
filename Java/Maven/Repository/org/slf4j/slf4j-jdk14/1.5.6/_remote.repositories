@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:27 CST 2023
-slf4j-jdk14-1.5.6.pom>public=
-slf4j-jdk14-1.5.6.pom>central=
+#Wed Nov 01 12:56:12 CST 2023
 slf4j-jdk14-1.5.6.jar>central=
+slf4j-jdk14-1.5.6.jar>huaweicloud=
+slf4j-jdk14-1.5.6.pom>central=
+slf4j-jdk14-1.5.6.pom>huaweicloud=
+slf4j-jdk14-1.5.6.pom>public=

@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:23:42 CST 2023
+#Wed Nov 01 12:54:28 CST 2023
 spring-restdocs-bom-3.0.0.pom>central=
+spring-restdocs-bom-3.0.0.pom>huaweicloud=

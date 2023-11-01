@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:09:37 CST 2023
+#Wed Nov 01 12:55:31 CST 2023
 mybatis-3.5.11.jar>central=
+mybatis-3.5.11.jar>huaweicloud=
 mybatis-3.5.11.pom>central=
+mybatis-3.5.11.pom>huaweicloud=

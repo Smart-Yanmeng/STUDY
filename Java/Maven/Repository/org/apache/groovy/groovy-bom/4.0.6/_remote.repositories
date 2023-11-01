@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:05:15 CST 2023
+#Wed Nov 01 12:54:54 CST 2023
 groovy-bom-4.0.6.pom>central=
+groovy-bom-4.0.6.pom>huaweicloud=

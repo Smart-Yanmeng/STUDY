@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
-guava-28.2-android.pom>central=
+#Wed Nov 01 12:57:02 CST 2023
 guava-28.2-android.jar>central=
+guava-28.2-android.jar>huaweicloud=
+guava-28.2-android.pom>central=
+guava-28.2-android.pom>huaweicloud=

@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:00 CST 2023
-logback-classic-1.4.6.pom>central=
+#Wed Nov 01 12:55:31 CST 2023
 logback-classic-1.4.6.jar>central=
+logback-classic-1.4.6.jar>huaweicloud=
+logback-classic-1.4.6.pom>central=
+logback-classic-1.4.6.pom>huaweicloud=

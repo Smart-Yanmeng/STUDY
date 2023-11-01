@@ -1,7 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:45 CST 2023
+#Wed Nov 01 12:57:02 CST 2023
 maven-settings-builder-3.0.jar>central=
+maven-settings-builder-3.0.jar>huaweicloud=
+maven-settings-builder-3.0.jar>public=
 maven-settings-builder-3.0.pom>central=
 maven-settings-builder-3.0.pom>huaweicloud=
-maven-settings-builder-3.0.jar>public=
 maven-settings-builder-3.0.pom>public=

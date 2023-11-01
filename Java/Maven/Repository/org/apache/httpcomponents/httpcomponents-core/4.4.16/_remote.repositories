@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Mar 10 21:33:01 CST 2023
+#Wed Nov 01 12:56:39 CST 2023
 httpcomponents-core-4.4.16.pom>central=
+httpcomponents-core-4.4.16.pom>huaweicloud=

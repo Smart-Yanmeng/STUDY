@@ -1,6 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:22:25 CST 2023
+#Wed Nov 01 12:57:02 CST 2023
 jdom2-2.0.6.jar>central=
-jdom2-2.0.6.pom>public=
-jdom2-2.0.6.pom>central=
+jdom2-2.0.6.jar>huaweicloud=
 jdom2-2.0.6.jar>public=
+jdom2-2.0.6.pom>central=
+jdom2-2.0.6.pom>huaweicloud=
+jdom2-2.0.6.pom>public=

@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:04:49 CST 2023
-maven-install-plugin-3.0.1.pom>central=
+#Wed Nov 01 12:55:18 CST 2023
 maven-install-plugin-3.0.1.jar>central=
+maven-install-plugin-3.0.1.jar>huaweicloud=
+maven-install-plugin-3.0.1.pom>central=
+maven-install-plugin-3.0.1.pom>huaweicloud=

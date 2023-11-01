@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:27 CST 2023
-backport-util-concurrent-3.1.pom>public=
+#Wed Nov 01 12:56:12 CST 2023
 backport-util-concurrent-3.1.jar>central=
+backport-util-concurrent-3.1.jar>huaweicloud=
 backport-util-concurrent-3.1.pom>central=
+backport-util-concurrent-3.1.pom>huaweicloud=
+backport-util-concurrent-3.1.pom>public=

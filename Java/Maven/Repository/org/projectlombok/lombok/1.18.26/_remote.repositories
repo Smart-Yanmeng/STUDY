@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 11 16:50:37 CST 2023
+#Wed Nov 01 12:55:31 CST 2023
 lombok-1.18.26-sources.jar>public=
 lombok-1.18.26.jar>central=
+lombok-1.18.26.jar>huaweicloud=
 lombok-1.18.26.pom>central=
+lombok-1.18.26.pom>huaweicloud=

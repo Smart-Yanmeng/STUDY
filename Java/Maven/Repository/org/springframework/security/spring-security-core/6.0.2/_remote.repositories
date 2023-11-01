@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:09:37 CST 2023
+#Wed Nov 01 12:55:31 CST 2023
 spring-security-core-6.0.2.jar>central=
+spring-security-core-6.0.2.jar>huaweicloud=
 spring-security-core-6.0.2.pom>central=
+spring-security-core-6.0.2.pom>huaweicloud=

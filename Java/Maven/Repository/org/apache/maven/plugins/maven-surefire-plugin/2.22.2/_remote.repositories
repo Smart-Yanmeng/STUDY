@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:47:15 CST 2023
-maven-surefire-plugin-2.22.2.pom>central=
+#Wed Nov 01 12:55:16 CST 2023
 maven-surefire-plugin-2.22.2.jar>central=
+maven-surefire-plugin-2.22.2.jar>huaweicloud=
+maven-surefire-plugin-2.22.2.pom>central=
+maven-surefire-plugin-2.22.2.pom>huaweicloud=

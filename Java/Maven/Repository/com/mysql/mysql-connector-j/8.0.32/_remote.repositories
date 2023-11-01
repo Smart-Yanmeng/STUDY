@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:28:00 CST 2023
-mysql-connector-j-8.0.32.pom>central=
+#Wed Nov 01 12:55:31 CST 2023
 mysql-connector-j-8.0.32.jar>central=
+mysql-connector-j-8.0.32.jar>huaweicloud=
+mysql-connector-j-8.0.32.pom>central=
+mysql-connector-j-8.0.32.pom>huaweicloud=

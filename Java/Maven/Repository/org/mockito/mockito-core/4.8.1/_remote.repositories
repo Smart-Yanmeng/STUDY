@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 15:09:37 CST 2023
-mockito-core-4.8.1.pom>central=
+#Wed Nov 01 12:55:31 CST 2023
 mockito-core-4.8.1.jar>central=
+mockito-core-4.8.1.jar>huaweicloud=
+mockito-core-4.8.1.pom>central=
+mockito-core-4.8.1.pom>huaweicloud=

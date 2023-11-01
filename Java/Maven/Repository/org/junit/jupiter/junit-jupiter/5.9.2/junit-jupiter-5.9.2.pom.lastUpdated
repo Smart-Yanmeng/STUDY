@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:24:35 CST 2023
+#Wed Nov 01 12:55:19 CST 2023
+https\://mirrors.huaweicloud.com/repository/maven/.lastUpdated=1698814519153
 https\://repo.maven.apache.org/maven2/.lastUpdated=1679462675463
 https\://repo.spring.io/milestone/.error=
-https\://repo.spring.io/milestone/.lastUpdated=1679462675243
+https\://repo.spring.io/milestone/.lastUpdated=1698814519095
