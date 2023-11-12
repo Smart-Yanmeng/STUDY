@@ -16,6 +16,7 @@ struct Computer {
 Computer com[1005];
 char list[1005][25];
 
+// 增加产品种类
 int getType(char *type, int cnt) {
     for (int i = 0; i < cnt; i++) {
         if (!strcmp(list[i], type)) return i;
@@ -31,6 +32,7 @@ int cmp(Computer a, Computer b) {
 
 int temp[1005];
 
+// 总计金额
 int check(int n, int s) {
     int mark = 0, sum = 0, t;
 
@@ -49,6 +51,7 @@ int check(int n, int s) {
     return sum;
 }
 
+// 二分
 int binary(int r, int key) {
     int l = 0, mid;
 
