@@ -3,34 +3,33 @@
 using namespace std;
 
 int n;
-int Cnt = 0;
-bool A[10], B[20], C[20];
+int arr[101], brr[101];
 
-void searchN(int cur) {
+void print() {
+    for (int i = 0; i < n; i++) cout << arr[i];
+    cout << endl;
+}
+
+void dfs(int cur) {
     if (cur == n) {
-        Cnt++;
+        print();
+
         return;
     }
 
     for (int i = 0; i < n; i++) {
-        if (!A[i] && !B[cur + i] && !C[cur - i + n]) {
-            A[i] = B[cur + i] = C[cur - i + n] = true;
-            searchN(cur + 1);
-            A[i] = B[cur + i] = C[cur - i + n] = false;
+        if (brr[i] == 0) {
+            arr[cur] = i + 1;
+            brr[i] = 1;
+            dfs(cur + 1);
+            brr[i] = 0;
         }
     }
 }
 
 int main() {
-    while (true) {
-        cin >> n;
-        if (n == 0) break;
-
-        searchN(0);
-        cout << Cnt << endl;
-
-        Cnt = 0;
-    }
+    cin >> n;
+    dfs(0);
 
     return 0;
 }
