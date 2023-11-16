@@ -1,0 +1,7 @@
+https://www.kaggle.com/search?q=Telecom+Churn
+
+https://www.kaggle.com/code/kashnitsky/topic-1-exploratory-data-analysis-with-pandas
+
+https://www.kaggle.com/code/zakriasaad1/customer-churn-prediction-on-telecom-dataset
+
+https://zhuanlan.zhihu.com/p/144665008
