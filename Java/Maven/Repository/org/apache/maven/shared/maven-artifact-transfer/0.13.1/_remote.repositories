@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Sat Aug 12 10:03:16 CST 2023
+#Thu Nov 23 22:17:56 CST 2023
+maven-artifact-transfer-0.13.1.jar>huaweicloud=
 maven-artifact-transfer-0.13.1.jar>public=
+maven-artifact-transfer-0.13.1.pom>huaweicloud=
 maven-artifact-transfer-0.13.1.pom>public=

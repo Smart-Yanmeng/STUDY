@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 05 20:40:25 CST 2023
+#Thu Nov 23 22:18:32 CST 2023
 plexus-archiver-4.2.1.jar>central=
+plexus-archiver-4.2.1.jar>huaweicloud=
 plexus-archiver-4.2.1.pom>central=
+plexus-archiver-4.2.1.pom>huaweicloud=

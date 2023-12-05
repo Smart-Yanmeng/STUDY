@@ -1,7 +1,9 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Mar 31 22:37:45 CST 2023
-jaxb-api-2.3.1.jar>central=
+#Thu Nov 23 22:17:44 CST 2023
 jaxb-api-2.3.1-sources.jar>public=
-jaxb-api-2.3.1.pom>public=
+jaxb-api-2.3.1.jar>central=
+jaxb-api-2.3.1.jar>huaweicloud=
 jaxb-api-2.3.1.jar>public=
 jaxb-api-2.3.1.pom>central=
+jaxb-api-2.3.1.pom>huaweicloud=
+jaxb-api-2.3.1.pom>public=

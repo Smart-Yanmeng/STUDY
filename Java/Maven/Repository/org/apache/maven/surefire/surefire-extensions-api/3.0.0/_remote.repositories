@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 04 12:03:12 CST 2023
-surefire-extensions-api-3.0.0.pom>central=
+#Thu Nov 23 22:17:15 CST 2023
 surefire-extensions-api-3.0.0.jar>central=
+surefire-extensions-api-3.0.0.jar>huaweicloud=
+surefire-extensions-api-3.0.0.pom>central=
+surefire-extensions-api-3.0.0.pom>huaweicloud=

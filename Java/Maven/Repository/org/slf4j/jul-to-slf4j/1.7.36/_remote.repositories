@@ -1,9 +1,10 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 12 21:56:02 CST 2023
-jul-to-slf4j-1.7.36.jar>public=
+#Thu Nov 23 23:41:32 CST 2023
+jul-to-slf4j-1.7.36-sources.jar>huaweicloud=
 jul-to-slf4j-1.7.36-sources.jar>public=
 jul-to-slf4j-1.7.36.jar>central=
 jul-to-slf4j-1.7.36.jar>huaweicloud=
+jul-to-slf4j-1.7.36.jar>public=
 jul-to-slf4j-1.7.36.pom>central=
-jul-to-slf4j-1.7.36.pom>public=
 jul-to-slf4j-1.7.36.pom>huaweicloud=
+jul-to-slf4j-1.7.36.pom>public=

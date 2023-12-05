@@ -1,7 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:10 CST 2023
+#Thu Nov 23 22:17:56 CST 2023
+junit-3.8.1.jar>central=
+junit-3.8.1.jar>huaweicloud=
 junit-3.8.1.jar>public=
 junit-3.8.1.pom>central=
-junit-3.8.1.jar>central=
-junit-3.8.1.pom>public=
 junit-3.8.1.pom>huaweicloud=
+junit-3.8.1.pom>public=

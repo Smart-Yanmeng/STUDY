@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 11 16:52:20 CST 2023
+#Thu Nov 23 22:16:00 CST 2023
 jcl-over-slf4j-1.7.36-sources.jar>public=
+jcl-over-slf4j-1.7.36.jar>huaweicloud=
 jcl-over-slf4j-1.7.36.jar>public=
+jcl-over-slf4j-1.7.36.pom>huaweicloud=
 jcl-over-slf4j-1.7.36.pom>public=

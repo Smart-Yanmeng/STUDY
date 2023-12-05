@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Sat Aug 12 10:03:16 CST 2023
+#Thu Nov 23 22:17:50 CST 2023
+maven-common-artifact-filters-3.3.2.jar>huaweicloud=
 maven-common-artifact-filters-3.3.2.jar>public=
+maven-common-artifact-filters-3.3.2.pom>huaweicloud=
 maven-common-artifact-filters-3.3.2.pom>public=

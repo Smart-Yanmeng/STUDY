@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 04 12:04:40 CST 2023
+#Thu Nov 23 22:18:32 CST 2023
 maven-deploy-plugin-3.1.1.jar>central=
+maven-deploy-plugin-3.1.1.jar>huaweicloud=
 maven-deploy-plugin-3.1.1.pom>central=
+maven-deploy-plugin-3.1.1.pom>huaweicloud=

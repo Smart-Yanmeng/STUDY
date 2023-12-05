@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:16:02 CST 2023
+#Thu Nov 23 22:17:46 CST 2023
 plexus-utils-3.0.22.pom>central=
+plexus-utils-3.0.22.pom>huaweicloud=
 plexus-utils-3.0.22.pom>public=

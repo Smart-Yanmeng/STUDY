@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:47:30 CST 2023
-logback-parent-1.2.11.pom>public=
+#Thu Nov 23 22:15:58 CST 2023
 logback-parent-1.2.11.pom>central=
+logback-parent-1.2.11.pom>huaweicloud=
+logback-parent-1.2.11.pom>public=

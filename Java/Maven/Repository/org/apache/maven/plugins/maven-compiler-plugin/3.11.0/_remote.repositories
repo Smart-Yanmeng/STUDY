@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Mar 22 13:24:36 CST 2023
-maven-compiler-plugin-3.11.0.pom>central=
+#Thu Nov 23 22:18:32 CST 2023
 maven-compiler-plugin-3.11.0.jar>central=
+maven-compiler-plugin-3.11.0.jar>huaweicloud=
+maven-compiler-plugin-3.11.0.pom>central=
+maven-compiler-plugin-3.11.0.pom>huaweicloud=

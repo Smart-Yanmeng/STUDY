@@ -1,9 +1,10 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Sep 21 17:25:40 CST 2023
+#Thu Nov 23 23:41:24 CST 2023
+javax.servlet-api-4.0.1-sources.jar>huaweicloud=
 javax.servlet-api-4.0.1-sources.jar>public=
-javax.servlet-api-4.0.1.jar>huaweicloud=
-javax.servlet-api-4.0.1.pom>public=
-javax.servlet-api-4.0.1.pom>huaweicloud=
 javax.servlet-api-4.0.1.jar>central=
+javax.servlet-api-4.0.1.jar>huaweicloud=
 javax.servlet-api-4.0.1.jar>public=
 javax.servlet-api-4.0.1.pom>central=
+javax.servlet-api-4.0.1.pom>huaweicloud=
+javax.servlet-api-4.0.1.pom>public=

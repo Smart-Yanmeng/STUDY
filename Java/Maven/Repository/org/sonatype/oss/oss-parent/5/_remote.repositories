@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:48:35 CST 2023
+#Thu Nov 23 22:18:08 CST 2023
 oss-parent-5.pom>central=
+oss-parent-5.pom>huaweicloud=
 oss-parent-5.pom>public=

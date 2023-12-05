@@ -1,4 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:32:50 CST 2023
-slf4j-api-1.7.25.pom>public=
+#Thu Nov 23 23:46:27 CST 2023
+slf4j-api-1.7.25.jar>huaweicloud=
 slf4j-api-1.7.25.jar>public=
+slf4j-api-1.7.25.pom>huaweicloud=
+slf4j-api-1.7.25.pom>public=

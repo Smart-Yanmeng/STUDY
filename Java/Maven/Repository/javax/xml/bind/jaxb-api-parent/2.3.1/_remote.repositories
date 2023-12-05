@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Mar 31 22:34:21 CST 2023
-jaxb-api-parent-2.3.1.pom>public=
+#Thu Nov 23 22:17:39 CST 2023
 jaxb-api-parent-2.3.1.pom>central=
+jaxb-api-parent-2.3.1.pom>huaweicloud=
+jaxb-api-parent-2.3.1.pom>public=

@@ -1,6 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:08:43 CST 2023
-maven-shared-utils-3.3.3.pom>huaweicloud=
-maven-shared-utils-3.3.3.pom>central=
-maven-shared-utils-3.3.3.pom>public=
+#Thu Nov 23 22:17:56 CST 2023
 maven-shared-utils-3.3.3.jar>central=
+maven-shared-utils-3.3.3.jar>huaweicloud=
+maven-shared-utils-3.3.3.pom>central=
+maven-shared-utils-3.3.3.pom>huaweicloud=
+maven-shared-utils-3.3.3.pom>public=

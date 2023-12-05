@@ -1,8 +1,9 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:30 CST 2023
-commons-codec-1.11.jar>public=
-commons-codec-1.11.pom>huaweicloud=
-commons-codec-1.11.jar>huaweicloud=
-commons-codec-1.11.pom>central=
+#Thu Nov 23 23:41:34 CST 2023
+commons-codec-1.11-sources.jar>huaweicloud=
 commons-codec-1.11.jar>central=
+commons-codec-1.11.jar>huaweicloud=
+commons-codec-1.11.jar>public=
+commons-codec-1.11.pom>central=
+commons-codec-1.11.pom>huaweicloud=
 commons-codec-1.11.pom>public=

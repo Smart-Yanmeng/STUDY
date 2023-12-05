@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:43 CST 2023
-plexus-interpolation-1.16.pom>huaweicloud=
+#Thu Nov 23 22:18:40 CST 2023
 plexus-interpolation-1.16.jar>central=
+plexus-interpolation-1.16.jar>huaweicloud=
 plexus-interpolation-1.16.pom>central=
+plexus-interpolation-1.16.pom>huaweicloud=

@@ -1,9 +1,10 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:30 CST 2023
-commons-logging-1.2.jar>public=
-commons-logging-1.2.jar>huaweicloud=
+#Thu Nov 23 23:41:25 CST 2023
+commons-logging-1.2-sources.jar>huaweicloud=
 commons-logging-1.2-sources.jar>public=
 commons-logging-1.2.jar>central=
+commons-logging-1.2.jar>huaweicloud=
+commons-logging-1.2.jar>public=
 commons-logging-1.2.pom>central=
 commons-logging-1.2.pom>huaweicloud=
 commons-logging-1.2.pom>public=

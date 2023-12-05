@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Nov 01 12:57:02 CST 2023
+#Thu Nov 23 23:41:51 CST 2023
+httpclient-4.5.14-sources.jar>huaweicloud=
 httpclient-4.5.14-sources.jar>public=
 httpclient-4.5.14.jar>central=
 httpclient-4.5.14.jar>huaweicloud=

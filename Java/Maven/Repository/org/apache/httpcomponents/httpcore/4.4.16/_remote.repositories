@@ -1,5 +1,6 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Wed Nov 01 12:57:02 CST 2023
+#Thu Nov 23 23:41:53 CST 2023
+httpcore-4.4.16-sources.jar>huaweicloud=
 httpcore-4.4.16-sources.jar>public=
 httpcore-4.4.16.jar>central=
 httpcore-4.4.16.jar>huaweicloud=

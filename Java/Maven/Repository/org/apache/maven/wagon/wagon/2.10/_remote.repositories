@@ -1,3 +1,4 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 21:15:55 CST 2023
+#Thu Nov 23 22:17:46 CST 2023
 wagon-2.10.pom>central=
+wagon-2.10.pom>huaweicloud=

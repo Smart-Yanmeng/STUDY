@@ -1,7 +1,8 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Tue Sep 19 10:09:58 CST 2023
+#Thu Nov 23 22:16:01 CST 2023
+jsr305-2.0.1.jar>central=
+jsr305-2.0.1.jar>huaweicloud=
+jsr305-2.0.1.jar>public=
 jsr305-2.0.1.pom>central=
 jsr305-2.0.1.pom>huaweicloud=
 jsr305-2.0.1.pom>public=
-jsr305-2.0.1.jar>public=
-jsr305-2.0.1.jar>central=

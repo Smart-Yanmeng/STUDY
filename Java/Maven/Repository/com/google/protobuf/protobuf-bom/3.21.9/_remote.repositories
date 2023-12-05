@@ -1,4 +1,5 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Mar 31 23:16:16 CST 2023
+#Tue Dec 05 12:01:14 CST 2023
+protobuf-bom-3.21.9.pom>huaweicloud=
 protobuf-bom-3.21.9.pom>public=
 protobuf-bom-3.21.9.pom>central=

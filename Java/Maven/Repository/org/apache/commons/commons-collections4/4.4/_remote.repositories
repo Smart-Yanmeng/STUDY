@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Thu Mar 02 19:28:04 CST 2023
-commons-collections4-4.4.jar>public=
+#Thu Nov 23 22:17:58 CST 2023
 commons-collections4-4.4-sources.jar>public=
+commons-collections4-4.4.jar>huaweicloud=
+commons-collections4-4.4.jar>public=
+commons-collections4-4.4.pom>huaweicloud=
 commons-collections4-4.4.pom>public=
