@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:29 CST 2023
+activation-1.1-sources.jar>huaweicloud=
+activation-1.1.jar>huaweicloud=
+activation-1.1.pom>huaweicloud=

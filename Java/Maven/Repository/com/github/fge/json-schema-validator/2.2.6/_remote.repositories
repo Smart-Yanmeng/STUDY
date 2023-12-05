@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:39 CST 2023
+json-schema-validator-2.2.6-sources.jar>huaweicloud=
+json-schema-validator-2.2.6.jar>huaweicloud=
+json-schema-validator-2.2.6.pom>huaweicloud=

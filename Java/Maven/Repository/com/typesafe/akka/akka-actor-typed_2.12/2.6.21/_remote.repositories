@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:48 CST 2023
+akka-actor-typed_2.12-2.6.21-sources.jar>huaweicloud=
+akka-actor-typed_2.12-2.6.21.jar>huaweicloud=
+akka-actor-typed_2.12-2.6.21.pom>huaweicloud=

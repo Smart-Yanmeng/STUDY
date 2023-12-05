@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:59 CST 2023
+rhino-1.7R4-sources.jar>huaweicloud=
+rhino-1.7R4.jar>huaweicloud=
+rhino-1.7R4.pom>huaweicloud=

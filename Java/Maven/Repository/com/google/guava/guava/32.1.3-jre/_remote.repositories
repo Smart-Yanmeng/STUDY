@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:49 CST 2023
+guava-32.1.3-jre-sources.jar>huaweicloud=
+guava-32.1.3-jre.jar>huaweicloud=
+guava-32.1.3-jre.pom>huaweicloud=

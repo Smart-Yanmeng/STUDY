@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:50 CST 2023
+mailapi-1.4.3-sources.jar>huaweicloud=
+mailapi-1.4.3.jar>huaweicloud=
+mailapi-1.4.3.pom>huaweicloud=

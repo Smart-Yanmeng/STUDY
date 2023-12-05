@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:33 CST 2023
+byte-buddy-1.12.10-sources.jar>huaweicloud=
+byte-buddy-1.12.10.jar>huaweicloud=
+byte-buddy-1.12.10.pom>huaweicloud=

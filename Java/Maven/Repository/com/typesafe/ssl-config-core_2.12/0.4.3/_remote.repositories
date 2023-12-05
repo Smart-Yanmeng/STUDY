@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:23 CST 2023
+ssl-config-core_2.12-0.4.3-sources.jar>huaweicloud=
+ssl-config-core_2.12-0.4.3.jar>huaweicloud=
+ssl-config-core_2.12-0.4.3.pom>huaweicloud=

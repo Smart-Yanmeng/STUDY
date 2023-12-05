@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:26 CST 2023
+play-json_2.12-2.8.2-sources.jar>huaweicloud=
+play-json_2.12-2.8.2.jar>huaweicloud=
+play-json_2.12-2.8.2.pom>huaweicloud=

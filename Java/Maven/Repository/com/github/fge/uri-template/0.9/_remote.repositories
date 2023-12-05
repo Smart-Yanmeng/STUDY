@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:42:01 CST 2023
+uri-template-0.9-sources.jar>huaweicloud=
+uri-template-0.9.jar>huaweicloud=
+uri-template-0.9.pom>huaweicloud=

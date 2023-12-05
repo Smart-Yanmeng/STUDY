@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:27 CST 2023
+mockito-core-4.5.0-sources.jar>huaweicloud=
+mockito-core-4.5.0.jar>huaweicloud=
+mockito-core-4.5.0.pom>huaweicloud=

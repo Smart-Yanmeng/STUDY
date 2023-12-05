@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:37 CST 2023
+checker-qual-3.37.0-sources.jar>huaweicloud=
+checker-qual-3.37.0.jar>huaweicloud=
+checker-qual-3.37.0.pom>huaweicloud=

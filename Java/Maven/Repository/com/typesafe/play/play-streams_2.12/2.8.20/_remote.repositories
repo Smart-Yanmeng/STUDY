@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:37 CST 2023
+play-streams_2.12-2.8.20-sources.jar>huaweicloud=
+play-streams_2.12-2.8.20.jar>huaweicloud=
+play-streams_2.12-2.8.20.pom>huaweicloud=

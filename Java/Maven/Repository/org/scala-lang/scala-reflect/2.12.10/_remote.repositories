@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:35 CST 2023
+scala-reflect-2.12.10-sources.jar>huaweicloud=
+scala-reflect-2.12.10.jar>huaweicloud=
+scala-reflect-2.12.10.pom>huaweicloud=

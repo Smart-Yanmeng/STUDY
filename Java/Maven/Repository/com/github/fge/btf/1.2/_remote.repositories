@@ -1,0 +1,5 @@
+#NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
+#Thu Nov 23 23:41:51 CST 2023
+btf-1.2-sources.jar>huaweicloud=
+btf-1.2.jar>huaweicloud=
+btf-1.2.pom>huaweicloud=
