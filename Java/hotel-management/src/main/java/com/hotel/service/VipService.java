@@ -6,11 +6,11 @@ import java.util.ArrayList;
 
 public interface VipService {
 
-    int addVip(Vip vip);
+    void addVip(Vip vip);
 
-    int deleteVipById(int id);
+    void deleteVipById(int id);
 
-    int updateVipById(Vip vip);
+    void updateVipById(Vip vip);
 
     Vip queryVipById(int id);
 

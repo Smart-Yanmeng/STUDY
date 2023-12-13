@@ -6,17 +6,17 @@ import java.util.ArrayList;
 
 public interface HomeService {
 
-    int addHome(Home home);
+    void addHome(Home home);
 
-    int deleteHomeById(int id);
+    void deleteHomeById(int id);
 
-    int updateHomeById(Home home);
+    void updateHomeById(Home home);
 
-    Home queryHomeById(Integer  id);
+    Home queryHomeById(Integer id);
 
     ArrayList<Home> queryAllHome();
 
     Home queryHomeByNum(int num);
 
-    int updateH_TypeById(Home home);
+    void updateH_TypeById(Home home);
 }

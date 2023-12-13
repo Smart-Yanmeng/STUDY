@@ -11,18 +11,18 @@ import java.util.ArrayList;
 public class GuestsServiceImpl implements GuestsService {
 
     @Autowired
-            GuestsMapper guestsMapper;
+    GuestsMapper guestsMapper;
 
-    public int addGuests(Guests guests) {
-        return guestsMapper.addGuests(guests);
+    public void addGuests(Guests guests) {
+        guestsMapper.addGuests(guests);
     }
 
-    public int deleteGuestsById(int id) {
-        return guestsMapper.deleteGuestsById(id);
+    public void deleteGuestsById(int id) {
+        guestsMapper.deleteGuestsById(id);
     }
 
-    public int updateGuestsById(Guests guests) {
-        return guestsMapper.updateGuestsById(guests);
+    public void updateGuestsById(Guests guests) {
+        guestsMapper.updateGuestsById(guests);
     }
 
     public Guests queryGuestsById(int id) {

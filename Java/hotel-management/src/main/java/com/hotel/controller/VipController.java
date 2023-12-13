@@ -15,58 +15,64 @@ import java.util.List;
 public class VipController {
 
     @Autowired
-            VipServiceImpl vipService;
+    VipServiceImpl vipService;
 
     @RequestMapping("/add")
-    public ModelAndView add(Vip vip){
+    public ModelAndView add(Vip vip) {
         ModelAndView mv = new ModelAndView();
         vipService.addVip(vip);
         mv.setViewName("suc_v");
+
         return mv;
     }
 
     @RequestMapping("/delete")
-    public String delete(int id){
+    public String delete(int id) {
         vipService.deleteVipById(id);
+
         return "redirect:/vip/list";
     }
 
     @RequestMapping("/list")
-    public ModelAndView list(){
+    public ModelAndView list() {
         ModelAndView mv = new ModelAndView();
-        List<Vip> vipList=vipService.queryAllVip();
-        mv.addObject("list",vipList);
+        List<Vip> vipList = vipService.queryAllVip();
+        mv.addObject("list", vipList);
         mv.setViewName("vip_list");
+
         return mv;
     }
 
     @RequestMapping("/update1")
-    public ModelAndView update1(int id){
+    public ModelAndView update1(int id) {
         ModelAndView mv = new ModelAndView();
         Vip vip = vipService.queryVipById(id);
-        mv.addObject("v",vip);
+        mv.addObject("v", vip);
         mv.setViewName("vip_update");
+
         return mv;
     }
 
     @RequestMapping("/update2")
-    public String update2(Vip v){
+    public String update2(Vip v) {
         vipService.updateVipById(v);
+
         return ("redirect:/vip/list");
     }
 
     @RequestMapping("/find")
-    public ModelAndView find(String findByPhone ){
+    public ModelAndView find(String findByPhone) {
         ModelAndView mv = new ModelAndView();
         Vip vip = vipService.queryVipByPhone(findByPhone);
-        List<Vip> vipList=new ArrayList<Vip>();
+        List<Vip> vipList = new ArrayList<Vip>();
         vipList.add(vip);
-        if (vip==null){
-            vipList=vipService.queryAllVip();
-            mv.addObject("error","未查询出结果");
+        if (vip == null) {
+            vipList = vipService.queryAllVip();
+            mv.addObject("error", "未查询出结果");
         }
-        mv.addObject("list",vipList);
+        mv.addObject("list", vipList);
         mv.setViewName("vip_list");
+
         return mv;
     }
 }

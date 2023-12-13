@@ -6,14 +6,15 @@
 
     <update id="updatePwd" parameterType="Admin">
         update admin
-        set  password=#{password}
-        where username='admin';
+        set password=#{password}
+        where username = 'admin';
     </update>
 
     <select id="findAdmin" resultType="Admin">
-        select * from admin
-        where username=#{0}
-        and password=#{1}
+        select *
+        from admin
+        where username = #{0}
+          and password = #{1}
     </select>
 
 </mapper>

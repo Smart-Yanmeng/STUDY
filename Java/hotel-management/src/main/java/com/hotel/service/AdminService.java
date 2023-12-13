@@ -4,7 +4,7 @@ import com.hotel.pojo.Admin;
 
 public interface AdminService {
 
-    int updatePwd (Admin admin);
+    void updatePwd(Admin admin);
 
-    Admin findAdmin(String username,int password);
+    Admin findAdmin(String username, int password);
 }

@@ -1,5 +1,7 @@
 #NOTE: This is a Maven Resolver internal implementation file, its format can be changed without prior notice.
-#Fri Aug 11 16:51:12 CST 2023
+#Tue Dec 05 20:54:34 CST 2023
+jsoup-1.13.1.pom>huaweicloud=
 jsoup-1.13.1-sources.jar>public=
-jsoup-1.13.1.jar>public=
 jsoup-1.13.1.pom>public=
+jsoup-1.13.1.jar>public=
+jsoup-1.13.1.jar>huaweicloud=

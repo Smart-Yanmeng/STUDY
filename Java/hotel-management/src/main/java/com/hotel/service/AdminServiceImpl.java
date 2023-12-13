@@ -6,19 +6,19 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-public class AdminServiceImpl implements AdminService{
+public class AdminServiceImpl implements AdminService {
 
     @Autowired
-            AdminMapper adminMapper;
+    AdminMapper adminMapper;
 
     @Override
-    public int updatePwd(Admin admin) {
-        return adminMapper.updatePwd(admin) ;
+    public void updatePwd(Admin admin) {
+        adminMapper.updatePwd(admin);
     }
 
     @Override
     public Admin findAdmin(String username, int password) {
-        return adminMapper.findAdmin(username,password);
+        return adminMapper.findAdmin(username, password);
     }
 
 

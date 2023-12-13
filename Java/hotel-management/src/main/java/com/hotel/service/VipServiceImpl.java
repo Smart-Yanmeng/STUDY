@@ -8,21 +8,21 @@ import org.springframework.stereotype.Service;
 import java.util.ArrayList;
 
 @Service
-public class VipServiceImpl  implements VipService {
+public class VipServiceImpl implements VipService {
 
     @Autowired
     VipMapper vipMapper;
 
-    public int addVip(Vip vip) {
-        return vipMapper.addVip(vip);
+    public void addVip(Vip vip) {
+        vipMapper.addVip(vip);
     }
 
-    public int deleteVipById(int id) {
-        return vipMapper.deleteVipById(id);
+    public void deleteVipById(int id) {
+        vipMapper.deleteVipById(id);
     }
 
-    public int updateVipById(Vip vip) {
-        return vipMapper.updateVipById(vip);
+    public void updateVipById(Vip vip) {
+        vipMapper.updateVipById(vip);
     }
 
     public Vip queryVipById(int id) {

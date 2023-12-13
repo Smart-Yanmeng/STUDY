@@ -6,13 +6,13 @@ import java.util.ArrayList;
 
 public interface GuestsService {
 
-    int addGuests (Guests guests);
+    void addGuests(Guests guests);
 
-    int deleteGuestsById (int id);
+    void deleteGuestsById(int id);
 
-    int updateGuestsById (Guests guests);
+    void updateGuestsById(Guests guests);
 
-    Guests queryGuestsById (int id);
+    Guests queryGuestsById(int id);
 
     ArrayList<Guests> queryAllGuests();
 

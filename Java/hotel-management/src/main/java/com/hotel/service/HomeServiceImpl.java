@@ -4,28 +4,29 @@ import com.hotel.dao.HomeMapper;
 import com.hotel.pojo.Home;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 import java.util.ArrayList;
 
 @Service
-public class HomeServiceImpl  implements HomeService{
+public class HomeServiceImpl implements HomeService {
 
     @Autowired
-            HomeMapper homeMapper;
+    HomeMapper homeMapper;
 
 
-    public int addHome(Home home) {
-        return homeMapper.addHome(home);
+    public void addHome(Home home) {
+        homeMapper.addHome(home);
     }
 
-    public int deleteHomeById(int id) {
-        return homeMapper.deleteHomeById(id);
+    public void deleteHomeById(int id) {
+        homeMapper.deleteHomeById(id);
     }
 
-    public int updateHomeById(Home home) {
-        return homeMapper.updateHomeById(home);
+    public void updateHomeById(Home home) {
+        homeMapper.updateHomeById(home);
     }
 
-    public Home queryHomeById(Integer  id) {
+    public Home queryHomeById(Integer id) {
         return homeMapper.queryHomeById(id);
     }
 
@@ -38,8 +39,8 @@ public class HomeServiceImpl  implements HomeService{
     }
 
     @Override
-    public int updateH_TypeById(Home home) {
-        return homeMapper.updateH_TypeById(home);
+    public void updateH_TypeById(Home home) {
+        homeMapper.updateH_TypeById(home);
     }
 
 }

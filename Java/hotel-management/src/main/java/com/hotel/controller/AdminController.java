@@ -12,24 +12,24 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class AdminController {
 
     @Autowired
-            AdminServiceImpl adminService;
+    AdminServiceImpl adminService;
 
     @RequestMapping("/login")
-    public String login(String username, int password){
+    public String login(String username, int password) {
 
-        Admin admin=adminService.findAdmin(username,password );
-       if(admin!=null){
-           if(admin.getPassword()==password){
-               return "index";
-           }else {
+        Admin admin = adminService.findAdmin(username, password);
+        if (admin != null) {
+            if (admin.getPassword() == password) {
+                return "index";
+            } else {
                 return "error";
-           }
-       }
+            }
+        }
         return "error";
     }
 
     @RequestMapping("/updatePwd")
-    public String update(Admin admin){
+    public String update(Admin admin) {
         adminService.updatePwd(admin);
         System.out.println(admin);
         return "suc_a";

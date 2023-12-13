@@ -8,47 +8,47 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class JumpController {
 
     @RequestMapping("/guests_add")
-    public String guest(){
+    public String guest() {
         return "guests_add";
     }
 
     @RequestMapping("/vip_add")
-    public String vip(){
+    public String vip() {
         return "vip_add";
     }
 
     @RequestMapping("/home_add")
-    public String home(){
+    public String home() {
         return "home_add";
     }
 
     @RequestMapping("/pwd_update")
-    public String pwd(){
+    public String pwd() {
         return "pwd_update";
     }
 
     @RequestMapping("/excel_down")
-    public String excel(){
+    public String excel() {
         return "excel_down";
     }
 
     @RequestMapping("/web_cache")
-    public String cache(){
+    public String cache() {
         return "web_cache";
     }
 
     @RequestMapping("/web_index")
-    public String web_index(){
+    public String web_index() {
         return "web_index";
     }
 
     @RequestMapping("/index")
-    public String index(){
+    public String index() {
         return "index";
     }
 
     @RequestMapping("/exit")
-    public String exit(){
+    public String exit() {
         return "exit";
     }
 

@@ -26,10 +26,10 @@ public class ExcelController {
     VipServiceImpl vipService;
 
     @RequestMapping("/home")
-    public void excel_home(HttpServletResponse response )throws IOException {
+    public void excel_home(HttpServletResponse response) throws IOException {
 
         response.setCharacterEncoding("UTF-8");
-        List<Home> homeList=homeService.queryAllHome();
+        List<Home> homeList = homeService.queryAllHome();
         //创建excel文件
         HSSFWorkbook wb = new HSSFWorkbook();
         //创建sheet页
@@ -43,8 +43,8 @@ public class ExcelController {
         titleRow.createCell(4).setCellValue("状态");
         titleRow.createCell(5).setCellValue("描述");
 
-        for(Home home:homeList){
-            HSSFRow dataRow = sheet.createRow(sheet.getLastRowNum()+1);
+        for (Home home : homeList) {
+            HSSFRow dataRow = sheet.createRow(sheet.getLastRowNum() + 1);
             dataRow.createCell(0).setCellValue(home.getId());
             dataRow.createCell(1).setCellValue(home.getNum());
             dataRow.createCell(2).setCellValue(home.getH_Type());
@@ -56,7 +56,7 @@ public class ExcelController {
         // 设置下载时客户端Excel的名称
         response.setContentType("application/octet-stream;charset=utf-8");
         response.setHeader("Content-Disposition", "attachment;filename="
-                + new String("房间信息表".getBytes(),"iso-8859-1") + ".xls");
+                + new String("房间信息表".getBytes(), "iso-8859-1") + ".xls");
 
         OutputStream ouputStream = response.getOutputStream();
         wb.write(ouputStream);
@@ -66,10 +66,10 @@ public class ExcelController {
     }
 
     @RequestMapping("/vip")
-    public void excel_vip(HttpServletResponse response )throws IOException {
+    public void excel_vip(HttpServletResponse response) throws IOException {
 
         response.setCharacterEncoding("UTF-8");
-        List<Vip> vipList=vipService.queryAllVip();
+        List<Vip> vipList = vipService.queryAllVip();
         //创建excel文件
         HSSFWorkbook wb = new HSSFWorkbook();
         //创建sheet页
@@ -85,8 +85,8 @@ public class ExcelController {
         titleRow.createCell(6).setCellValue("开通时间");
         titleRow.createCell(7).setCellValue("到期时间");
 
-        for(Vip vip:vipList){
-            HSSFRow dataRow = sheet.createRow(sheet.getLastRowNum()+1);
+        for (Vip vip : vipList) {
+            HSSFRow dataRow = sheet.createRow(sheet.getLastRowNum() + 1);
             dataRow.createCell(0).setCellValue(vip.getId());
             dataRow.createCell(1).setCellValue(vip.getName());
             dataRow.createCell(2).setCellValue(vip.getSex());
@@ -100,7 +100,7 @@ public class ExcelController {
         // 设置下载时客户端Excel的名称
         response.setContentType("application/octet-stream;charset=utf-8");
         response.setHeader("Content-Disposition", "attachment;filename="
-                + new String("客户会员名单".getBytes(),"iso-8859-1") + ".xls");
+                + new String("客户会员名单".getBytes(), "iso-8859-1") + ".xls");
 
         OutputStream ouputStream = response.getOutputStream();
         wb.write(ouputStream);
